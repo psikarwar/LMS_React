@@ -14,6 +14,7 @@ const App: React.FC = () => {
   return (
 
     <div >
+    
       <HomepageBanner1/>
       
       <Banner2/>
