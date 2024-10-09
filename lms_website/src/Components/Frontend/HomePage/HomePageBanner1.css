@@ -1,0 +1,85 @@
+/* src/Components/Frontend/HomepageBanner1.css */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+}
+
+.text-content {
+    max-width: 600px;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #0f172a;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #64748b;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.image-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.main-image {
+    width: 220px;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    right: 0;
+}
+
+.supporting-image {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    bottom: 5%;
+    left: 20%;
+}
+
+.community-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.community-image {
+    width: 60px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.community-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #0f172a;
+}
