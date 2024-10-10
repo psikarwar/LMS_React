@@ -1,36 +1,42 @@
 // import React from 'react'
 
-
 import CategoryPage from "./Components/Frontend/CategoryPage/CategoryPage"
 import CheckoutPage from "./Components/Frontend/CheckoutPage/CheckoutPage"
 import CoursePage from "./Components/Frontend/CoursePage/CoursePage"
-import HomepageBanner1 from "./Components/Frontend/HomePage/HomepageBanner1"
-import Banner2 from "./Components/Frontend/HomePage/HomepageBanner2"
 import Login from "./Components/Frontend/LoginPage/Login"
 import OrderCompletePage from "./Components/Frontend/OrderCompletePage/OrderCompletePage"
 import ShoppingCart from "./Components/Frontend/ShoppingCart/ShoppingCart"
+import OrderCompletePage2 from "./Components/OrderCompletePage2/OrderCompletePage2"
+// import OrderCompletePage2 from "./Components/Frontend/OrderCompletePage/OrderCompletePage2" // Import new component
 
 const App: React.FC = () => {
+  const courseData = {
+    title: 'Introduction to User Experience Design',
+    lessons: [
+      { title: 'What is User Experience (UX) Design?', duration: '4min', isCompleted: true },
+      { title: 'Historical Overview of UX Design', duration: '4min', isCompleted: true },
+      { title: 'Understanding User-Centered Design', duration: '4min', isCompleted: false },
+      { title: 'The Role of UX Design in Digital Products', duration: '4min', isCompleted: false },
+    ],
+  };
+
   return (
-
-    <div >
-    
-      <HomepageBanner1/>
+    <div>
+      <Login />
+      <CategoryPage />
+      <CoursePage />
+      <ShoppingCart />
+      <CheckoutPage />
+      <OrderCompletePage />
       
-      <Banner2/>
-
-      <Login/>
-      <CategoryPage/>
-      <CoursePage/>
-      <ShoppingCart/>
-      <CheckoutPage/>
-      <OrderCompletePage/>
+      {/* Render the new OrderCompletePage2 component */}
+      <OrderCompletePage2 
+        course={courseData} 
+        imageUrl="https://path-to-your-image.jpg" // Replace with actual image path
+      />
       
-      
-      
-      
-  </div>
+    </div>
   )
 }
 
-export default App
+export default App;
