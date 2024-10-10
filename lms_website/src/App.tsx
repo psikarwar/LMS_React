@@ -1,13 +1,14 @@
-// import React from 'react'
+// import React from 'react';
 
-import CategoryPage from "./Components/Frontend/CategoryPage/CategoryPage"
-import CheckoutPage from "./Components/Frontend/CheckoutPage/CheckoutPage"
-import CoursePage from "./Components/Frontend/CoursePage/CoursePage"
-import Login from "./Components/Frontend/LoginPage/Login"
-import OrderCompletePage from "./Components/Frontend/OrderCompletePage/OrderCompletePage"
-import ShoppingCart from "./Components/Frontend/ShoppingCart/ShoppingCart"
-import OrderCompletePage2 from "./Components/OrderCompletePage2/OrderCompletePage2"
-// import OrderCompletePage2 from "./Components/Frontend/OrderCompletePage/OrderCompletePage2" // Import new component
+import CategoryPage from "./Components/Frontend/CategoryPage/CategoryPage";
+import CheckoutPage from "./Components/Frontend/CheckoutPage/CheckoutPage";
+import CoursePage from "./Components/Frontend/CoursePage/CoursePage";
+import Login from "./Components/Frontend/LoginPage/Login";
+import OrderCompletePage from "./Components/Frontend/OrderCompletePage/OrderCompletePage";
+import ShoppingCart from "./Components/Frontend/ShoppingCart/ShoppingCart";
+import OrderCompletePage2 from "./Components/OrderCompletePage2/OrderCompletePage2";
+import Banner1 from "./Components/HomePage/Banner1";
+import Signup from "./Components/SignUp/Signup";
 
 const App: React.FC = () => {
   const courseData = {
@@ -34,9 +35,11 @@ const App: React.FC = () => {
         course={courseData} 
         imageUrl="https://path-to-your-image.jpg" // Replace with actual image path
       />
-      
-    </div>
-  )
-}
+
+      <Banner1 />
+      <Signup />
+    </div>  // Ensure the closing div is correctly placed here
+  );
+};
 
 export default App;
