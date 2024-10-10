@@ -8,6 +8,8 @@ import CoursePage from "./Components/Frontend/CoursePage/CoursePage"
 import Login from "./Components/Frontend/LoginPage/Login"
 import OrderCompletePage from "./Components/Frontend/OrderCompletePage/OrderCompletePage"
 import ShoppingCart from "./Components/Frontend/ShoppingCart/ShoppingCart"
+import Banner1 from "./Components/HomePage/Banner1"
+import Signup from "./Components/SignUp/Signup"
 
 const App: React.FC = () => {
   return (
@@ -15,7 +17,8 @@ const App: React.FC = () => {
     <div >
     
       
-    
+      <Banner1 />
+      <Signup/>
       <Login/>
       <CategoryPage/>
       <CoursePage/>

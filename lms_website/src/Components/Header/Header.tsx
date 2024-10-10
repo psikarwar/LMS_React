@@ -8,9 +8,9 @@ const Header: React.FC = () => {
         <span className="ml-1 text-lg font-medium text-slate-800">Byway</span>
       </div>
       <nav className="flex items-center">
-        <span className="mx-6 text-base font-medium text-slate-800">Categories</span>
-        <div className="flex items-center px-3 py-2 mr-6 border rounded-lg border-slate-800">
-          <img src="./assets/heroicons-magnifying-glass-20-solid.svg" alt="Search" className="w-5 h-5 mr-2" />
+        <span className="mx-10 text-base font-medium text-slate-800">Categories</span>
+        <div className="flex items-center px-80 py-2 mr-6 border rounded-lg border-slate-800">
+          <img src="./assets/heroicons-magnifying-glass-20-solid.svg" alt="Search" className="max-w-80px h-5 ml-38" />
           <input
             type="text"
             placeholder="Search courses"
