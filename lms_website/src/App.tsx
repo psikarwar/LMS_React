@@ -9,6 +9,7 @@ import Login from "./Components/Frontend/LoginPage/Login"
 import OrderCompletePage from "./Components/Frontend/OrderCompletePage/OrderCompletePage"
 import ShoppingCart from "./Components/Frontend/ShoppingCart/ShoppingCart"
 import Banner1 from "./Components/HomePage/Banner1"
+import HomeScreen from "./Components/HomeScreen/HomeScreen"
 import Signup from "./Components/SignUp/Signup"
 
 const App: React.FC = () => {
@@ -18,6 +19,7 @@ const App: React.FC = () => {
     
       
       <Banner1 />
+      <HomeScreen/>
       <Signup/>
       <Login/>
       <CategoryPage/>
