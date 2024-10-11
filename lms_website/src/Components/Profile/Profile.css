@@ -1,0 +1,80 @@
+.profile-container {
+    background-color: #f8fafc;
+    border-radius: 16px;
+    padding: 24px;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+  }
+  
+  .profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .profile-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+  }
+  
+  .profile-name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #0f172a;
+  }
+  
+  .share-button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 24px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    color: #0f172a;
+    cursor: pointer;
+  }
+  
+  .share-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .divider {
+    width: 100%;
+    margin: 24px 0;
+  }
+  
+  .profile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .menu-item {
+    padding: 16px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #334155;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .menu-item.selected {
+    background-color: #0f172a;
+    color: #ffffff;
+  }
+  

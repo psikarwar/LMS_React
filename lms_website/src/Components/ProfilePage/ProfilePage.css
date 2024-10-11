@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.ProfilePage-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  background-color: white;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.logo img {
+  width: 31px;
+  height: 40px;
+  margin-right: 4px;
+}
+
+.ProfilePage-nav {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  margin: 0 10px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.profile-icon {
+  border-radius: 50%;
+}
+
+.initials {
+  color: white;
+  margin-left: -25px;
+  z-index: 1;
+}
+
+.main-content {
+  display: flex;
+  padding: 20px 80px;
+}
+
+.profile-sidebar {
+  flex: 0 1 300px;
+  background-color: #f8fafc;
+  border-radius: 16px;
+  padding: 24px;
+  margin-right: 20px;
+}
+
+.profile-sidebar h2 {
+  margin: 16px 0;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  padding: 16px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.sidebar-menu .active {
+  background-color: #0f172a;
+  color: white;
+}
+
+.profile-section {
+  flex: 1;
+}
+
+.basic-info, .image-section, .links-section {
+  background-color: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #e2e8f0;
+}
+
+.input-group, .link-input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label, .link-input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.select-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.select-wrapper img {
+  margin-left: -30px;
+  cursor: pointer;
+}
+
+.image-preview {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.button {
+  background-color: #0f172a;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.button.upload {
+  background-color: white;
+  color: #0f172a;
+  border: 1px solid #0f172a;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.ProfilePage-footer {
+  background-color: #1e293b;
+  padding: 40px 80px;
+  color: #cbd5e1;
+}
+
+.footer-section img,
+.footer-section p {
+  margin-bottom: 20px;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+  color: #f1f5f9;
+}
+
+.footer-links ul,
+.footer-contact p {
+  margin: 10px 0;
+}
+
+.footer-contact {
+  max-width: 300px;
+}
