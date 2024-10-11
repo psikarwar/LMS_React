@@ -1,7 +1,7 @@
 import DesignCourse from './DesignCourse/DesignCourse';
 // import PopularMentor from './PopularMentor/PopularMentor';
 import PopularMentors from './PopularMentor/PopularMentor';
-import FeaturedCourses from './FeaturedCourse/FeaturedCourse';
+// import FeaturedCourses from './FeaturedCourse/FeaturedCourse';
 
 // Mentor data arrays
 const mentorsSet1 = [
@@ -205,7 +205,7 @@ function CategoryPage() {
 
       {/* Popular Mentors Section */}
       <PopularMentors mentors={[]} />  {/* Existing PopularMentors */}
-      <FeaturedCourses courses={[]} />  {/* Existing Featured Courses */}
+        {/* Existing Featured Courses */}
 
       {/* New PopularMentor Component Rendering */}
       <div>
