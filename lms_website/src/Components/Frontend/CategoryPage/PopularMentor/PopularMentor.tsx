@@ -1,17 +1,15 @@
 import React from 'react';
 
-const mentors = [
-  {
-    name: "Ronald Richards",
-    role: "UI/UX Designer",
-    rating: "4.9",
-    students: "2400 Students",
-    image: "./assets/rectangle-1136.svg",
-  },
-  // Add objects for more mentors, changing the image path accordingly
-];
+// Define Mentor type
+type Mentor = {
+  name: string;
+  role: string;
+  rating: string;
+  students: string;
+  image: string;
+};
 
-const PopularMentors: React.FC = () => {
+const PopularMentor: React.FC<{ mentors: Mentor[] }> = ({ mentors }) => {
   return (
     <div className="p-6 font-inter">
       <h2 className="font-semibold text-2xl leading-[140%] text-gray-900 mb-6">
@@ -54,7 +52,6 @@ const PopularMentors: React.FC = () => {
                 <p className="font-semibold text-gray-600">{mentor.students}</p>
               </div>
             </div>
-            
           </div>
         ))}
       </div>
@@ -62,4 +59,4 @@ const PopularMentors: React.FC = () => {
   );
 };
 
-export default PopularMentors;
+export default PopularMentor;

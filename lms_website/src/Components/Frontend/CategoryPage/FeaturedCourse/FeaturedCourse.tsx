@@ -1,18 +1,20 @@
 import React from 'react';
 
-const courses = [
-  {
-    title: "Beginner’s Guide to Design",
-    author: "By Ronald Richards",
-    hours: "22 Total Hours. 155 Lectures. Beginner",
-    price: "$149.9",
-    image: "./assets/rectangle-1080.svg",
-    rating: "(1200 Ratings)",
-  },
-  // Add objects for more courses, changing the image path accordingly
-];
+// Define the types for the course data
+interface Course {
+  title: string;
+  author: string;
+  hours: string;
+  price: string;
+  image: string;
+  rating: string;
+}
 
-const FeaturedCourses: React.FC = () => {
+interface FeaturedCoursesProps {
+  courses: Course[];
+}
+
+const FeaturedCourse: React.FC<FeaturedCoursesProps> = ({ courses }) => {
   return (
     <div className="p-6 font-inter">
       <h2 className="font-semibold text-2xl leading-[140%] text-gray-900 mb-6">
@@ -50,4 +52,4 @@ const FeaturedCourses: React.FC = () => {
   );
 };
 
-export default FeaturedCourses;
+export default FeaturedCourse;
