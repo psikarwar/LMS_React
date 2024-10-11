@@ -16,8 +16,8 @@ const categories: Category[] = [
 const TopCategories: React.FC = () => {
   return (
     <div className="px-6 py-6 max-w-screen-xl mx-auto">
-      <div className="flex justify-between items-center mb-6">
-        <h2 className="font-inter font-semibold text-2xl leading-[140%] text-gray-900">
+      <div className="flex justify-between items-left mb-6">
+        <h2 className="font-inter font-semibold text-2xl leading-[140%] text-gray-900" >
           Top Categories
         </h2>
         <button className="px-6 py-2 rounded-lg bg-transparent border-none cursor-pointer text-blue-500 font-inter font-medium text-sm leading-[160%]">

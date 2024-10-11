@@ -13,7 +13,7 @@ const PopularMentor: React.FC<{ mentors: Mentor[] }> = ({ mentors }) => {
   return (
     <div className="p-6 font-inter">
       <h2 className="font-semibold text-2xl leading-[140%] text-gray-900 mb-6">
-        Popular Mentors
+        Top Instructors
       </h2>
       
       <div className="grid grid-cols-5 gap-6">
