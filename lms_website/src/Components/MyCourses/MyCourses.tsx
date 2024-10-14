@@ -5,7 +5,7 @@ import Header from '../Header/Header';
 import Profile from '../Profile/Profile';
 import Footer from '../Footer/Footer';
 
-const App: React.FC = () => {
+const MyCourses: React.FC = () => {
   return (
     <div className="app">
         <Header/>
@@ -77,4 +77,4 @@ const CourseCard: React.FC = () => (
 );
 
 
-export default App;
+export default MyCourses;

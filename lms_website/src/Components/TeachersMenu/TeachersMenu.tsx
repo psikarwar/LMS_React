@@ -196,7 +196,7 @@ interface Instructor {
   mailIconSrc: string;
 }
 
-const App: React.FC = () => {
+const TeachersMenu: React.FC = () => {
   const instructors: Instructor[] = [
     {
       name: 'Ronald Richards',
@@ -264,4 +264,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default TeachersMenu;
