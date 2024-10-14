@@ -1,95 +1,127 @@
 import React from 'react';
+// Import the missing components
+import Header from '../../Header/Header'; // Adjust the path based on your project structure
+import Footer from '../../Footer/Footer'; // Adjust the path
+
+import CourseCustomer from './CourseCustomer/CourseCustomer'; // Import the CourseCustomer component
+import DesignCourse from '../CategoryPage/DesignCourse/DesignCourse'; // Import the DesignCourse component
+import CourseDesign from './CourseDesign/CourseDesign';
+import CourseImg from './CourseImg/CourseImg';
+import CourseMenu from './CourseMenu/CourseMenu'; // Importing the CourseMenu component
+import CourseDescription from './CourseDescription/CourseDescription'; // Importing the CourseDescription component
+import CourseInstructor from './CourseInstructor/CourseInstructor';
+import CourseSyllabus from './CourseSyllabus/CourseSyllabus'; // Import the CourseSyllabus component
+import CourseReviews from './CourseReviews/CourseReviews'; // Import the CourseReviews component
 
 const CoursePage: React.FC = () => {
+  // Syllabus data
+  const syllabusData = [
+    { title: 'Introduction to UX Design', lessons: 5, duration: '1 hour' },
+    { title: 'Basics of User-Centered Design', lessons: 5, duration: '1 hour' },
+    { title: 'Elements of User Experience', lessons: 5, duration: '1 hour' },
+    { title: 'Visual Design Principles', lessons: 5, duration: '1 hour' },
+  ];
+
+  // Reviews data (sample data for demonstration)
+  const reviewsData = [
+    {
+      reviewerName: 'Mark Doe',
+      rating: 5,
+      reviewDate: '22nd March, 2024',
+      reviewText: 'This course has transformed my approach to UX design!',
+    },
+    {
+      reviewerName: 'Jane Smith',
+      rating: 4,
+      reviewDate: '15th April, 2024',
+      reviewText: 'Very informative and engaging course.',
+    },
+    // Add more reviews here...
+  ];
+
   return (
     <div className="w-full bg-white">
+      {/* Render the imported components */}
       <Header />
-      <Breadcrumbs />
-      <CourseDetails />
-      <ReviewsSection />
-      <CustomerFeedback />
+      {/* <Breadcrumbs /> */}
+      
+      {/* CourseDesign and CourseImg layout */}
+      <div className="flex justify-between items-start p-6">
+        <div className="w-2/3">
+          <CourseDesign
+            title="Introduction to User Experience Design"
+            description="This course is meticulously crafted to provide you with a foundational understanding of the principles, methodologies, and tools that drive exceptional user experiences in the digital landscape."
+            ratingScore={4.6}
+            ratingCount="651651"
+            totalHours="10"
+            lectures="30"
+            levels="Beginner"
+            creatorName="John Doe"
+            languages={['English', 'Spanish']}
+          />
+          
+          {/* Adding CourseDescription below CourseDesign */}
+          <CourseDescription />
+          
+          {/* Add CourseInstructor component below CourseDescription */}
+          <CourseInstructor
+            name="Ronald Richards"
+            role="UI/UX Designer"
+            imageSrc="./assets/ellipse-4.svg"
+            reviews={40445}
+            students={500}
+            courses={15}
+            description="With over a decade of industry experience, Ronald brings a wealth of practical knowledge to the classroom. He has played a pivotal role in designing user-centric interfaces for renowned tech companies, ensuring seamless and engaging user experiences."
+          />
+          
+          {/* Adding CourseSyllabus below CourseInstructor */}
+          <CourseSyllabus syllabus={syllabusData} />
+          
+          {/* Adding CourseReviews below CourseSyllabus */}
+          <CourseReviews
+            averageRating={4.6}
+            totalReviews={146951}
+            ratingBreakdown={[
+              { percentage: 80, rating: 5 },
+              { percentage: 10, rating: 4 },
+              { percentage: 5, rating: 3 },
+              { percentage: 3, rating: 2 },
+              { percentage: 2, rating: 1 },
+            ]}
+            reviews={reviewsData}
+          />
+
+          {/* Adding CourseCustomer below CourseReviews */}
+          <CourseCustomer />
+          
+          {/* Adding DesignCourse below CourseCustomer */}
+          <DesignCourse
+            title="Advanced UX Techniques"
+            author="Alice Johnson"
+            totalRatings={1024}
+            totalHours="8"
+            lectures={15}
+            level="Intermediate"
+            price="199.99"
+            imageSrc="./assets/course-image.svg" // Adjust the path based on your project structure
+            rating={0}          />
+        </div>
+
+        {/* CourseImg and centered CourseMenu */}
+        <div className="w-1/3 flex flex-col items-center">
+          <CourseImg />
+          
+          {/* Center the CourseMenu below CourseImg */}
+          <div className="mt-6 w-full">
+            <CourseMenu />
+          </div>
+        </div>
+      </div>
+      
+      {/* Render the additional sections */}
+      {/* <ReviewsSection /> */}
+      {/* <CustomerFeedback /> */}
       <Footer />
-    </div>
-  );
-};
-
-const Header: React.FC = () => {
-  return (
-    <div className="flex items-center justify-between p-4 border-b border-gray-300">
-      <img src="./assets/logo.svg" alt="Byway" className="w-8 h-10" />
-      <span className="font-inter font-medium text-base text-gray-800 ml-2">Byway</span>
-      <div className="flex items-center border border-gray-800 rounded-lg p-2">
-        <img src="./assets/heroicons-magnifying-glass-20-solid.svg" alt="Search" className="w-5 h-5" />
-        <input type="text" placeholder="Search courses" className="border-none ml-2 font-inter font-medium text-sm" />
-      </div>
-      <button className="font-inter font-medium text-sm text-gray-800 bg-transparent border-none cursor-pointer">
-        Teach on Byway
-      </button>
-    </div>
-  );
-};
-
-const Breadcrumbs: React.FC = () => {
-  return (
-    <div className="flex items-center p-4">
-      <span className="font-inter font-normal text-sm text-gray-800 mr-2">Home</span>
-      <img src="./assets/icon-chevron-right-small.svg" alt="Chevron" className="w-6 h-6 mx-2" />
-      <span className="font-inter font-normal text-sm text-gray-800 mr-2">Categories</span>
-      <img src="./assets/icon-chevron-right-small.svg" alt="Chevron" className="w-6 h-6 mx-2" />
-      <span className="font-inter font-normal text-sm text-blue-600">Introduction to User Experience Design</span>
-    </div>
-  );
-};
-
-const CourseDetails: React.FC = () => {
-  return (
-    <div className="p-4 border-b border-gray-300">
-      <h1 className="font-inter font-bold text-4xl text-gray-900">Introduction to User Experience Design</h1>
-      <p className="font-inter font-normal text-base text-gray-800 mt-4">
-        This course is meticulously crafted to provide you with a foundational understanding of the principles,
-        methodologies, and tools that drive exceptional user experiences in the digital landscape.
-      </p>
-      <div className="flex items-center mt-4">
-        <span className="font-poppins font-medium text-base text-yellow-400">4.6</span>
-        <img src="./assets/phosphor-icons-star.svg" alt="Star" className="w-5 h-5 ml-2" />
-        <span className="font-inter font-normal text-sm text-gray-800 ml-2">(651651 rating)</span>
-      </div>
-    </div>
-  );
-};
-
-const ReviewsSection: React.FC = () => {
-  return (
-    <div className="p-4 border-b border-gray-300">
-      <h2 className="font-inter font-semibold text-2xl text-gray-900 mb-4">Learner Reviews</h2>
-      <p className="font-inter font-normal text-base text-gray-800 mb-2">
-        "Byway's tech courses are top-notch! As someone who's always looking to stay ahead in the rapidly evolving tech world,
-        I appreciate the up-to-date content and engaging multimedia."
-      </p>
-      <span className="font-inter font-semibold text-lg text-gray-900">Jane Doe, Designer</span>
-    </div>
-  );
-};
-
-const CustomerFeedback: React.FC = () => {
-  return (
-    <div className="p-4 border-b border-gray-300">
-      <h2 className="font-inter font-semibold text-2xl text-black mb-4">What Our Customer Say About Us</h2>
-      <p className="font-inter font-normal text-base text-black">
-        "Byway's tech courses are top-notch! As someone who's always looking to stay ahead in the rapidly evolving tech world,
-        I appreciate the up-to-date content and engaging multimedia."
-      </p>
-    </div>
-  );
-};
-
-const Footer: React.FC = () => {
-  return (
-    <div className="p-8 bg-gray-800 flex flex-col items-start">
-      <img src="./assets/image-4.svg" alt="Logo" className="w-28 h-10 mb-4" />
-      <p className="font-inter font-normal text-sm text-gray-300 max-w-md">
-        Empowering learners through accessible and engaging online education.
-      </p>
     </div>
   );
 };
