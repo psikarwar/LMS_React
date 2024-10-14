@@ -108,7 +108,7 @@ body {
     gap: 16px;
   }
   
-  .instructor-card {
+  /* .instructor-card {
     flex: 1 0 21%;
     background-color: white;
     border: 1px solid #e2e8f0;
@@ -122,7 +122,7 @@ body {
     background-color: #2563eb;
     color: white;
   }
-  
+   */
   .pagination {
     display: flex;
     justify-content: center;
