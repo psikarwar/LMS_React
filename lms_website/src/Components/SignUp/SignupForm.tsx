@@ -1,88 +1,109 @@
 import React from 'react';
 
-const SignUpForm: React.FC = () => {
+const App: React.FC = () => {
   return (
-    <div className="text-left">
-      <h1 className="font-inter  text-center font-semibold text-4xl text-slate-900 mb-10 mt-20">Create Your Account</h1>
-      <form>
-        <div className="flex justify-between gap-5 mb-1">
-          <div className="flex-1">
-            <label className="font-inter font-semibold text-lg text-slate-900 mb-2 block">Full Name</label>
-            <div className="flex justify-between gap-2">
+    <div className="max-w-full  bg-gray-50 flex justify-left items-center">
+      <div className="bg-white w-full max-w-2xl p-4 md:p-5  ">
+        <h1 className="text-slate-900 text-3xl md:text-4xl font-semibold text-center mb-8">
+          Create Your Account
+        </h1>
+
+        <form className="space-y-6">
+          {/* Full Name */}
+          <div className="flex flex-col md:flex-row md:space-x-4">
+            <div className="w-full">
+              <label className="block text-lg font-semibold text-slate-900 mb-2">Full Name</label>
               <input
                 type="text"
                 placeholder="First Name"
-                className="w-full p-3 border border-slate-200 rounded-lg text-slate-400"
+                className="w-full p-3 border border-gray-300 rounded-lg text-gray-600 focus:outline-none focus:border-gray-500"
               />
+            </div>
+            <div className="w-full mt-4 md:mt-0">
+              <label className="block text-lg font-semibold text-slate-900 mb-2">&nbsp;</label>
               <input
                 type="text"
                 placeholder="Last Name"
-                className="w-full p-3 border border-slate-200 rounded-lg text-slate-400"
+                className="w-full p-3 border border-gray-300 rounded-lg text-gray-600 focus:outline-none focus:border-gray-500"
               />
             </div>
           </div>
-        </div>
-        <div className="mb-5">
-          <label className="font-inter font-semibold text-lg text-slate-900 mb-2 block">Username</label>
-          <input
-            type="text"
-            placeholder="Username"
-            className="w-full p-3 border border-slate-200 rounded-lg text-slate-400"
-          />
-        </div>
-        <div className="mb-5">
-          <label className="font-inter font-semibold text-lg text-slate-900 mb-2 block">Email</label>
-          <input
-            type="email"
-            placeholder="Email ID"
-            className="w-full p-3 border border-slate-200 rounded-lg text-slate-400"
-          />
-        </div>
-        <div className="flex justify-between gap-5 mb-5">
-          <div className="flex-1">
-            <label className="font-inter font-semibold text-lg text-slate-900 mb-2 block">Password</label>
-            <input
-              type="password"
-              placeholder="Enter Password"
-              className="w-full p-3 border border-slate-200 rounded-lg text-slate-400"
-            />
-          </div>
-          <div className="flex-1">
-            <label className="font-inter font-semibold text-lg text-slate-900 mb-2 block">Confirm Password</label>
-            <input
-              type="password"
-              placeholder="Confirm Password"
-              className="w-full p-3 border border-slate-200 rounded-lg text-slate-400"
-            />
-          </div>
-        </div>
-        <button className="flex items-center justify-start gap-2 mt-5 px-6 py-2 bg-slate-900 text-white font-inter font-medium text-sm rounded-lg w-fit">
-  Create Account
-  <img src="./assets/icon-arrow-narrow-right.svg" alt="arrow" />
-</button>
 
-      </form>
-      <div className="flex items-center justify-center my-10">
-        <img src="./assets/line-34.svg" alt="line" />
-        <span className="font-inter font-normal text-sm text-slate-400 mx-2">Sign up with</span>
-        <img src="./assets/line-35.svg" alt="line" />
-      </div>
-      <div className="flex justify-between mt-5">
-        <div className="flex items-center justify-center w-56 h-12 border border-slate-200 rounded-lg bg-white cursor-pointer gap-2 hover:bg-slate-100">
-          <img src="./assets/facebook-logo-primary-2.svg" alt="Facebook" />
-          <span>Facebook</span>
+          {/* Username */}
+          <div>
+            <label className="block text-lg font-semibold text-slate-900 mb-2">Username</label>
+            <input
+              type="text"
+              placeholder="Username"
+              className="w-full p-3 border border-gray-300 rounded-lg text-gray-600 focus:outline-none focus:border-gray-500"
+            />
+          </div>
+
+          {/* Email */}
+          <div>
+            <label className="block text-lg font-semibold text-slate-900 mb-2">Email</label>
+            <input
+              type="email"
+              placeholder="Email ID"
+              className="w-full p-3 border border-gray-300 rounded-lg text-gray-600 focus:outline-none focus:border-gray-500"
+            />
+          </div>
+
+          {/* Password and Confirm Password */}
+          <div className="flex flex-col md:flex-row md:space-x-4">
+            <div className="w-full">
+              <label className="block text-lg font-semibold text-slate-900 mb-2">Password</label>
+              <input
+                type="password"
+                placeholder="Enter Password"
+                className="w-full p-3 border border-gray-300 rounded-lg text-gray-600 focus:outline-none focus:border-gray-500"
+              />
+            </div>
+            <div className="w-full mt-4 md:mt-0">
+              <label className="block text-lg font-semibold text-slate-900 mb-2">&nbsp;</label>
+              <input
+                type="password"
+                placeholder="Confirm Password"
+                className="w-full p-3 border border-gray-300 rounded-lg text-gray-600 focus:outline-none focus:border-gray-500"
+              />
+            </div>
+          </div>
+
+          {/* Create Account Button */}
+          <button
+            type="submit"
+            className="w-full py-3 bg-slate-900 text-white text-center font-medium rounded-lg flex items-center justify-center gap-2 hover:bg-slate-800 transition"
+          >
+            <span>Create Account</span>
+            <img src="./assets/icon-arrow-narrow-right.svg" alt="arrow" />
+          </button>
+        </form>
+
+        {/* Divider */}
+        <div className="flex items-center my-6">
+          <hr className="flex-grow border-gray-300" />
+          <span className="px-3 text-sm text-gray-500">Sign up with</span>
+          <hr className="flex-grow border-gray-300" />
         </div>
-        <div className="flex items-center justify-center w-56 h-12 border border-slate-200 rounded-lg bg-white cursor-pointer gap-2 hover:bg-slate-100">
-          <img src="./assets/google.svg" alt="Google" />
-          <span className="text-[#ea4335]">Google</span>
-        </div>
-        <div className="flex items-center justify-center w-56 h-12 border border-slate-200 rounded-lg bg-white cursor-pointer gap-2 hover:bg-slate-100">
-          <img src="./assets/providers-image-1.svg" alt="Microsoft" />
-          <span className="text-black">Microsoft</span>
+
+        {/* Social Sign-up Buttons */}
+        <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
+          <button className="flex items-center justify-center w-full md:w-1/3 py-3 border border-gray-300 rounded-lg bg-white hover:bg-gray-100">
+            <img src="./assets/facebook-logo-primary-2.svg" alt="Facebook" className="w-6 h-6" />
+            <span className="ml-2">Facebook</span>
+          </button>
+          <button className="flex items-center justify-center w-full md:w-1/3 py-3 border border-gray-300 rounded-lg bg-white hover:bg-gray-100">
+            <img src="./assets/google.svg" alt="Google" className="w-6 h-6" />
+            <span className="ml-2 text-red-500">Google</span>
+          </button>
+          <button className="flex items-center justify-center w-full md:w-1/3 py-3 border border-gray-300 rounded-lg bg-white hover:bg-gray-100">
+            <img src="./assets/providers-image-1.svg" alt="Microsoft" className="w-6 h-6" />
+            <span className="ml-2">Microsoft</span>
+          </button>
         </div>
       </div>
     </div>
   );
 };
 
-export default SignUpForm;
+export default App;

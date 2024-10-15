@@ -101,7 +101,9 @@ const HomeScreen: React.FC = () => {
   return (
     <>
       <Header />
-      <Banner1 />
+      <Banner1 title={''} description={''} buttonText={''} onButtonClick={function (): void {
+        throw new Error('Function not implemented.');
+      } } />
       <StatsSection />
       <TopCategories />
 
