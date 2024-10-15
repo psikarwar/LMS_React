@@ -13,3 +13,5 @@ const LearningImage: React.FC = () => {
 };
 
 export default LearningImage;
+
+

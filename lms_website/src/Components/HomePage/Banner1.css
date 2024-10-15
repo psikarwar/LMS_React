@@ -1,0 +1,28 @@
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.banner-content {
+    flex: 1;
+    min-width: 300px;
+    padding-right: 20px;
+}
+
+.banner-images {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.banner-images img {
+    margin: 10px;
+    max-width: 100px;
+    /* Adjust size as needed */
+    height: auto;
+}

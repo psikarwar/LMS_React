@@ -1,9 +1,17 @@
 import React from 'react';
 
-const BlueButton: React.FC = () => {
+interface BlueButtonProps {
+  buttonText: string;
+  onClick: () => void;
+}
+
+const BlueButton: React.FC<BlueButtonProps> = ({ buttonText, onClick }) => {
   return (
-    <button className="text-white bg-blue-600 px-4 py-4 rounded-lg text-base font-medium hover:bg-blue-700">
-      Start your instructor journey
+    <button
+      className="bg-blue-500 text-white py-2 px-4 rounded"
+      onClick={onClick}
+    >
+      {buttonText}
     </button>
   );
 };

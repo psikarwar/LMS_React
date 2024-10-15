@@ -1,10 +1,6 @@
 // import React from 'react'
 
 import React from 'react';
-import Banner1 from './Components/HomePage/Banner1';
-import Banner2 from './Components/HomePage/Banner2';
-import Banner3 from './Components/HomePage/Banner3';
-import Banner4 from './Components/HomePage/Banner4';
 import Signup from './Components/SignUp/Signup';
 import HomeScreen from './Components/HomeScreen/HomeScreen';
 import Login from './Components/Frontend/LoginPage/Login';
@@ -27,10 +23,7 @@ const App: React.FC = () => {
 
     <div >
        {/* Honey */}
-      <Banner1/>
-      <Banner2/>
-      <Banner3/>
-      <Banner4/>
+      
       <Signup/>
       <HomeScreen/>
       {/* Drashti       */}

@@ -100,7 +100,7 @@ const MyReviewMenu: React.FC = () => {
     const reviews = [
         {
             courseName: "Beginner’s Guide to Design",
-            rating: 4,
+            rating: 1,
             reviewText:
                 "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding.",
             reviewerName: "John Doe",
@@ -124,7 +124,7 @@ const MyReviewMenu: React.FC = () => {
         },
         {
             courseName: "Digital Marketing 101",
-            rating: 3,
+            rating: 2,
             reviewText:
                 "It was a good introduction to digital marketing, though I felt it could have gone deeper in certain areas. Overall, I still learned a lot.",
             reviewerName: "Alex Johnson",
