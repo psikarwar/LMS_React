@@ -1,31 +1,12 @@
 import React from 'react';
+// import Header from '../../Header/Header'; // Import the Header component
+// import Footer from '../../Footer/Footer'; // Import the Footer component
 
 const CheckoutPage: React.FC = () => {
   return (
     <div className="font-sans text-gray-800">
-      <header className="flex justify-between items-center p-4 lg:p-8 bg-white border-b border-gray-200">
-        <div className="flex items-center">
-          <img src="./assets/logo.svg" alt="Byway Logo" />
-          <span className="ml-2 font-medium text-base">Byway</span>
-        </div>
-        <nav className="flex items-center">
-          <span className="mx-4 text-sm font-medium">Categories</span>
-          <div className="flex items-center border border-gray-800 rounded-lg p-2 mx-4">
-            <img src="./assets/heroicons-magnifying-glass-20-solid.svg" alt="Search" />
-            <span className="ml-2">Search courses</span>
-          </div>
-          <span className="mx-4 text-sm font-medium">Teach on Byway</span>
-          <div className="flex items-center space-x-4">
-            <img src="./assets/heart.svg" alt="Heart" />
-            <img src="./assets/icon-cart.svg" alt="Cart" />
-            <img src="./assets/bell-01.svg" alt="Notifications" />
-            <div className="flex items-center justify-center bg-gray-800 text-white rounded-full w-10 h-10">
-              <img src="./assets/ellipse-4.svg" alt="Profile" />
-              <span>J</span>
-            </div>
-          </div>
-        </nav>
-      </header>
+      {/* Add the Header component */}
+      {/* <Header /> */}
 
       <div className="p-6 lg:p-20">
         <div className="flex items-center text-sm mb-6">
@@ -151,29 +132,8 @@ const CheckoutPage: React.FC = () => {
         </main>
       </div>
 
-      <footer className="bg-gray-800 text-gray-300 p-8">
-        <div className="flex justify-between max-w-screen-xl mx-auto">
-          <div className="w-1/3">
-            <img src="./assets/image-4.svg" alt="Byway" />
-            <p className="mt-4">
-              Empowering learners through accessible and engaging online education. Byway is a leading online learning platform dedicated to providing high-quality, flexible, and affordable educational experiences.
-            </p>
-          </div>
-          <div className="w-1/3">
-            <h3 className="text-lg font-semibold text-white mb-4">Get Help</h3>
-            <span className="block mb-2">Contact Us</span>
-            <span className="block mb-2">Latest Articles</span>
-            <span className="block">FAQ</span>
-          </div>
-          <div className="w-1/3">
-            <h3 className="text-lg font-semibold text-white mb-4">Contact Us</h3>
-            <span className="block mb-2">Address: 123 Main Street, Anytown, CA 12345</span>
-            <span className="block mb-2">Tel: +(123) 456-7890</span>
-            <span className="block">Mail: bywayedu@webkul.in</span>
-            <img src="./assets/image-3.svg" alt="Contact icons" className="mt-4" />
-          </div>
-        </div>
-      </footer>
+      {/* Render the Footer component at the end */}
+      {/* <Footer /> */}
     </div>
   );
 };

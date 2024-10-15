@@ -1,48 +1,51 @@
 import React from 'react';
 
-// Define the types for the course data
-interface Course {
+// Define Course type
+type Course = {
+  id: number;
+  image: string;
   title: string;
   author: string;
-  hours: string;
-  price: string;
-  image: string;
-  rating: string;
-}
+  ratings: number;
+  hours: number;
+  lectures: number;
+  level: string;
+  price: number;
+};
 
-interface FeaturedCoursesProps {
-  courses: Course[];
-}
-
-const FeaturedCourse: React.FC<FeaturedCoursesProps> = ({ courses }) => {
+const FeaturedCourses: React.FC<{ courses: Course[] }> = ({ courses }) => {
   return (
-    <div className="p-6 font-inter">
-      <h2 className="font-semibold text-2xl leading-[140%] text-gray-900 mb-6">
+    <div className="max-w-screen-xl mx-auto p-4">
+      <h2 className="font-inter font-semibold text-2xl text-gray-900 mb-6">
         Featured Courses
       </h2>
-      <div className="grid grid-cols-4 gap-10">
-        {courses.map((course, index) => (
-          <div
-            key={index}
-            className="bg-white border border-gray-200 rounded-2xl p-4"
-          >
+      <div className="flex flex-wrap justify-between gap-10">
+        {courses.map((course) => (
+          <div key={course.id} className="bg-white border border-gray-200 rounded-xl p-4 w-full sm:w-[calc(50%-20px)] lg:w-[calc(25%-20px)]">
             <img
-              className="w-full h-auto rounded-lg"
               src={course.image}
               alt={course.title}
+              className="w-full h-auto rounded-lg"
             />
             <div className="mt-4">
-              <h3 className="font-semibold text-lg leading-[160%] text-gray-900">
+              <h3 className="font-inter font-semibold text-lg text-gray-900">
                 {course.title}
               </h3>
-              <p className="text-sm leading-[150%] text-gray-600">{course.author}</p>
-              <div className="flex items-center text-xs leading-[14.52px] text-gray-600 my-2">
-                <img src="./assets/icon.svg" alt="Star" className="mr-2" />
-                <span>{course.rating}</span>
+              <p className="text-sm text-gray-600">{course.author}</p>
+              <div className="flex items-center gap-2 mt-2">
+                {/* Example using static icons - can be dynamic if needed */}
+                <img src="./assets/icon.svg" alt="Star" className="w-5 h-5" />
+                <img src="./assets/icon-2.svg" alt="Star" className="w-5 h-5" />
+                <img src="./assets/icon-3.svg" alt="Star" className="w-5 h-5" />
+                <img src="./assets/icon-4.svg" alt="Star" className="w-5 h-5" />
+                <img src="./assets/icon-5.svg" alt="Star" className="w-5 h-5" />
+                <span className="text-xs text-gray-600">({course.ratings} Ratings)</span>
               </div>
-              <p className="text-sm leading-[150%] text-gray-600">{course.hours}</p>
-              <p className="font-semibold text-xl text-gray-900 mt-2">
-                {course.price}
+              <p className="text-sm text-gray-600 mt-2">
+                {course.hours} Total Hours. {course.lectures} Lectures. {course.level}
+              </p>
+              <p className="font-inter font-semibold text-xl text-gray-900 mt-2">
+                ${course.price}
               </p>
             </div>
           </div>
@@ -52,4 +55,4 @@ const FeaturedCourse: React.FC<FeaturedCoursesProps> = ({ courses }) => {
   );
 };
 
-export default FeaturedCourse;
+export default FeaturedCourses;

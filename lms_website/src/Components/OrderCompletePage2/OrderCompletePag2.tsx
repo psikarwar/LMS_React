@@ -1,10 +1,12 @@
+import React from 'react';
 import OrderHeader from './OrderHeader/OrderHeader'; // Adjust the path according to your folder structure
 import OrderImg from './OrderImg/OrderImg'; // Adjust the path according to your folder structure
 import OrderCompletion from './OrderCompletion/OrderCompletion'; // Import the new OrderCompletion component
 import OrderReview from './OrderReview/OrderReview'; // Import the OrderReview component
 import CourseInstructor from '../Frontend/CoursePage/CourseInstructor/CourseInstructor'; // Import the CourseInstructor component
 import CourseReviews from '../Frontend/CoursePage/CourseReviews/CourseReviews'; // Import the CourseReviews component
-import Footer from '../Footer/Footer'; // Adjust the path according to your folder structure
+// import Footer from '../Footer/Footer'; // Adjust the path according to your folder structure
+import OrderTabs from './OrderTabs/OrderTabs'; // Import the OrderTabs component
 
 function OrderCompletePag2() {
   const overview = `Embark on a transformative journey into the dynamic world of User Experience (UX) Design with our comprehensive course, "Introduction to User Experience Design." This course is meticulously crafted to provide you with a foundational understanding of the principles, methodologies, and tools that drive exceptional user experiences in the digital landscape.`;
@@ -54,6 +56,10 @@ function OrderCompletePag2() {
     ],
   };
 
+  // Sample tabs data
+  const tabs = ['Details', 'Instructor', 'Courses', 'Reviews'];
+  const [activeTab, setActiveTab] = React.useState<string>(tabs[0]); // Set initial active tab
+
   return (
     <div>
       <OrderHeader />
@@ -63,11 +69,14 @@ function OrderCompletePag2() {
         {/* Order Image on the left side */}
         <div className="w-full lg:w-1/2">
           <OrderImg /> 
+
+          {/* Adding the OrderTabs component below OrderImg on the left side */}
+          <OrderTabs tabs={tabs} activeTab={activeTab} onTabChange={setActiveTab} />
         </div>
 
         {/* Order Completion on the right side */}
         <div className="w-full lg:w-1/2">
-          <OrderCompletion /> 
+          <OrderCompletion />
         </div>
       </div>
 
@@ -102,7 +111,7 @@ function OrderCompletePag2() {
       <div>OrderCompletePag2</div> {/* Keep the existing code as it is */}
 
       {/* Adding the Footer component at the bottom */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 // Import the missing components
-import Header from '../../Header/Header'; // Adjust the path based on your project structure
-import Footer from '../../Footer/Footer'; // Adjust the path
+// import Header from '../../Header/Header'; // Adjust the path based on your project structure
+// import Footer from '../../Footer/Footer'; // Adjust the path
 
 import CourseCustomer from './CourseCustomer/CourseCustomer'; // Import the CourseCustomer component
 import DesignCourse from '../CategoryPage/DesignCourse/DesignCourse'; // Import the DesignCourse component
@@ -36,13 +36,19 @@ const CoursePage: React.FC = () => {
       reviewDate: '15th April, 2024',
       reviewText: 'Very informative and engaging course.',
     },
+    {
+      reviewerName: 'Jane Smith',
+      rating: 4,
+      reviewDate: '15th April, 2024',
+      reviewText: 'Very informative and engaging course.',
+    },
     // Add more reviews here...
   ];
 
   return (
     <div className="w-full bg-white">
       {/* Render the imported components */}
-      <Header />
+      {/* <Header /> */}
       {/* <Breadcrumbs /> */}
       
       {/* CourseDesign and CourseImg layout */}
@@ -121,7 +127,7 @@ const CoursePage: React.FC = () => {
       {/* Render the additional sections */}
       {/* <ReviewsSection /> */}
       {/* <CustomerFeedback /> */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

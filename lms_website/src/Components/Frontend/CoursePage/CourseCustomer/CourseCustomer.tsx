@@ -31,15 +31,15 @@ const CourseCustomer: React.FC = () => {
   return (
     <div className="bg-gray-100 p-10 text-center">
       <h2 className="font-inter font-semibold text-2xl text-black mb-5">What Our Customers Say About Us</h2>
-      <div className="flex flex-wrap justify-center mt-5 gap-6">
-        {testimonials.map((testimonial, index) => (
-          <div key={index} className="bg-white border border-gray-300 rounded-lg p-6 w-80 text-left shadow-lg">
-            <img src="./assets/ri-double-quotes-l.svg" alt="Quotes" className="w-12 h-12 mb-4" />
-            <p className="font-inter font-normal text-lg text-black leading-6 mb-6">{testimonial.text}</p>
+      <div className="flex justify-center mt-5 gap-1"> {/* Increased gap to 8 */}
+        {testimonials.slice(0, 3).map((testimonial, index) => (
+          <div key={index} className="bg-white border border-gray-300 rounded-lg p-4 w-64 text-left shadow-lg h-80">
+            <img src="./assets/ri-double-quotes-l.svg" alt="Quotes" className="w-10 h-10 mb-4" />
+            <p className="font-inter font-normal text-base text-black leading-6 mb-4">{testimonial.text}</p>
             <div className="flex items-center">
-              <img src={testimonial.image} alt={testimonial.name} className="w-15 h-15 rounded-full mr-4" />
+              <img src={testimonial.image} alt={testimonial.name} className="w-12 h-12 rounded-full mr-3" />
               <div>
-                <strong className="font-inter font-semibold text-xl text-black">{testimonial.name}</strong>
+                <strong className="font-inter font-semibold text-lg text-black">{testimonial.name}</strong>
                 <span className="font-inter font-normal text-sm text-gray-600">{testimonial.role}</span>
               </div>
             </div>

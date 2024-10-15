@@ -12,10 +12,11 @@ type Mentor = {
 const PopularMentor: React.FC<{ mentors: Mentor[] }> = ({ mentors }) => {
   return (
     <div className="p-6 font-inter">
+      {/* This <h2> is outside the map function, so it will render only once */}
       <h2 className="font-semibold text-2xl leading-[140%] text-gray-900 mb-6">
         Top Instructors
       </h2>
-      
+
       <div className="grid grid-cols-5 gap-6">
         {mentors.map((mentor, index) => (
           <div
@@ -27,7 +28,7 @@ const PopularMentor: React.FC<{ mentors: Mentor[] }> = ({ mentors }) => {
               src={mentor.image}
               alt={mentor.name}
             />
-            
+
             <div className="text-center mt-4">
               <h3 className="font-semibold text-lg leading-[160%] text-gray-900">
                 {mentor.name}

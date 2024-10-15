@@ -1,4 +1,5 @@
 import React from 'react';
+import courseimg from '../../../../assets/Rectangle 1080.svg'
 
 interface CourseMoreProps {
   image: string;
@@ -13,7 +14,7 @@ interface CourseMoreProps {
 const CourseMore: React.FC<CourseMoreProps> = ({ image, title, author, ratingsCount, details, price }) => {
   return (
     <div className="w-66 p-4 border border-gray-200 rounded-lg bg-white flex flex-col gap-2">
-      <img src={image} alt={title} className="w-full h-36 object-cover rounded-md" />
+      <img src={courseimg} alt={title} className="w-full h-36 object-cover rounded-md" />
       <div className="flex flex-col gap-2">
         <h3 className="font-semibold text-lg text-gray-900">{title}</h3>
         <p className="font-normal text-sm text-gray-500">{author}</p>

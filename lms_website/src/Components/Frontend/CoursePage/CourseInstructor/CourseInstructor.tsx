@@ -1,4 +1,5 @@
 import React from 'react';
+import img1 from '../../../../assets/Ellipse 4.svg';
 
 interface InstructorProps {
   name: string;
@@ -13,7 +14,6 @@ interface InstructorProps {
 const CourseInstructor: React.FC<InstructorProps> = ({
   name,
   role,
-  imageSrc,
   reviews,
   students,
   courses,
@@ -29,7 +29,7 @@ const CourseInstructor: React.FC<InstructorProps> = ({
 
         <div className="flex gap-4 mt-12">
           <img
-            src={imageSrc}
+            src={img1}
             alt="Instructor"
             className="w-30 h-30 rounded-full object-cover"
           />

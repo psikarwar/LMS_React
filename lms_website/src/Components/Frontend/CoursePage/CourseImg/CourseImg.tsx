@@ -1,10 +1,11 @@
 import React from 'react';
+import img1 from '../../../../assets/image-4.svg';
 
 const CourseImg: React.FC = () => {
   return (
     <div className="w-[400px] bg-white rounded-[16px] border border-gray-200 overflow-hidden font-inter">
       <img
-        src="./assets/image-4.svg"
+        src={img1}
         alt="Product"
         className="w-[356px] h-[200px] object-cover m-[24px]"
       />

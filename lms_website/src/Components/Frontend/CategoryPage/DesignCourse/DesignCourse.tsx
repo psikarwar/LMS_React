@@ -1,4 +1,6 @@
 import React from 'react';
+import starimg from '../../../../assets/Frame 427318789.svg';
+
 
 interface CourseProps {
   title: string;
@@ -29,7 +31,7 @@ const DesignCourse: React.FC<CourseProps> = ({
         <h3 className="font-semibold text-lg text-gray-900">{title}</h3>
         <p className="text-sm text-gray-600">By {author}</p>
         <div className="flex items-center text-xs text-gray-600 mt-2">
-          <img src="./assets/icon-star.svg" alt="Star" className="w-4 h-4" />
+          <img src={starimg} alt="Star" className="w-15 h-15" />
           <span className="ml-1">({totalRatings} Ratings)</span>
         </div>
         <p className="text-sm text-gray-600 mt-2">

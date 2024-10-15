@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   return (
@@ -19,12 +20,16 @@ const Header: React.FC = () => {
         </div>
         <span className="mx-6 text-base font-medium text-slate-800">Teach on Byway</span>
         <img src="./assets/icon-cart.svg" alt="Cart" className="w-6 h-6 mr-6" />
+        <Link to="/login">
         <button className="px-4 py-2 mr-2 text-sm font-medium border rounded-md border-slate-800 text-slate-800">
           Log In
+          
         </button>
+        </Link>
+        <Link to="/signup">
         <button className="px-4 py-2 text-sm font-medium text-white bg-slate-800 rounded-md">
           Sign Up
-        </button>
+        </button> </Link>
       </nav>
     </header>
   );

@@ -1,53 +1,51 @@
+// import Header from '../../Header/Header';
 import DesignCourse from './DesignCourse/DesignCourse';
-// import PopularMentor from './PopularMentor/PopularMentor';
 import PopularMentors from './PopularMentor/PopularMentor';
-// import FeaturedCourses from './FeaturedCourse/FeaturedCourse';
+// import Footer from '../../Footer/Footer';
+import CategoryRating from './CategoryRating/CategoryRating'; // Import the CategoryRating component
+import rightimg from '../../../../assets/chevron-right.svg';
 
-// Mentor data arrays
+// Mentor data arrays (same as provided)
 const mentorsSet1 = [
   {
     name: 'Ronald Richards',
     role: 'UI/UX Designer',
     rating: '4.9',
     students: '2400 Students',
-    image: './assets/rectangle-1136.svg', // replace with actual image path
+    image: './assets/rectangle-1136.svg',
   },
   {
     name: 'Ronald Richards',
     role: 'UI/UX Designer',
     rating: '4.9',
     students: '2400 Students',
-    image: './assets/rectangle-1136.svg', // replace with actual image path
+    image: './assets/rectangle-1136.svg',
   },
   {
     name: 'Ronald Richards',
     role: 'UI/UX Designer',
     rating: '4.9',
     students: '2400 Students',
-    image: './assets/rectangle-1136.svg', // replace with actual image path
+    image: './assets/rectangle-1136.svg',
   },
   {
     name: 'Ronald Richards',
     role: 'UI/UX Designer',
     rating: '4.9',
     students: '2400 Students',
-    image: './assets/rectangle-1136.svg', // replace with actual image path
+    image: './assets/rectangle-1136.svg',
   },
   {
     name: 'Ronald Richards',
     role: 'UI/UX Designer',
     rating: '4.9',
     students: '2400 Students',
-    image: './assets/rectangle-1136.svg', // replace with actual image path
+    image: './assets/rectangle-1136.svg',
   },
-  // Add more mentors
+  // Additional mentors as needed
 ];
 
-
-  // Add more mentors
-
-
-// Course data
+// Course data (same as provided)
 const courses = [
   {
     title: "Beginner’s Guide to Design",
@@ -58,7 +56,7 @@ const courses = [
     lectures: 155,
     level: "Beginner",
     price: "149.9",
-    imageSrc: "./assets/rectangle-1080.svg"
+    imageSrc: "./assets/rectangle-1080.svg",
   },
   {
     title: "Beginner’s Guide to Design",
@@ -69,7 +67,7 @@ const courses = [
     lectures: 155,
     level: "Beginner",
     price: "149.9",
-    imageSrc: "./assets/rectangle-1080.svg"
+    imageSrc: "./assets/rectangle-1080.svg",
   },
   {
     title: "Beginner’s Guide to Design",
@@ -80,7 +78,7 @@ const courses = [
     lectures: 155,
     level: "Beginner",
     price: "149.9",
-    imageSrc: "./assets/rectangle-1080.svg"
+    imageSrc: "./assets/rectangle-1080.svg",
   },
   {
     title: "Beginner’s Guide to Design",
@@ -91,7 +89,7 @@ const courses = [
     lectures: 155,
     level: "Beginner",
     price: "149.9",
-    imageSrc: "./assets/rectangle-1080.svg"
+    imageSrc: "./assets/rectangle-1080.svg",
   },
   {
     title: "Beginner’s Guide to Design",
@@ -102,7 +100,7 @@ const courses = [
     lectures: 155,
     level: "Beginner",
     price: "149.9",
-    imageSrc: "./assets/rectangle-1080.svg"
+    imageSrc: "./assets/rectangle-1080.svg",
   },
   {
     title: "Beginner’s Guide to Design",
@@ -113,7 +111,7 @@ const courses = [
     lectures: 155,
     level: "Beginner",
     price: "149.9",
-    imageSrc: "./assets/rectangle-1080.svg"
+    imageSrc: "./assets/rectangle-1080.svg",
   },
   {
     title: "Beginner’s Guide to Design",
@@ -124,7 +122,7 @@ const courses = [
     lectures: 155,
     level: "Beginner",
     price: "149.9",
-    imageSrc: "./assets/rectangle-1080.svg"
+    imageSrc: "./assets/rectangle-1080.svg",
   },
   {
     title: "Beginner’s Guide to Design",
@@ -135,7 +133,7 @@ const courses = [
     lectures: 155,
     level: "Beginner",
     price: "149.9",
-    imageSrc: "./assets/rectangle-1080.svg"
+    imageSrc: "./assets/rectangle-1080.svg",
   },
   {
     title: "Beginner’s Guide to Design",
@@ -146,15 +144,18 @@ const courses = [
     lectures: 155,
     level: "Beginner",
     price: "149.9",
-    imageSrc: "./assets/rectangle-1080.svg"
-  }
-  // Add more courses here
+    imageSrc: "./assets/rectangle-1080.svg",
+  },
+  // Additional courses as needed
 ];
 
 // Main Component
 function CategoryPage() {
   return (
     <>
+      {/* Header component */}
+      {/* <Header /> */}
+
       <div className="p-6 font-inter">
         <h1 className="font-bold text-4xl text-gray-900">Design Courses</h1>
         <h2 className="font-semibold text-2xl text-gray-900 mt-6 mb-6">All Development Courses</h2>
@@ -173,48 +174,59 @@ function CategoryPage() {
           </div>
         </div>
 
-        <div className="grid grid-cols-3 gap-6">
-          {courses.map((course, index) => (
-            <DesignCourse
-              key={index}
-              title={course.title}
-              author={course.author}
-              rating={course.rating}
-              totalRatings={course.totalRatings}
-              totalHours={course.totalHours}
-              lectures={course.lectures}
-              level={course.level}
-              price={course.price}
-              imageSrc={course.imageSrc}
-            />
-          ))}
-        </div>
+        {/* New Flex Layout with Sidebar */}
+        <div className="flex">
+          {/* Left Sidebar with Filters */}
+          <div className="w-1/4 pr-6">
+            <CategoryRating title="Rating" content={<div>Ratings Content</div>} />
+            <CategoryRating title="Number of Chapters" content={<div>Chapters Content</div>} />
+            <CategoryRating title="Price" content={<div>Price Content</div>} />
+            <CategoryRating title="Category" content={<div>Category Content</div>} />
+          </div>
 
-        <div className="flex justify-center items-center gap-2 mt-10">
-          <button className="bg-white border border-gray-200 rounded-lg p-3 cursor-pointer">
-            <img src="./assets/icon-left-chevron.svg" alt="Left Chevron" />
-          </button>
-          <button className="bg-white border border-gray-200 rounded-lg p-3 font-semibold text-gray-900">1</button>
-          <button className="bg-white border border-gray-200 rounded-lg p-3">2</button>
-          <button className="bg-white border border-gray-200 rounded-lg p-3">3</button>
-          <button className="bg-white border border-gray-200 rounded-lg p-3 cursor-pointer">
-            <img src="./assets/icon-right-chevron.svg" alt="Right Chevron" />
-          </button>
+          {/* Main Course Grid */}
+          <div className="w-3/4">
+            <div className="grid grid-cols-3 gap-6">
+              {courses.map((course, index) => (
+                <DesignCourse
+                  key={index}
+                  title={course.title}
+                  author={course.author}
+                  rating={course.rating}
+                  totalRatings={course.totalRatings}
+                  totalHours={course.totalHours}
+                  lectures={course.lectures}
+                  level={course.level}
+                  price={course.price}
+                  imageSrc={course.imageSrc}
+                />
+              ))}
+            </div>
+
+            {/* Pagination */}
+            <div className="flex justify-center items-center gap-2 mt-10">
+              <button className="bg-white border border-gray-200 rounded-lg p-3 cursor-pointer">
+                <img src="./assets/icon-left-chevron.svg" alt="Left Chevron" />
+              </button>
+              <button className="bg-white border border-gray-200 rounded-lg p-3 font-semibold text-gray-900">1</button>
+              <button className="bg-white border border-gray-200 rounded-lg p-3">2</button>
+              <button className="bg-white border border-gray-200 rounded-lg p-3">3</button>
+              <button className="bg-white border border-gray-200 rounded-lg p-3 cursor-pointer">
+                <img src={rightimg} alt="Right Chevron" />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
       {/* Popular Mentors Section */}
-      <PopularMentors mentors={[]} />  {/* Existing PopularMentors */}
-        {/* Existing Featured Courses */}
+      <PopularMentors mentors={[]} />
 
-      {/* New PopularMentor Component Rendering */}
-      <div>
-        {/* First set of mentors */}
-        <PopularMentors mentors={mentorsSet1} />
+      {/* Render first set of mentors */}
+      <PopularMentors mentors={mentorsSet1} />
 
-        {/* Second set of mentors */}
-        {/* <PopularMentor mentors={mentorsSet2} /> */}
-      </div>
+      {/* Footer Component */}
+      {/* <Footer /> */}
     </>
   );
 }
