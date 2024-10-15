@@ -10,7 +10,7 @@ const Signup: React.FC = () => {
       <Header />
 
       {/* Main content container */}
-      <div className="relative flex flex-col lg:flex-row justify-center items-center lg:items-start h-auto lg:h-screen px-4 md:px-10 lg:px-20 py-8">
+      <div className="relative flex flex-col lg:flex-row justify-center items-center lg:items-start h-auto lg:h-auto px-4 md:px-10 lg:px-20 py-8">
         {/* Learning image (adjust to take full width on smaller screens) */}
         <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
           <LearningImage />
