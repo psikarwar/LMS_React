@@ -8,6 +8,13 @@ import HomeScreen from './Components/HomeScreen/HomeScreen';
 import Login from './Components/Frontend/LoginPage/Login';
 // import CategoryPage from './Components/Frontend/CategoryPage/CategoryPage';
 import CoursePage from './Components/Frontend/CoursePage/CoursePage';
+import MainLayout from './Components/MainProfile/MainLayout';
+import CategoryPage from './Components/Frontend/CategoryPage/CategoryPage';
+import ShoppingCart from './Components/Frontend/ShoppingCart/ShoppingCart';
+import CheckoutPage from './Components/Frontend/CheckoutPage/CheckoutPage';
+import OrderCompletePage from './Components/Frontend/OrderCompletePage/OrderCompletePage';
+import OrderCompletePag2 from './Components/OrderCompletePage2/OrderCompletePag2';
+import MentorPage from './Components/MentorPage/MentorPage';
 
 
 
@@ -21,6 +28,13 @@ const App: React.FC = () => {
       <Route path="/login" element={<Login/>} />
       <Route path="/signup" element={<Signup/>} />
       <Route path="/course" element={<CoursePage/>} />
+      <Route path="/profile" element={<MainLayout/>} />
+      <Route path="/category" element={<CategoryPage/>} />
+      <Route path="/shopping" element={<ShoppingCart/>} />
+      <Route path="/checkout" element={<CheckoutPage/>} />
+      <Route path="/ordercom" element={<OrderCompletePage/>} />
+      <Route path="/ordercompl" element={<OrderCompletePag2/>} />
+      <Route path="/mentor" element={<MentorPage/>} />
       
 
       </Routes>
