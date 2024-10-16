@@ -5,7 +5,8 @@ const AdminDashboard :React.FC = () => {
   return (
       <>
           <div className='flex flex-row'>
-          <Sidebar />
+        <Sidebar />
+      
               </div>
           
      </>

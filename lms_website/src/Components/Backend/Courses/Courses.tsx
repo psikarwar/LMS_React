@@ -144,7 +144,7 @@ import Tab from '../Tab/Tab';
 
 const Courses: React.FC = () => {
   return (
-    <div className="p-4 font-sans">
+    <div className="p-4 font-sans ml-58">
       {/* Header Section */}
       <header className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
         <h1 className="text-lg md:text-2xl font-semibold">NCERT Solutions for Class 12 Chemistry</h1>
@@ -152,7 +152,7 @@ const Courses: React.FC = () => {
       </header>
 
       {/* Tab Navigation */}
-      <nav className="flex flex-wrap gap-2 my-4 border-b border-gray-300">
+      <nav className="flex flex-wrap gap-4 my-4 border-b border-gray-300">
         <NavLink
           to="/commission"
           className={({ isActive }: { isActive: boolean }) =>

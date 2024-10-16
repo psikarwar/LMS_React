@@ -16,7 +16,6 @@ import OrderCompletePag2 from './Components/OrderCompletePage2/OrderCompletePag2
 import MentorPage from './Components/MentorPage/MentorPage';
 import Commission from './Components/Backend/Commission/Commission';
 import AdminDashboard from './Components/Backend/AdminLayout/AdminDashboard';
-import Courses from './Components/Backend/Courses/Courses';
 
 
 
@@ -39,7 +38,6 @@ const App: React.FC = () => {
       <Route path="/ordercompl" element={<OrderCompletePag2/>} />
       <Route path="/mentor" element={<MentorPage/>} />
       <Route path="/commission" element={<Commission/>} />
-      <Route path="/back-course" element={<Courses />} />
           
           
       
