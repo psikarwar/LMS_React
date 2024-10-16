@@ -1,12 +1,12 @@
 import React from 'react';
 import ReviewCard from '../ReviewCard/ReviewCard';
 import Pagination from '../Pagination/Pagination';
-import option from '../../assets/myassets/icon-horizontal-dots.svg'
+import option from '../../../../assets/icon-horizontal-dots.svg'
 const MyReviewMenu: React.FC = () => {
     const reviews = [
         {
             courseName: "Beginner’s Guide to Design",
-            rating: 1,
+            rating: 5,
             reviewText:
                 "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding.",
             reviewerName: "John Doe",
