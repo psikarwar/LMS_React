@@ -35,7 +35,7 @@ const Header: React.FC = () => {
           Teach on Byway
         </span>
         <img src="./assets/icon-cart.svg" alt="Cart" className="w-6 h-6 mr-6" />
-        <Link to="/login">
+        <Link to="/chapter">
         <button className="px-4 py-2 mr-2 text-sm font-medium border rounded-md border-slate-800 text-slate-800">
           Log In
           
