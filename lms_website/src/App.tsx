@@ -1,3 +1,4 @@
+// import React from 'react'
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './Components/Header/Header';
@@ -17,6 +18,10 @@ import Chapter from './Components/Backend/Courses/Chapter/Chapter';
 import ChapterDetails from './Components/Backend/Courses/Chapter/ChapterDetails/ChapterDetails';
 import ChapterResources from './Components/Backend/Courses/Chapter/ChapterResources/ChapterResources';
 import ChapterSeo from './Components/Backend/Courses/Chapter/ChapterSeo/ChapterSeo';
+import Commission from './Components/Backend/Commission/Commission';
+import AdminDashboard from './Components/Backend/AdminLayout/AdminDashboard';
+
+
 
 const App: React.FC = () => {
   return (
@@ -43,8 +48,35 @@ const App: React.FC = () => {
         <Route path="/chapterresource" element={<ChapterResources />} />
         <Route path="/chapterseo" element={<ChapterSeo />} />
       </Routes>
+
+      <Header/>        
+      <Routes>
+      <Route path="/" element={<HomeScreen/>} />
+      <Route path="/login" element={<Login/>} />
+      <Route path="/signup" element={<Signup/>} />
+      <Route path="/course" element={<CoursePage/>} />
+      <Route path="/profile" element={<MainLayout/>} />
+      <Route path="/category" element={<CategoryPage/>} />
+      <Route path="/shopping" element={<ShoppingCart/>} />
+      <Route path="/checkout" element={<CheckoutPage/>} />
+      <Route path="/ordercom" element={<OrderCompletePage/>} />
+      <Route path="/ordercompl" element={<OrderCompletePag2/>} />
+      <Route path="/mentor" element={<MentorPage/>} />
+      <Route path="/commission" element={<Commission/>} />
+          
+          
+      
+
+        </Routes>
+        <AdminDashboard/>
+
     </Router>
   );
 };
 
 export default App;
+    
+     
+
+
+

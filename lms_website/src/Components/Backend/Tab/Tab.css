@@ -1,0 +1,33 @@
+/* .tab {
+    padding: 16px 10px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #475569;
+  }
+  
+  .tab.active {
+    border-color: #3b82f6;
+    color: #3b82f6;
+  }
+  
+  .tab span {
+    font-weight: 500;
+    font-size: 14px;
+  }
+   */
+   .tab {
+    padding: 16px 10px;
+    border-bottom: 2px solid transparent; /* Default: no bottom border */
+    color: #475569;
+    cursor: pointer;
+  }
+  
+  .tab.active {
+    border-bottom: 2px solid #3b82f6; /* Blue bottom border for active tab */
+    color: #3b82f6; /* Blue color for active tab */
+  }
+  
+  .tab span {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  

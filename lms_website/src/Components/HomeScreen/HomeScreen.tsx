@@ -1,13 +1,13 @@
 import React from 'react';
 
 
-import Banner1 from '../HomePage/Banner1';
 import StatsSection from './stats/stats';
 import TopCategories from './Topcategories/TopCategories';
 import DesignCourse from '../Frontend/CategoryPage/DesignCourse/DesignCourse';
 import PopularMentor from '../Frontend/CategoryPage/PopularMentor/PopularMentor';
 import Feedback from './stats/Feedback/Feedback';
 import EducationSection from './Educationsection/Education';
+
 
 // Sample data for courses
 const courses = [
@@ -100,22 +100,20 @@ const mentors = [
 const HomeScreen: React.FC = () => {
   return (
     <>
-      <Banner1 title={''} description={''} buttonText={''} onButtonClick={function (): void {
-        throw new Error('Function not implemented.');
-      } } />
+     
       <StatsSection />
       <TopCategories />
 
       <h2
         className="font-inter font-semibold text-2xl leading-[150%] text-gray-900"
-        style={{ marginLeft: '14rem' }}
+        style={{ marginLeft: '10rem' }}
       >
         Top Courses
       </h2>
       
       <div
         className="p-4 grid grid-cols-4 gap-11 w-fit h-fit"
-        style={{ marginLeft: '14rem' }}
+        style={{ marginLeft: '9rem' }}
       >
         {/* Render top 4 courses */}
         {courses.slice(0, 4).map((course, index) => (
