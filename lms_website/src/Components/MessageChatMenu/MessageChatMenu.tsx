@@ -60,17 +60,12 @@
 
 // export default MessageChatMenu;
 import React from 'react';
-import Header from '../Header/Header';
-import Profile from '../Profile/Profile';
-import Footer from '../Footer/Footer';
 
 const MessageChatMenu: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen font-inter">
-      <Header />
 
       <main className="flex-grow flex flex-col lg:flex-row p-5 lg:p-20 bg-gray-50">
-        <Profile />
 
         <section className="flex-grow lg:ml-5 bg-white p-5 rounded-lg shadow-md">
           <header className="mb-5 border-b pb-3">
@@ -144,7 +139,6 @@ const MessageChatMenu: React.FC = () => {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 };

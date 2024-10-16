@@ -1,5 +1,4 @@
 // import React from 'react'
-
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './Components/Header/Header';
@@ -15,13 +14,14 @@ import CheckoutPage from './Components/Frontend/CheckoutPage/CheckoutPage';
 import OrderCompletePage from './Components/Frontend/OrderCompletePage/OrderCompletePage';
 import OrderCompletePag2 from './Components/OrderCompletePage2/OrderCompletePag2';
 import MentorPage from './Components/MentorPage/MentorPage';
-
-
+// import Courses from './Components/Backend/Courses/Courses';
+import Commission from './Components/Backend/Commission/Commission';
 
 const App: React.FC = () => {
   return (
     <>
     <Router>
+
       <Header/>
       <Routes>
       <Route path="/" element={<HomeScreen/>} />
@@ -35,6 +35,7 @@ const App: React.FC = () => {
       <Route path="/ordercom" element={<OrderCompletePage/>} />
       <Route path="/ordercompl" element={<OrderCompletePag2/>} />
       <Route path="/mentor" element={<MentorPage/>} />
+      <Route path="/commission" element={<Commission/>} />
       
 
       </Routes>
@@ -49,4 +50,17 @@ const App: React.FC = () => {
 }
 
 export default App
+
+// import React from 'react'
+// import Courses from './Components/Backend/Courses/Courses'
+
+// const App = () => {
+//   return (
+//     <>
+//     <Courses/>
+//     </>
+//   )
+// }
+
+// export default App
     
