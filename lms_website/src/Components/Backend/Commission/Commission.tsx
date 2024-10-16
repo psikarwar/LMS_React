@@ -8,7 +8,7 @@ import im4 from '../../../../../assets/icon-graph-3.svg';
 const Commission: React.FC = () => {
   return (
     <>
-      <section className="flex gap-4 mb-9 ml-80"> {/* Replaced .banners with Tailwind classes */}
+      <section className="flex gap-4 mb-20 ml-80"> {/* Replaced .banners with Tailwind classes */}
         <Banner iconPath={im2} amount="$1K" description="Life Time Courses Commission" />
         <Banner iconPath={im3} amount="$800.00" description="Life Time Received Commission" />
         <Banner iconPath={im4} amount="$200.00" description="Life Time Pending Commission" />

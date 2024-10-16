@@ -5,7 +5,6 @@ import Header from './Components/Header/Header';
 import Signup from './Components/SignUp/Signup';
 import HomeScreen from './Components/HomeScreen/HomeScreen';
 import Login from './Components/Frontend/LoginPage/Login';
-// import CategoryPage from './Components/Frontend/CategoryPage/CategoryPage';
 import CoursePage from './Components/Frontend/CoursePage/CoursePage';
 import MainLayout from './Components/MainProfile/MainLayout';
 import CategoryPage from './Components/Frontend/CategoryPage/CategoryPage';
@@ -14,6 +13,11 @@ import CheckoutPage from './Components/Frontend/CheckoutPage/CheckoutPage';
 import OrderCompletePage from './Components/Frontend/OrderCompletePage/OrderCompletePage';
 import OrderCompletePag2 from './Components/OrderCompletePage2/OrderCompletePag2';
 import MentorPage from './Components/MentorPage/MentorPage';
+import Customer from './Components/Backend/Courses/Customer/Customer';
+import Chapter from './Components/Backend/Courses/Chapter/Chapter';
+import ChapterDetails from './Components/Backend/Courses/Chapter/ChapterDetails/ChapterDetails';
+import ChapterResources from './Components/Backend/Courses/Chapter/ChapterResources/ChapterResources';
+import ChapterSeo from './Components/Backend/Courses/Chapter/ChapterSeo/ChapterSeo';
 import Commission from './Components/Backend/Commission/Commission';
 import AdminDashboard from './Components/Backend/AdminLayout/AdminDashboard';
 
@@ -21,22 +25,31 @@ import AdminDashboard from './Components/Backend/AdminLayout/AdminDashboard';
 
 const App: React.FC = () => {
   return (
-    <>
     <Router>
       
-      <Header/>        
+      <Header />
       <Routes>
-      <Route path="/" element={<HomeScreen/>} />
-      <Route path="/login" element={<Login/>} />
-      <Route path="/signup" element={<Signup/>} />
-      <Route path="/course" element={<CoursePage/>} />
-      <Route path="/profile" element={<MainLayout/>} />
-      <Route path="/category" element={<CategoryPage/>} />
-      <Route path="/shopping" element={<ShoppingCart/>} />
-      <Route path="/checkout" element={<CheckoutPage/>} />
-      <Route path="/ordercom" element={<OrderCompletePage/>} />
-      <Route path="/ordercompl" element={<OrderCompletePag2/>} />
-      <Route path="/mentor" element={<MentorPage/>} />
+        <Route path="/" element={<HomeScreen />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/course" element={<CoursePage />} />
+        <Route path="/profile" element={<MainLayout />} />
+        <Route path="/category" element={<CategoryPage />} />
+        <Route path="/shopping" element={<ShoppingCart />} />
+        <Route path="/checkout" element={<CheckoutPage />} />
+        <Route path="/ordercom" element={<OrderCompletePage />} />
+        <Route path="/ordercompl" element={<OrderCompletePag2 />} />
+        <Route path="/mentor" element={<MentorPage />} />
+
+        {/* Backend */}
+        <Route path="/customer" element={<Customer />} />
+        <Route path="/chapter" element={<Chapter />} />
+        {/* Update the route for ChapterDetails without the ID */}
+        <Route path="/chapterdetail" element={<ChapterDetails />} />
+        <Route path="/chapterresource" element={<ChapterResources />} />
+        <Route path="/chapterseo" element={<ChapterSeo />} />
+
+      
       <Route path="/commission" element={<Commission/>} />
           
           
@@ -46,13 +59,12 @@ const App: React.FC = () => {
         <AdminDashboard/>
 
     </Router>
+  );
+};
 
+export default App;
     
-     </>
      
-   
-  )
-}
 
-export default App
+
 

@@ -113,14 +113,14 @@
 
 
 import React, { useState } from 'react';
-import { Link, Routes, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import db from '../../../../assets/Backend/sidebar/Dashboard.svg';
 import course from '../../../../assets/Backend/sidebar/course.svg';
 import communication from '../../../../assets/Backend/sidebar/Communication.svg';
 import rev from '../../../../assets/Backend/sidebar/Revenue.svg';
 import setting from '../../../../assets/Backend/sidebar/setting.svg';
 import CB from '../../../../assets/Backend/sidebar/closebtn.svg';
-import Courses from '../../Courses/Courses';
+// import Courses from '../../Courses/Courses';
 
 const Sidebar: React.FC = () => {
   const [isCollapsed, setIsCollapsed] = useState(false); // Track if the sidebar is collapsed
@@ -168,7 +168,7 @@ const Sidebar: React.FC = () => {
           <div className={`flex items-center p-4 rounded-lg hover:bg-[#1e293b] ${isCollapsed ? 'justify-center' : ''}`}>
             <img src={course} alt="Courses" className="w-6 h-6 mr-3" />
             {!isCollapsed && (
-              <Link to="/back-course" className="font-inter text-sm leading-6">Courses</Link>
+              <Link to="/maincourse" className="font-inter text-sm leading-6">Courses</Link>
             )}
           </div>
 
@@ -195,16 +195,7 @@ const Sidebar: React.FC = () => {
         </div>
       </div>
 
-      {/* Main Content Area */}
-      <div className={`ml-${isCollapsed ? '20' : '60'} flex-1 p-8 transition-all duration-300`}>
-        <Routes>
-          {/* <Route path="/dashboard" element={<Dashboard />} /> */}
-          <Route path="/back-course" element={<Courses />} />
-          {/* <Route path="/communication" element={<Communication />} /> */}
-          {/* <Route path="/revenue" element={<Revenue />} />
-          <Route path="/setting" element={<Setting />} /> */}
-        </Routes>
-      </div>
+      
     </div>
   );
 };
