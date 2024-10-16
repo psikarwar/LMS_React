@@ -14,15 +14,18 @@ import CheckoutPage from './Components/Frontend/CheckoutPage/CheckoutPage';
 import OrderCompletePage from './Components/Frontend/OrderCompletePage/OrderCompletePage';
 import OrderCompletePag2 from './Components/OrderCompletePage2/OrderCompletePag2';
 import MentorPage from './Components/MentorPage/MentorPage';
-// import Courses from './Components/Backend/Courses/Courses';
 import Commission from './Components/Backend/Commission/Commission';
+import AdminDashboard from './Components/Backend/AdminLayout/AdminDashboard';
+import Courses from './Components/Backend/Courses/Courses';
+
+
 
 const App: React.FC = () => {
   return (
     <>
     <Router>
 
-      <Header/>
+      <Header/>        
       <Routes>
       <Route path="/" element={<HomeScreen/>} />
       <Route path="/login" element={<Login/>} />
@@ -36,9 +39,13 @@ const App: React.FC = () => {
       <Route path="/ordercompl" element={<OrderCompletePag2/>} />
       <Route path="/mentor" element={<MentorPage/>} />
       <Route path="/commission" element={<Commission/>} />
+      <Route path="/back-course" element={<Courses />} />
+          
+          
       
 
-      </Routes>
+        </Routes>
+        <AdminDashboard/>
 
     </Router>
 
@@ -51,16 +58,3 @@ const App: React.FC = () => {
 
 export default App
 
-// import React from 'react'
-// import Courses from './Components/Backend/Courses/Courses'
-
-// const App = () => {
-//   return (
-//     <>
-//     <Courses/>
-//     </>
-//   )
-// }
-
-// export default App
-    

@@ -1,4 +1,9 @@
 import React from 'react';
+import telescope from '../../../assets/Homescreen/telescope.svg'
+import development from '../../../assets/Homescreen/development.svg';
+import Marketing from '../../../assets/Homescreen/Marketing.svg';
+import Physics from '../../../assets/Homescreen/Physics.svg';
+
 
 interface Category {
   name: string;
@@ -7,10 +12,10 @@ interface Category {
 }
 
 const categories: Category[] = [
-  { name: 'Astrology', courses: 11, icon: './assets/group-136.svg' },
-  { name: 'Development', courses: 12, icon: './assets/code-browser.svg' },
-  { name: 'Marketing', courses: 12, icon: './assets/briefcase-02.svg' },
-  { name: 'Physics', courses: 14, icon: './assets/atom-01.svg' },
+  { name: 'Astrology', courses: 11, icon: telescope },
+  { name: 'Development', courses: 12, icon: development },
+  { name: 'Marketing', courses: 12, icon: Marketing },
+  { name: 'Physics', courses: 14, icon: Physics },
 ];
 
 const TopCategories: React.FC = () => {
@@ -32,6 +37,7 @@ const TopCategories: React.FC = () => {
           >
             <div className="w-[100px] h-[100px] mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
               <img src={category.icon} alt={category.name} className="w-10 h-10" />
+              
             </div>
             <h3 className="font-inter font-semibold text-lg leading-[150%] text-gray-900 mb-2">
               {category.name}
