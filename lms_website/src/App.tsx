@@ -15,6 +15,8 @@ import CheckoutPage from './Components/Frontend/CheckoutPage/CheckoutPage';
 import OrderCompletePage from './Components/Frontend/OrderCompletePage/OrderCompletePage';
 import OrderCompletePag2 from './Components/OrderCompletePage2/OrderCompletePag2';
 import MentorPage from './Components/MentorPage/MentorPage';
+import AdminDashboard from './Components/Backend/AdminLayout/AdminDashboard';
+import Courses from './Components/Backend/Courses/Courses';
 
 
 
@@ -22,7 +24,8 @@ const App: React.FC = () => {
   return (
     <>
     <Router>
-      <Header/>
+        <Header />
+        
       <Routes>
       <Route path="/" element={<HomeScreen/>} />
       <Route path="/login" element={<Login/>} />
@@ -34,10 +37,14 @@ const App: React.FC = () => {
       <Route path="/checkout" element={<CheckoutPage/>} />
       <Route path="/ordercom" element={<OrderCompletePage/>} />
       <Route path="/ordercompl" element={<OrderCompletePag2/>} />
-      <Route path="/mentor" element={<MentorPage/>} />
+          <Route path="/mentor" element={<MentorPage />} />
+           <Route path="/back-course" element={<Courses />} />
+          
+          
       
 
-      </Routes>
+        </Routes>
+        <AdminDashboard/>
 
     </Router>
 

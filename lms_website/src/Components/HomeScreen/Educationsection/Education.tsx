@@ -1,5 +1,6 @@
 import React from 'react';
-
+import img1 from '../../../assets/Homescreen/education.svg'
+import Eduimg2 from '../../../assets/Homescreen/eduimg2.svg';
 const section1 = [
     {
         title: 'Become an Instructor',
@@ -7,7 +8,7 @@ const section1 = [
             'Instructors from around the world teach millions of students on Byway. We provide the tools and skills to teach what you love.',
         buttonText: 'Start Your Instructor Journey',
         buttonIcon: './assets/icon-arrow-narrow-right.svg',
-        image: '../../../assets/image-8.svg',
+        image: '../../../assets/Homescreen/education.svg',
     },
 ];
 const section2 = [
@@ -23,18 +24,18 @@ const section2 = [
 
 const EducationSection: React.FC = () => {
   return (
-    <div className="flex flex-col gap-14 py-20 px-20 bg-white">
+    <div className="flex flex-row  py-2 px-20 bg-white">
       {section1.map((section, index) => (
         <div
           key={index}
-          className="flex flex-wrap items-center gap-36"
+          className="flex flex-wrap items-center gap-36 "
         >
           <img
-            src={section.image}
+            src={Eduimg2}
             alt="Illustration"
             className="flex-shrink-0 rounded-xl w-2/5"
           />
-          <div className="flex flex-col gap-4 w-1/2">
+          <div className="flex flex-col gap-2 w-1/2 ">
             <h3 className="text-black font-inter font-semibold text-lg leading-[150%]">
               {section.title}
             </h3>
@@ -59,7 +60,7 @@ const EducationSection: React.FC = () => {
           className="flex flex-wrap items-center gap-36"
         >
          
-                  <div className="flex flex-col gap-4 ">  
+                  <div className="flex flex-col gap-4 mr-32 mt-20 ">  
             <h3 className="text-black font-inter font-semibold text-lg leading-[150%]">
               {section.title}
             </h3>
@@ -75,11 +76,11 @@ const EducationSection: React.FC = () => {
                           />
             
                       </button>
-                       <div className="flex flex-col gap-4 w-1/2">  
+                       <div className="flex flex-col gap-4 w-96 mt-32">  
                       <img
-            src={section.image}
+            src={img1}
             alt="Illustration"
-            className="flex-shrink-0 rounded-xl w-2/5"
+            className="flex-shrink-0 rounded-xl w-6/6"
                           />
                           </div>
           </div>
