@@ -8,7 +8,7 @@ interface SeoNotesProps {
 
 const SeoNotes: React.FC<SeoNotesProps> = ({ title, notes }) => {
   return (
-    <div className="flex flex-col gap-5 w-[361px]">
+    <div className="ml-80 flex flex-col gap-5 w-[361px]">
       
       <div className="flex flex-col p-2 bg-white rounded-lg border border-gray-300 gap-1">
         <label className="font-inter font-normal text-sm leading-6 text-gray-700">

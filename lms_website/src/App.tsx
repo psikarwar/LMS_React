@@ -20,11 +20,15 @@ import ChapterResources from './Components/Backend/Courses/Chapter/ChapterResour
 import ChapterSeo from './Components/Backend/Courses/Chapter/ChapterSeo/ChapterSeo';
 import Commission from './Components/Backend/Commission/Commission';
 import AdminDashboard from './Components/Backend/AdminLayout/AdminDashboard';
+import EditCoupon from './Components/Backend/Courses/Promotion/EditCoupon/EditCoupon';
 import ReviewPage from './Components/Backend/ReviewPage/ReviewPage';
 import Notification from './Components/Backend/Communication/Notification/Notification';
 import Message from './Components/Backend/Communication/Message/Message';
 import Details from './Components/Backend/Courses/Details/Details';
 import CommunicationReview from './Components/Backend/Communication/Review/CommunicationReview';
+import CreateCoupon from './Components/Backend/Courses/Promotion/CreateCoupon/CreateCoupon';
+import Setting from './Components/Backend/Courses/Setting/Setting';
+import NotificationSend from './Components/Backend/Communication/Notification/Notificationsend/NotificationSend';
 
 
 
@@ -48,6 +52,11 @@ const App: React.FC = () => {
       <Route path="/mentor" element={<MentorPage/>} />
       
      
+        
+       
+      
+      
+     
 
 
         {/* Backend */}
@@ -57,6 +66,13 @@ const App: React.FC = () => {
         <Route path="/chapterdetail" element={<ChapterDetails />} />
         <Route path="/chapterresource" element={<ChapterResources />} />
         <Route path="/chapterseo" element={<ChapterSeo />} />
+        <Route path="/editcoupon" element={<EditCoupon />} />
+        <Route path="/createcoupon" element={<CreateCoupon />} />
+        <Route path="/setting" element={<Setting />} />
+     
+
+             
+      
 
        <Route path="/commn-review" element={<CommunicationReview/>}/>
       <Route path="/commission" element={<Commission/>} />
@@ -64,7 +80,8 @@ const App: React.FC = () => {
           
       <Route path="/notification" element={<Notification />} />
         <Route path="/message" element={<Message />} />
-        <Route path='/detail' element={<Details/>}/>
+        <Route path='/detail' element={<Details />} />
+        <Route path='/notification-send'element={<NotificationSend/>}/>
           
       
 

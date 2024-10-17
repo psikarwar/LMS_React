@@ -31,7 +31,7 @@ const ChapterResources: React.FC = () => {
       />
 
       {/* Conditionally render content based on active tab */}
-      <div className="p-4">
+      <div className="ml-80 p-4">
         {activeTab === 'Details' && (
           <div>
             <h2 className="text-2xl font-semibold text-gray-800">Details for {chapterTitle}</h2>
