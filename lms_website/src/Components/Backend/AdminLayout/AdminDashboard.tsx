@@ -3,6 +3,7 @@ import Sidebar from './Sidebar/Sidebar'
 import { Route, Routes } from 'react-router-dom'
 import Courses from '../Courses/Courses'
 import Maincourse from '../Courses/maincourse'
+import Communication from '../Communication/Communication'
 
 const AdminDashboard: React.FC = () => {
    const [isCollapsed] = useState(false);
@@ -15,7 +16,7 @@ const AdminDashboard: React.FC = () => {
             {/* <Route path="/dashboard" element={<Dashboard />} /> */}
             <Route path="/maincourse"element={<Maincourse/>}/>
           <Route path="/back-course" element={<Courses />} />
-          {/* <Route path="/communication" element={<Communication />} /> */}
+          <Route path="/communication" element={<Communication />} />
           {/* <Route path="/revenue" element={<Revenue />} />
           <Route path="/setting" element={<Setting />} /> */}
         </Routes>
