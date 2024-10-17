@@ -26,6 +26,8 @@ import Notification from './Components/Backend/Communication/Notification/Notifi
 import Message from './Components/Backend/Communication/Message/Message';
 import Review from './Components/Backend/Communication/Review/Review';
 import Details from './Components/Backend/Courses/Details/Details';
+import CreateCoupon from './Components/Backend/Courses/Promotion/CreateCoupon/CreateCoupon';
+import Setting from './Components/Backend/Courses/Setting/Setting';
 
 
 
@@ -60,6 +62,8 @@ const App: React.FC = () => {
         <Route path="/chapterresource" element={<ChapterResources />} />
         <Route path="/chapterseo" element={<ChapterSeo />} />
         <Route path="/editcoupon" element={<EditCoupon />} />
+        <Route path="/createcoupon" element={<CreateCoupon />} />
+        <Route path="/setting" element={<Setting />} />
      
 
              
