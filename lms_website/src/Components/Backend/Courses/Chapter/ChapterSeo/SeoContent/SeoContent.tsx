@@ -7,7 +7,7 @@ interface SeoContentProps {
 
 const SeoContent: React.FC<SeoContentProps> = ({ title, content }) => {
   return (
-    <div className="flex flex-col gap-3">
+    <div className="ml-80 flex flex-col gap-3">
       <h1 className="font-inter font-semibold text-lg leading-tight text-gray-900">
         {title}
       </h1>

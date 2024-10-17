@@ -10,7 +10,7 @@ interface ChapterCardProps {
 // Component
 const ChapDescription: React.FC<ChapterCardProps> = ({ title, subtitle, description }) => {
   return (
-    <div className="flex flex-col gap-4 w-full max-w-[696px]">
+    <div className="ml-80 flex flex-col gap-4 w-full max-w-[696px]">
       {/* Title Card */}
       <div className="flex flex-row gap-6 p-2 bg-white rounded-lg border border-gray-300 items-start">
         <div className="flex-1">

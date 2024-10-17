@@ -8,7 +8,7 @@ interface ChapterNotesProps {
 
 const ChapterNotes: React.FC<ChapterNotesProps> = ({ title, content }) => {
   return (
-    <div className="flex flex-col gap-1 w-full max-w-[1266px]">
+    <div className="ml-80 flex flex-col gap-1 w-full max-w-[1266px]">
       <h2 className="font-inter font-semibold text-[18px] leading-[160%] text-[#0f172a]">
         {title}
       </h2>

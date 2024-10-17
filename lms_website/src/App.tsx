@@ -20,6 +20,7 @@ import ChapterResources from './Components/Backend/Courses/Chapter/ChapterResour
 import ChapterSeo from './Components/Backend/Courses/Chapter/ChapterSeo/ChapterSeo';
 import Commission from './Components/Backend/Commission/Commission';
 import AdminDashboard from './Components/Backend/AdminLayout/AdminDashboard';
+import EditCoupon from './Components/Backend/Courses/Promotion/EditCoupon/EditCoupon';
 
 
 
@@ -47,21 +48,11 @@ const App: React.FC = () => {
         <Route path="/chapterdetail" element={<ChapterDetails />} />
         <Route path="/chapterresource" element={<ChapterResources />} />
         <Route path="/chapterseo" element={<ChapterSeo />} />
-      </Routes>
+        <Route path="/editcoupon" element={<EditCoupon />} />
+     
 
-      <Header/>        
-      <Routes>
-      <Route path="/" element={<HomeScreen/>} />
-      <Route path="/login" element={<Login/>} />
-      <Route path="/signup" element={<Signup/>} />
-      <Route path="/course" element={<CoursePage/>} />
-      <Route path="/profile" element={<MainLayout/>} />
-      <Route path="/category" element={<CategoryPage/>} />
-      <Route path="/shopping" element={<ShoppingCart/>} />
-      <Route path="/checkout" element={<CheckoutPage/>} />
-      <Route path="/ordercom" element={<OrderCompletePage/>} />
-      <Route path="/ordercompl" element={<OrderCompletePag2/>} />
-      <Route path="/mentor" element={<MentorPage/>} />
+             
+      
       <Route path="/commission" element={<Commission/>} />
           
           

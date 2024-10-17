@@ -39,7 +39,7 @@ const ChapterDetails: React.FC = () => {
             activeTab={activeTab} 
             onTabChange={handleTabChange} 
           />
-          <div className="mt-4">
+          <div className="mt-4 ml-80">
             {activeTab === 'Details' && (
               <>
                 <ChapterHeading 

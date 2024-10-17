@@ -12,7 +12,7 @@ const data = [
 
 const Customer: React.FC = () => {
   return (
-    <div className="container mx-auto mt-8">
+    <div className="ml-80 container mx-auto mt-8">
       <h1 className="text-xl font-bold mb-4">Customer Details</h1>
       <CustomerDetail data={data} />
     </div>

@@ -24,7 +24,7 @@ const ChapterTabs: React.FC<ChapterTabsProps> = ({ tabs, activeTab, onTabChange 
   }, [location.pathname, onTabChange]);
 
   return (
-    <div className="flex items-center border-b border-gray-300">
+    <div className=" ml-80 flex items-center border-b border-gray-300">
       {tabs.map((tab) => (
         <div
           key={tab}
