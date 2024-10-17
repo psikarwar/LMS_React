@@ -1,0 +1,12 @@
+
+.badges {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+  
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }

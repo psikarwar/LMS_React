@@ -20,17 +20,19 @@ import ChapterResources from './Components/Backend/Courses/Chapter/ChapterResour
 import ChapterSeo from './Components/Backend/Courses/Chapter/ChapterSeo/ChapterSeo';
 import Commission from './Components/Backend/Commission/Commission';
 import AdminDashboard from './Components/Backend/AdminLayout/AdminDashboard';
+import ReviewPage from './Components/Backend/ReviewPage/ReviewPage';
 
 
 
 const App: React.FC = () => {
   return (
     <Router>
+        <AdminDashboard/>
       
       <Header />
       <Routes>
         <Route path="/" element={<HomeScreen />} />
-        <Route path="/login" element={<Login />} />
+        < Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/course" element={<CoursePage />} />
         <Route path="/profile" element={<MainLayout />} />
@@ -51,12 +53,12 @@ const App: React.FC = () => {
 
       
       <Route path="/commission" element={<Commission/>} />
+      <Route path='/reviews' element={<ReviewPage/>}/>
           
           
       
 
         </Routes>
-        <AdminDashboard/>
 
     </Router>
   );
