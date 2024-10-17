@@ -1,0 +1,23 @@
+.badge {
+    padding: 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    text-align: center;
+    width: 172px;
+  }
+  
+  .label {
+    color: #334155;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  .value {
+    margin-top: 6px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    color: #fef2f2;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  
