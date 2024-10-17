@@ -20,6 +20,8 @@ import ChapterResources from './Components/Backend/Courses/Chapter/ChapterResour
 import ChapterSeo from './Components/Backend/Courses/Chapter/ChapterSeo/ChapterSeo';
 import Commission from './Components/Backend/Commission/Commission';
 import AdminDashboard from './Components/Backend/AdminLayout/AdminDashboard';
+import EditCoupon from './Components/Backend/Courses/Promotion/EditCoupon/EditCoupon';
+import ReviewPage from './Components/Backend/ReviewPage/ReviewPage';
 import Notification from './Components/Backend/Communication/Notification/Notification';
 import Message from './Components/Backend/Communication/Message/Message';
 import Review from './Components/Backend/Communication/Review/Review';
@@ -31,6 +33,7 @@ import NotificationSend from './Components/Backend/Communication/Notification/No
 const App: React.FC = () => {
   return (
     <Router>
+        <AdminDashboard/>
       
       <Header />
       <Routes>
@@ -48,6 +51,12 @@ const App: React.FC = () => {
       
      
         
+       
+      
+      
+     
+
+
         {/* Backend */}
         <Route path="/customer" element={<Customer />} />
         <Route path="/chapter" element={<Chapter />} />
@@ -55,9 +64,16 @@ const App: React.FC = () => {
         <Route path="/chapterdetail" element={<ChapterDetails />} />
         <Route path="/chapterresource" element={<ChapterResources />} />
         <Route path="/chapterseo" element={<ChapterSeo />} />
+        <Route path="/editcoupon" element={<EditCoupon />} />
+     
+
+             
+      
 
        <Route path="/commn-review" element={<Review/>}/>
       <Route path="/commission" element={<Commission/>} />
+      <Route path='/reviews' element={<ReviewPage/>}/>
+          
       <Route path="/notification" element={<Notification />} />
         <Route path="/message" element={<Message />} />
         <Route path='/detail' element={<Details />} />
@@ -66,7 +82,6 @@ const App: React.FC = () => {
       
 
         </Routes>
-        <AdminDashboard/>
 
     </Router>
   );

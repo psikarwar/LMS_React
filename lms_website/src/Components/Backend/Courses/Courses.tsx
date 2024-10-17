@@ -178,7 +178,7 @@ const Courses: React.FC = () => {
        <Tab title="Customer"  />
         </NavLink>
         <NavLink
-          to="/chapters"
+          to="/customer"
           className={({ isActive }: { isActive: boolean }) =>
             `tab ${isActive ? 'active' : ''}`
           }
@@ -186,7 +186,7 @@ const Courses: React.FC = () => {
        <Tab title="Chapters"  />
         </NavLink>
         <NavLink
-          to="/promotion"
+          to="/chapter"
           className={({ isActive }: { isActive: boolean }) =>
             `tab ${isActive ? 'active' : ''}`
           }
@@ -195,7 +195,7 @@ const Courses: React.FC = () => {
        
         </NavLink>
         <NavLink
-          to="/detail"
+          to="/editcoupon"
           className={({ isActive }: { isActive: boolean }) =>
             `tab ${isActive ? 'active' : ''}`
           }

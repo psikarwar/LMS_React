@@ -46,7 +46,7 @@ const ResourcesContent: React.FC<ResourcesContentProps> = ({
   };
 
   return (
-    <div className="flex flex-col gap-4 w-full pr-[659px]">
+    <div className="ml-80 flex flex-col gap-4 w-full pr-[659px]">
       {/* Content Type */}
       <div className="flex flex-row gap-6 p-2 bg-white border border-gray-300 rounded-lg items-start w-[696px]">
         <div className="flex-1">
