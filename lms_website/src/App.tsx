@@ -23,17 +23,17 @@ import AdminDashboard from './Components/Backend/AdminLayout/AdminDashboard';
 import ReviewPage from './Components/Backend/ReviewPage/ReviewPage';
 import Notification from './Components/Backend/Communication/Notification/Notification';
 import Message from './Components/Backend/Communication/Message/Message';
-import Review from './Components/Backend/Communication/Review/Review';
 import Details from './Components/Backend/Courses/Details/Details';
+import CommunicationReview from './Components/Backend/Communication/Review/CommunicationReview';
 
 
 
 const App: React.FC = () => {
   return (
     <Router>
-        <AdminDashboard/>
       
       <Header />
+        <AdminDashboard/>
       <Routes>
       <Route path="/" element={<HomeScreen/>} />
       <Route path="/login" element={<Login/>} />
@@ -58,7 +58,7 @@ const App: React.FC = () => {
         <Route path="/chapterresource" element={<ChapterResources />} />
         <Route path="/chapterseo" element={<ChapterSeo />} />
 
-       <Route path="/commn-review" element={<Review/>}/>
+       <Route path="/commn-review" element={<CommunicationReview/>}/>
       <Route path="/commission" element={<Commission/>} />
       <Route path='/reviews' element={<ReviewPage/>}/>
           
