@@ -105,8 +105,8 @@ const Table: React.FC = () => {
   ];
 
   return (
-    <div className="overflow-x-auto ml-64"> {/* Allow horizontal scrolling */}
-      <table className="min-w-full border-collapse">
+    <div className="overflow-x-auto "> {/* Allow horizontal scrolling */}
+      <table className="border border-[silver] p-4 w-full ">
         <thead>
           <tr className="bg-white text-gray-800">
             <th className="px-4 py-3 border-b border-gray-300">Order ID</th>

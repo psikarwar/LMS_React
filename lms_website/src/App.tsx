@@ -21,12 +21,19 @@ import ChapterSeo from './Components/Backend/Courses/Chapter/ChapterSeo/ChapterS
 import Commission from './Components/Backend/Commission/Commission';
 import AdminDashboard from './Components/Backend/AdminLayout/AdminDashboard';
 import EditCoupon from './Components/Backend/Courses/Promotion/EditCoupon/EditCoupon';
+import ReviewPage from './Components/Backend/ReviewPage/ReviewPage';
+import Notification from './Components/Backend/Communication/Notification/Notification';
+import Message from './Components/Backend/Communication/Message/Message';
+import Review from './Components/Backend/Communication/Review/Review';
+import Details from './Components/Backend/Courses/Details/Details';
 
 
 
 const App: React.FC = () => {
   return (
     <Router>
+        <AdminDashboard/>
+      
       <Header />
       <Routes>
         <Route path="/" element={<HomeScreen />} />
@@ -40,6 +47,10 @@ const App: React.FC = () => {
         <Route path="/ordercom" element={<OrderCompletePage />} />
         <Route path="/ordercompl" element={<OrderCompletePag2 />} />
         <Route path="/mentor" element={<MentorPage />} />
+      
+      
+     
+
 
         {/* Backend */}
         <Route path="/customer" element={<Customer />} />
@@ -53,13 +64,18 @@ const App: React.FC = () => {
 
              
       
+
+       <Route path="/commn-review" element={<Review/>}/>
       <Route path="/commission" element={<Commission/>} />
+      <Route path='/reviews' element={<ReviewPage/>}/>
           
+      <Route path="/notification" element={<Notification />} />
+        <Route path="/message" element={<Message />} />
+        <Route path='/detail' element={<Details/>}/>
           
       
 
         </Routes>
-        <AdminDashboard/>
 
     </Router>
   );
