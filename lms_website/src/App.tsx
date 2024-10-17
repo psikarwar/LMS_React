@@ -23,6 +23,7 @@ import AdminDashboard from './Components/Backend/AdminLayout/AdminDashboard';
 import Notification from './Components/Backend/Communication/Notification/Notification';
 import Message from './Components/Backend/Communication/Message/Message';
 import Review from './Components/Backend/Communication/Review/Review';
+import Details from './Components/Backend/Courses/Details/Details';
 
 
 
@@ -43,10 +44,8 @@ const App: React.FC = () => {
       <Route path="/ordercom" element={<OrderCompletePage/>} />
       <Route path="/ordercompl" element={<OrderCompletePag2/>} />
       <Route path="/mentor" element={<MentorPage/>} />
-      <Route path="/commission" element={<Commission />} />
-      <Route path="/notification" element={<Notification />} />
-      <Route path="/message" element={<Message />} />
-      <Route path="/commn-review" element={<Review/>}/>
+      
+     
         <Route path="/" element={<HomeScreen />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
@@ -67,9 +66,11 @@ const App: React.FC = () => {
         <Route path="/chapterresource" element={<ChapterResources />} />
         <Route path="/chapterseo" element={<ChapterSeo />} />
 
-      
+       <Route path="/commn-review" element={<Review/>}/>
       <Route path="/commission" element={<Commission/>} />
-          
+      <Route path="/notification" element={<Notification />} />
+        <Route path="/message" element={<Message />} />
+        <Route path='/detail' element={<Details/>}/>
           
       
 
