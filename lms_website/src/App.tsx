@@ -29,6 +29,7 @@ import CommunicationReview from './Components/Backend/Communication/Review/Commu
 import CreateCoupon from './Components/Backend/Courses/Promotion/CreateCoupon/CreateCoupon';
 import Setting from './Components/Backend/Courses/Setting/Setting';
 import NotificationSend from './Components/Backend/Communication/Notification/Notificationsend/NotificationSend';
+import Dashboard from './Components/Backend/Communication/Dashboard/DashBoard';
 
 
 
@@ -60,6 +61,7 @@ const App: React.FC = () => {
 
 
         {/* Backend */}
+         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/customer" element={<Customer />} />
         <Route path="/chapter" element={<Chapter />} />
         {/* Update the route for ChapterDetails without the ID */}
