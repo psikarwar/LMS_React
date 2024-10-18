@@ -131,10 +131,8 @@ const Sidebar: React.FC = () => {
   };
 
   return (
-    <div className="flex">
-      {/* Sidebar */}
       <div
-        className={`fixed top-20 left-0 h-screen bg-[#0f172a] flex flex-col p-4 text-[#e2e8f0] transition-all duration-300 ${
+        className={`fixed left-0 h-screen bg-[#0f172a] flex flex-col p-4 text-[#e2e8f0] transition-all duration-300 ${
           isCollapsed ? 'w-20' : 'w-60'
         }`}
       >
@@ -194,9 +192,7 @@ const Sidebar: React.FC = () => {
           </div>
         </div>
       </div>
-
       
-    </div>
   );
 };
 
