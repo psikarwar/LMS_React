@@ -55,7 +55,7 @@ const LineChart: React.FC<LineChartProps> = ({
   }, [labels, datasets]);
 
   return (
-    <div className={`flex justify-center items-center h-full`}>
+    <div className={`flex justify-center items-center h-full w-full mt-4`}>
       <canvas
         ref={chartRef}
         className={`w-full ${canvasWidth} ${canvasHeight}`}
