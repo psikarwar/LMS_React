@@ -32,6 +32,7 @@ import NotificationSend from "./Components/Backend/Communication/Notification/No
 import Courses from "./Components/Backend/Courses/Courses";
 import Communication from "./Components/Backend/Communication/Communication";
 import AdminDashboard from "./Components/Backend/AdminLayout/AdminDashboard";
+import DashBoard from "./Components/Backend/Communication/Dashboard/DashBoard";
 // import Sidebar from './Components/Backend/AdminLayout/Sidebar/Sidebar';
 
 const App: React.FC = () => {
@@ -75,7 +76,7 @@ const App: React.FC = () => {
           <Route path="/detail" element={<Details />} />
           <Route path="/notification-send" element={<NotificationSend />} />
 
-          {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+          <Route path="/dashboard" element={<DashBoard />} />
 
           <Route path="/communication" element={<Communication />} />
           {/* <Route path="/revenue" element={<Revenue />} /> */}
