@@ -15,7 +15,7 @@ interface ChapterInfoProps {
 
 const ChapterInfo: React.FC<ChapterInfoProps> = ({ data }) => {
   return (
-    <div className="ml-80 bg-white shadow rounded-lg p-4">
+    <div className="bg-white shadow rounded-lg p-4">
       <table className="min-w-full">
         <thead>
           <tr className="bg-gray-100">

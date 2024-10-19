@@ -2,7 +2,7 @@ import React from 'react';
 
 const CouponInfo: React.FC = () => {
   return (
-    <div className="ml-80 flex flex-col gap-6">
+    <div className="flex flex-col gap-6">
       <div className="flex flex-col gap-2">
         <div className="text-gray-800 font-medium text-base">Coupon Information</div>
         <InputField label="Coupon Status" value="Active" icon="icon-down-chevron.svg" />

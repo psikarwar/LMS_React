@@ -7,7 +7,7 @@ interface ChapterTitleProps {
 
 const ChapterTitle: React.FC<ChapterTitleProps> = ({ }) => {
   return (
-    <div className="ml-80 flex items-center justify-between p-2 bg-white">
+    <div className="flex items-center justify-between p-2 bg-white">
       <div className="flex items-center gap-2">
         <img src={backimg} alt="Back" className="w-6 h-6" />
         <span className="font-semibold text-lg text-gray-800">Chapter-1 The Solid State</span>

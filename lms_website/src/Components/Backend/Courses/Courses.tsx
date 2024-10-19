@@ -186,7 +186,7 @@ const Courses: React.FC = () => {
        <Tab title="Chapters"  />
         </NavLink>
         <NavLink
-          to="/createcoupon"
+          to="/promotion"
           className={({ isActive }: { isActive: boolean }) =>
             `tab ${isActive ? 'active' : ''}`
           }

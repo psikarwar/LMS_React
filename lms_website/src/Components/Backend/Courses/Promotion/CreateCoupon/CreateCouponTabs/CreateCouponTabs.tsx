@@ -4,7 +4,7 @@ const CreateCouponTabs: React.FC = () => {
   const [selectedButton, setSelectedButton] = useState<'Draft' | 'Save' | 'Publish' | null>(null);
 
   return (
-    <div className="ml-80 flex items-center justify-between">
+    <div className="sflex items-center justify-between">
       <div className="text-gray-900 font-semibold text-lg">Coupons / Create coupon</div>
       <div className="flex gap-4">
         <button
