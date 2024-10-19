@@ -2,7 +2,7 @@ import React from 'react';
 
 const SettingContent: React.FC = () => {
   return (
-    <div className="ml-80 flex flex-col gap-6">
+    <div className="flex flex-col gap-6">
       <h1 className="text-xl font-semibold leading-6 text-gray-900">Settings</h1>
       
       <div className="flex flex-col gap-2">

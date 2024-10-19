@@ -4,7 +4,7 @@ import CouponInfo from './CouponInfo/CouponInfo'; // Import CouponInfo component
 
 const EditCoupon: React.FC = () => {
   return (
-    <div className="ml-70 p-6">
+    <div className="p-6">
       <EditCouponTabs />
       {/* You can add other content related to editing the coupon here */}
       <CouponInfo /> {/* Add CouponInfo component below EditCouponTabs */}

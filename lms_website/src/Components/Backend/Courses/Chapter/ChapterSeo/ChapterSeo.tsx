@@ -16,7 +16,7 @@ const ChapterSeo: React.FC = () => {
   };
 
   return (
-    <div className="chapter-seo-container ml-80">
+    <div className="chapter-seo-container">
       {/* Call the ChapterTitle component */}
       <ChapterTitle chapterTitle="Chapter-1 The Solid State" />
 

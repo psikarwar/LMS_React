@@ -8,7 +8,7 @@ interface ChapterHeadingProps {
 // Functional component definition with the defined props
 const ChapterHeading: React.FC<ChapterHeadingProps> = ({ paragraph }) => {
   return (
-    <div className="ml-80 flex flex-col gap-1 w-full max-w-[1253px]">
+    <div className="flex flex-col gap-1 w-full max-w-[1253px]">
       <h2 className="font-inter font-semibold text-lg leading-[160%] text-[#0f172a]">
         Chapter Details
       </h2>

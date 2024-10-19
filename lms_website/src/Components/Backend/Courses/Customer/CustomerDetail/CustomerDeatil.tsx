@@ -18,7 +18,7 @@ const CustomerDetail: React.FC<CustomerDetailProps> = ({ data }) => {
   const headers = ['ID', 'Customer', 'Type', 'Country', 'Joined', 'Total Amount', 'Last Order'];
 
   return (
-    <div className="ml-80 overflow-x-auto">
+    <div className="overflow-x-auto">
       <table className="min-w-full table-auto border-collapse border border-gray-200">
         <thead className="bg-white text-gray-800 sticky top-0 z-10">
           <tr>
