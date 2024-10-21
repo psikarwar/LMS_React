@@ -33,6 +33,7 @@ import Courses from "./Components/Backend/Courses/Courses";
 import Communication from "./Components/Backend/Communication/Communication";
 import AdminDashboard from "./Components/Backend/AdminLayout/AdminDashboard";
 import Revenue from "./Components/Backend/Revenue/Revenue";
+import HomeScreen from "./Components/HomeScreen/HomeScreen";
 // import Sidebar from './Components/Backend/AdminLayout/Sidebar/Sidebar';
 
 const App: React.FC = () => {
@@ -41,8 +42,7 @@ const App: React.FC = () => {
       {/* <Sidebar/> */}
       {/* <Header /> */}
       <Routes>
-        {" "}
-        {/* <Route path="/" element={<HomeScreen/>} /> */}
+        <Route path="/homescreen" element={<HomeScreen/>} >
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/course" element={<CoursePage />} />
@@ -52,7 +52,8 @@ const App: React.FC = () => {
         <Route path="/checkout" element={<CheckoutPage />} />
         <Route path="/ordercom" element={<OrderCompletePage />} />
         <Route path="/ordercompl" element={<OrderCompletePag2 />} />
-        <Route path="/mentor" element={<MentorPage />} />
+        <Route path="/mentor" element={<MentorPage />} /></Route>
+
         <Route path="/" element={<AdminDashboard />}>
           <Route path="/maincourse" element={<Courses />} />
 
