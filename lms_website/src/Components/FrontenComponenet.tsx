@@ -6,7 +6,8 @@ const FrontenComponenet = () => {
   return (
 <>
       
-      <Header/>
+      <Header />
+     
         <Outlet /> {/* This will render the respective component based on the route */}
       <Footer/>
 </>  )

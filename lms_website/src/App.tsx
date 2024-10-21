@@ -29,13 +29,16 @@ import CommunicationReview from "./Components/Backend/Communication/Review/Commu
 import CreateCoupon from "./Components/Backend/Courses/Promotion/CreateCoupon/CreateCoupon";
 import Setting from "./Components/Backend/Courses/Setting/Setting";
 import NotificationSend from "./Components/Backend/Communication/Notification/Notificationsend/NotificationSend";
-import Courses from "./Components/Backend/Courses/Courses";
+// import Courses from "./Components/Backend/Courses/Courses";
 import Communication from "./Components/Backend/Communication/Communication";
 import AdminDashboard from "./Components/Backend/AdminLayout/AdminDashboard";
 import DashBoard from "./Components/Backend/Communication/Dashboard/DashBoard";
 import Promotion from "./Components/Backend/Courses/Promotion/Promotion";
 import Revenue from "./Components/Backend/Revenue/Revenue";
 import HomeScreen from "./Components/HomeScreen/HomeScreen";
+import FrontenComponenet from "./Components/FrontenComponenet";
+import Maincourse from "./Components/Backend/Courses/maincourse";
+import Courses from "./Components/Backend/Courses/Courses";
 // import Sidebar from './Components/Backend/AdminLayout/Sidebar/Sidebar';
 
 const App: React.FC = () => {
@@ -44,7 +47,8 @@ const App: React.FC = () => {
       {/* <Sidebar/> */}
       {/* <Header /> */}
       <Routes>
-        <Route path="/homescreen" element={<HomeScreen/>} >
+       <Route path="/" element={<FrontenComponenet />}>
+        <Route path="/homescreen" element={<HomeScreen/>} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/course" element={<CoursePage />} />
@@ -54,10 +58,13 @@ const App: React.FC = () => {
         <Route path="/checkout" element={<CheckoutPage />} />
         <Route path="/ordercom" element={<OrderCompletePage />} />
         <Route path="/ordercompl" element={<OrderCompletePag2 />} />
-        <Route path="/mentor" element={<MentorPage />} /></Route>
+          <Route path="/mentor" element={<MentorPage />} />
+        </Route>
 
         <Route path="/" element={<AdminDashboard />}>
-          <Route path="/maincourse" element={<Courses />} />
+          <Route path="/maincourse" element={<Maincourse />} />
+           <Route path="/admincourse" element={<Courses />} />
+
 
           {/* Backend */}
           <Route path="/customer" element={<Customer />} />

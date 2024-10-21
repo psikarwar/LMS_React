@@ -44,7 +44,7 @@ const Maincourse: React.FC = () => {
       {/* Header Section */}
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-2xl font-semibold">Courses</h1>
-      <NavLink to ="/back-course"> <button className="bg-blue-600 text-white py-2 px-6 rounded-lg font-medium">
+      <NavLink to ="/admincourse"> <button className="bg-blue-600 text-white py-2 px-6 rounded-lg font-medium">
           <span>Add Course</span>
         </button></NavLink>
       </div>
