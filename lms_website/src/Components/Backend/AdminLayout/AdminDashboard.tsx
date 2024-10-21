@@ -11,6 +11,7 @@ const AdminDashboard: React.FC = () => {
 
       {/* Main content area */}
       <div className="flex-1 p-8 ml-60"> {/* Sidebar width accounted */}
+        
         <Outlet /> {/* This will render the respective component based on the route */}
       </div>
     </div>
