@@ -7,8 +7,10 @@ const FrontenComponenet = () => {
 <>
       
       <Header />
+      <main>
      
         <Outlet /> {/* This will render the respective component based on the route */}
+        </main>
       <Footer/>
 </>  )
 }

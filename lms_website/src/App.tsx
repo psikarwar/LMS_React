@@ -43,11 +43,15 @@ import Courses from "./Components/Backend/Courses/Courses";
 
 const App: React.FC = () => {
   return (
+   
+     
     <Router>
       {/* <Sidebar/> */}
       {/* <Header /> */}
+      {/* <Courses/> */}
+        
       <Routes>
-       <Route path="/" element={<FrontenComponenet />}>
+       <Route path="" element={<FrontenComponenet />}>
         <Route path="/homescreen" element={<HomeScreen/>} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
@@ -96,8 +100,11 @@ const App: React.FC = () => {
 
         </Route>
       </Routes>
-    </Router>
-  );
+      </Router>
+     
+      );
+      
 };
+    
 
 export default App;

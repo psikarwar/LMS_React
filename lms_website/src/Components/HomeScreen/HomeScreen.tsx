@@ -100,20 +100,25 @@ const mentors = [
 const HomeScreen: React.FC = () => {
   return (
     <>
+       <div
+        className="p-1 "
+        style={{ marginLeft: '1rem' }}
+      >
      
       <StatsSection />
-      <TopCategories />
+        <TopCategories />
+        </div>
 
       <h2
         className="font-inter font-semibold text-2xl leading-[150%] text-gray-900"
-        style={{ marginLeft: '10rem' }}
+        style={{ marginLeft: '1rem' }}
       >
         Top Courses
       </h2>
       
       <div
         className="p-4 grid grid-cols-4 gap-11 w-fit h-fit"
-        style={{ marginLeft: '9rem' }}
+        style={{ marginLeft: '1rem' }}
       >
         {/* Render top 4 courses */}
         {courses.slice(0, 4).map((course, index) => (
@@ -134,7 +139,7 @@ const HomeScreen: React.FC = () => {
 
       {/* Add the PopularMentor component here */}
       
-      <div style={{ marginLeft: '10rem' }}
+      <div style={{ marginLeft: '1rem' }}
       >
         
         <PopularMentor mentors={mentors} />
