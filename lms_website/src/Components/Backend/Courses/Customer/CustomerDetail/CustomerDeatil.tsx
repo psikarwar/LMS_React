@@ -1,4 +1,5 @@
 import React from 'react';
+import arrowimg from '../../../../../assets/sort.svg';
 
 interface Customer {
   id: number;
@@ -26,7 +27,7 @@ const CustomerDetail: React.FC<CustomerDetailProps> = ({ data }) => {
               <th key={index} className="px-4 py-2 text-left text-sm font-medium border-b border-gray-200">
                 <div className="flex items-center">
                   {header}
-                  <img src={`./assets/icon-sort-${index + 2}.svg`} alt="sort-icon" className="w-3 h-6 ml-2" />
+                  <img src={arrowimg} alt="sort-icon" className="w-3 h-6 ml-2" />
                 </div>
               </th>
             ))}

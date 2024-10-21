@@ -11,7 +11,7 @@ interface CourseMoreProps {
   price: string;
 }
 
-const CourseMore: React.FC<CourseMoreProps> = ({ image, title, author, ratingsCount, details, price }) => {
+const CourseMore: React.FC<CourseMoreProps> = ({ title, author, ratingsCount, details, price }) => {
   return (
     <div className="w-66 p-4 border border-gray-200 rounded-lg bg-white flex flex-col gap-2">
       <img src={courseimg} alt={title} className="w-full h-36 object-cover rounded-md" />
