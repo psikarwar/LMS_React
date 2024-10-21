@@ -6,10 +6,10 @@ const OrderImg: React.FC = () => {
       <img 
         src="./assets/frame-427318906.svg" 
         alt="Video Thumbnail" 
-        className="w-500 h-200 block rounded-lg" 
+        className="w-full h-auto rounded-lg" 
       />
       <div className="absolute inset-0 flex justify-center items-center">
-        <button className="w-15 h-15 bg-white/80 rounded-full text-black text-2xl flex justify-center items-center hover:bg-white transition duration-300">
+        <button className="w-12 h-12 md:w-16 md:h-16 bg-white/80 rounded-full text-black text-3xl flex justify-center items-center hover:bg-white transition duration-300">
           ▶
         </button>
       </div>

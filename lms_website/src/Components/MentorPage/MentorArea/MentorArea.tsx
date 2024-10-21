@@ -14,13 +14,15 @@ const MentorArea: React.FC<MentorAreaProps> = ({
   experienceDescription,
 }) => {
   return (
-    <div className="flex flex-col gap-4 text-slate-700 max-w-2xl">
-      <div className="flex flex-col gap-1">
+    <div className="flex flex-col gap-6 text-slate-700 max-w-4xl mx-auto p-4"> {/* Increased max width and added padding */}
+      <div className="flex flex-col gap-2">
         <h2 className="text-lg font-semibold text-slate-900 leading-6">About {mentorName}</h2>
-        <p className="text-base font-normal leading-7">{aboutDescription}</p>
+        <p className="text-base font-normal leading-7 max-w-full"> {/* Set max width to full */}
+          {aboutDescription}
+        </p>
       </div>
       
-      <div className="flex flex-col gap-1">
+      <div className="flex flex-col gap-2">
         <h2 className="text-lg font-semibold text-slate-900 leading-6">Areas of Expertise</h2>
         <ul className="list-disc ml-5 text-base font-normal leading-7">
           {expertiseAreas.map((area, index) => (
@@ -29,9 +31,11 @@ const MentorArea: React.FC<MentorAreaProps> = ({
         </ul>
       </div>
       
-      <div className="flex flex-col gap-1">
+      <div className="flex flex-col gap-2">
         <h2 className="text-lg font-semibold text-slate-900 leading-6">Professional Experience</h2>
-        <p className="text-base font-normal leading-7">{experienceDescription}</p>
+        <p className="text-base font-normal leading-7 max-w-full"> {/* Set max width to full */}
+          {experienceDescription}
+        </p>
       </div>
     </div>
   );

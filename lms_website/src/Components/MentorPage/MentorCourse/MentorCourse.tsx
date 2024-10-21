@@ -24,23 +24,24 @@ const MentorCourse: React.FC = () => {
       price: "$149.9",
     },
     
+    
     // Add more courses as needed
   ];
 
   return (
-    <div className="bg-slate-50 py-10 px-20">
-      <h2 className="text-2xl font-semibold leading-relaxed mb-6">
+    <div className="bg-slate-50 py-10 px-4 md:px-20"> {/* Responsive padding */}
+      <h2 className="text-2xl font-semibold leading-relaxed mb-6 text-center">
         More Courses by <span className="text-blue-600">Ronald Richards</span>
       </h2>
-      <div className="flex items-center gap-6 mb-6">
-        <button className="bg-slate-400 rounded-lg p-3">
+      <div className="flex items-center justify-between mb-6"> {/* Justify space between buttons */}
+        <button className="bg-slate-400 rounded-lg p-3 hidden md:flex"> {/* Hidden on smaller screens */}
           <img src="./assets/icon-left-chevron.svg" alt="Previous" className="w-6 h-6" />
         </button>
-        <button className="bg-slate-400 rounded-lg p-3">
+        <button className="bg-slate-400 rounded-lg p-3 hidden md:flex"> {/* Hidden on smaller screens */}
           <img src="./assets/icon-chevron-right.svg" alt="Next" className="w-6 h-6" />
         </button>
       </div>
-      <div className="flex gap-6 overflow-x-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"> {/* Change to grid layout */}
         {courses.map((course, index) => (
           <CourseCard key={index} course={course} />
         ))}
@@ -55,11 +56,11 @@ interface CourseCardProps {
 
 const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
   return (
-    <div className="bg-white border border-slate-200 rounded-xl p-4 min-w-[266px]">
+    <div className="bg-white border border-slate-200 rounded-xl p-4 min-w-[266px] flex-shrink-0"> {/* Flex-shrink to allow cards to resize */}
       <img
         src="./assets/rectangle-1080.svg"
         alt="Course"
-        className="w-[266px] h-[139px] rounded-lg"
+        className="w-full h-[139px] rounded-lg" 
       />
       <div className="mt-4">
         <h3 className="text-lg font-semibold text-slate-900">{course.title}</h3>

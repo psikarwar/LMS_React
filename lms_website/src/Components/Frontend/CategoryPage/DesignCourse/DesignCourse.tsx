@@ -1,7 +1,6 @@
 import React from 'react';
 import starimg from '../../../../assets/Frame 427318789.svg';
 
-
 interface CourseProps {
   title: string;
   author: string;
@@ -25,13 +24,13 @@ const DesignCourse: React.FC<CourseProps> = ({
   imageSrc 
 }) => {
   return (
-    <div className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-lg">
-      <img className="w-full" src={imageSrc} alt={title} />
+    <div className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-lg max-w-xs sm:max-w-md mx-auto">
+      <img className="w-full h-48 object-cover" src={imageSrc} alt={title} />
       <div className="p-4">
-        <h3 className="font-semibold text-lg text-gray-900">{title}</h3>
+        <h3 className="font-semibold text-lg text-gray-900 truncate">{title}</h3>
         <p className="text-sm text-gray-600">By {author}</p>
         <div className="flex items-center text-xs text-gray-600 mt-2">
-          <img src={starimg} alt="Star" className="w-15 h-15" />
+          <img src={starimg} alt="Star" className="w-13 h-5" />
           <span className="ml-1">({totalRatings} Ratings)</span>
         </div>
         <p className="text-sm text-gray-600 mt-2">

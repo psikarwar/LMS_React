@@ -1,4 +1,6 @@
+// src/Components/Frontend/CheckoutPage.tsx
 import React from 'react';
+import { Link } from 'react-router-dom';
 // import Header from '../../Header/Header'; // Import the Header component
 // import Footer from '../../Footer/Footer'; // Import the Footer component
 
@@ -12,13 +14,15 @@ const CheckoutPage: React.FC = () => {
         <div className="flex items-center text-sm mb-6">
           <span>Details</span>
           <img src="./assets/icon-chevron-right-small.svg" alt="Chevron" className="mx-2" />
+          <Link to="/shopping">
           <span>Shopping Cart</span>
+          </Link>
           <img src="./assets/icon-chevron-right-small.svg" alt="Chevron" className="mx-2" />
           <span className="text-blue-600 font-semibold">Checkout</span>
         </div>
 
-        <main className="flex justify-between space-x-8">
-          <section className="bg-white p-6 rounded-xl shadow w-1/2">
+        <main className="flex flex-col lg:flex-row justify-between space-x-0 lg:space-x-8">
+          <section className="bg-white p-6 rounded-xl shadow w-full lg:w-1/2">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Checkout Page</h2>
             <div className="space-y-4">
               <div className="mb-4">
@@ -61,8 +65,8 @@ const CheckoutPage: React.FC = () => {
                       className="w-full p-3 border border-gray-300 rounded-lg"
                     />
                   </div>
-                  <div className="flex space-x-4">
-                    <div className="w-1/2">
+                  <div className="flex flex-col sm:flex-row space-x-0 sm:space-x-4">
+                    <div className="w-full sm:w-1/2 mb-4">
                       <label className="block font-semibold mb-1">Expiry Date</label>
                       <input
                         type="text"
@@ -70,7 +74,7 @@ const CheckoutPage: React.FC = () => {
                         className="w-full p-3 border border-gray-300 rounded-lg"
                       />
                     </div>
-                    <div className="w-1/2">
+                    <div className="w-full sm:w-1/2 mb-4">
                       <label className="block font-semibold mb-1">CVC/CVV</label>
                       <input
                         type="text"
@@ -89,7 +93,7 @@ const CheckoutPage: React.FC = () => {
             </div>
           </section>
 
-          <aside className="bg-white p-6 rounded-xl shadow w-1/2">
+          <aside className="bg-white p-6 rounded-xl shadow w-full lg:w-1/2 mt-6 lg:mt-0">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Order Details</h2>
             <div className="flex mb-6">
               <img

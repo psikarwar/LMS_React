@@ -52,6 +52,12 @@ function OrderCompletePag2() {
         reviewDate: "2024-09-28",
         reviewText: "Great course, but I wish there were more hands-on projects.",
       },
+      {
+        reviewerName: "Bob Johnson",
+        rating: 4,
+        reviewDate: "2024-09-28",
+        reviewText: "Great course, but I wish there were more hands-on projects.",
+      },
       // Add more reviews as needed
     ],
   };

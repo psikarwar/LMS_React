@@ -1,6 +1,6 @@
 // src/Components/Frontend/ShoppingCart/ShoppingCartImg.tsx
 import React from 'react';
-import img1 from '../../../../assets/image 3.svg'
+import img1 from '../../../../assets/image 3.svg';
 
 interface CourseCardProps {
   imageSrc: string;
@@ -25,8 +25,8 @@ const ShoppingCartImg: React.FC<CourseCardProps> = ({
   onClickRemove,
 }) => {
   return (
-    <div className="flex items-center w-[880px] h-[140px] bg-white rounded-lg border border-gray-300 p-4 box-border">
-      <div className="flex">
+    <div className="flex flex-col sm:flex-row items-center w-full max-w-[880px] h-auto bg-white rounded-lg border border-gray-300 p-4 box-border">
+      <div className="flex items-start w-full">
         <img src={img1} alt={title} className="w-[192px] h-[108px] object-cover rounded-lg" />
 
         <div className="flex flex-col gap-2 ml-4">
@@ -41,7 +41,7 @@ const ShoppingCartImg: React.FC<CourseCardProps> = ({
                   src={`./assets/phosphor-icons-star-${index + 3}.svg`}
                   alt="star"
                   key={index}
-                  className="w-[19.2px] h-[19.2px]"
+                  className="w-4 h-4" // Responsive size
                 />
               ))}
               <span className="font-normal text-sm text-gray-500">({ratingCount} rating)</span>
@@ -50,10 +50,16 @@ const ShoppingCartImg: React.FC<CourseCardProps> = ({
           </div>
 
           <div className="flex items-center gap-4">
-            <button onClick={onClickSave} className="font-normal text-sm text-blue-600 bg-transparent border-0 cursor-pointer">
+            <button
+              onClick={onClickSave}
+              className="font-normal text-sm text-blue-600 bg-transparent border-0 cursor-pointer"
+            >
               Save for later
             </button>
-            <button onClick={onClickRemove} className="font-normal text-sm text-red-600 bg-transparent border-0 cursor-pointer">
+            <button
+              onClick={onClickRemove}
+              className="font-normal text-sm text-red-600 bg-transparent border-0 cursor-pointer"
+            >
               Remove
             </button>
           </div>
