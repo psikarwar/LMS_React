@@ -11,7 +11,7 @@ import iconx from '../../../../assets/Backend/detail/iconx.svg'
 const Details: React.FC = () => {
   return (
     <>
-      <div className="flex items-center justify-between p-4 font-inter ml-80 mt-10 mr-20">
+      <div className="flex items-center justify-between p-4 font-inter  mt-10 mr-20">
         <span className="text-lg font-semibold text-gray-900">Details</span>
         <div className="flex gap-2">
           <button className="bg-white text-gray-900 py-2.5 px-6 border border-gray-200 rounded-lg cursor-pointer text-sm font-medium">
@@ -26,7 +26,7 @@ const Details: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex gap-6 font-inter ml-80 mr-20">
+      <div className="flex gap-6 font-inter  mr-20">
         {/* Left Column - 80% width */}
         <div className="flex flex-col gap-4 p-6 w-4/5">
           <h2 className="text-xl font-semibold text-gray-900">Course Details</h2>

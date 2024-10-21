@@ -4,7 +4,7 @@ import CouponInfo from '../EditCoupon/CouponInfo/CouponInfo'; // Import the Coup
 
 const CreateCoupon: React.FC = () => {
   return (
-    <div className="ml-70 p-6">
+    <div className="p-6">
       <CreateCouponTabs />
       {/* Add the CouponInfo component below */}
       <CouponInfo />

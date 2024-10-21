@@ -1,0 +1,27 @@
+/* Define filter styles for the images */
+.filter-gray {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.filter-blue {
+    filter: brightness(0) saturate(100%) invert(20%) sepia(99%) saturate(1562%) hue-rotate(175deg) brightness(97%) contrast(100%);
+}
+
+/* Image hover effect */
+.hover\:filter-blue:hover {
+    filter: brightness(0) saturate(100%) invert(20%) sepia(99%) saturate(1562%) hue-rotate(175deg) brightness(97%) contrast(100%);
+}
+
+/* Background hover effect for the sidebar items */
+.sidebar-item {
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-item:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly lightens the background on hover */
+}
+
+.sidebar-item.active {
+    background-color: rgba(59, 130, 246, 0.2); /* Active background color */
+}

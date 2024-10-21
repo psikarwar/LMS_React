@@ -32,6 +32,8 @@ import NotificationSend from "./Components/Backend/Communication/Notification/No
 import Courses from "./Components/Backend/Courses/Courses";
 import Communication from "./Components/Backend/Communication/Communication";
 import AdminDashboard from "./Components/Backend/AdminLayout/AdminDashboard";
+import DashBoard from "./Components/Backend/Communication/Dashboard/DashBoard";
+import Promotion from "./Components/Backend/Courses/Promotion/Promotion";
 import Revenue from "./Components/Backend/Revenue/Revenue";
 import HomeScreen from "./Components/HomeScreen/HomeScreen";
 // import Sidebar from './Components/Backend/AdminLayout/Sidebar/Sidebar';
@@ -67,6 +69,7 @@ const App: React.FC = () => {
           <Route path="/editcoupon" element={<EditCoupon />} />
           <Route path="/createcoupon" element={<CreateCoupon />} />
           <Route path="/setting" element={<Setting />} />
+          <Route path="/promotion" element={<Promotion />} />
 
           <Route path="/commn-review" element={<CommunicationReview />} />
           <Route path="/commission" element={<Commission />} />
@@ -77,7 +80,7 @@ const App: React.FC = () => {
           <Route path="/detail" element={<Details />} />
           <Route path="/notification-send" element={<NotificationSend />} />
 
-          {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+          <Route path="/dashboard" element={<DashBoard />} />
 
           <Route path="/communication" element={<Communication />} />
           {/* <Route path="/revenue" element={<Revenue />} /> */}
