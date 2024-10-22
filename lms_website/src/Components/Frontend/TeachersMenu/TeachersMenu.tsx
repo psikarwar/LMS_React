@@ -38,7 +38,7 @@ const TeachersMenu: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <main className="flex-1 flex px-4 md:px-10 lg:px-20 py-10">
+      <main className="flex-1 flex px-2 py-4">
       <section className="flex-grow ">
           <h3 className="font-semibold text-xl sm:text-2xl text-gray-900">Teachers(12)</h3>
 

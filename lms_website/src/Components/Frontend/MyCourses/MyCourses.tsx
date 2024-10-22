@@ -71,7 +71,7 @@ import search from '../../../assets/myassets/search.svg';
 const MyCourses: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gray-100">
-      <main className="flex flex-1 p-5 md:p-10">
+      <main className="flex-1 flex px-2 py-4">
         <section className="flex-1">
           <header className="flex justify-between items-center mb-5">
             <h2 className="text-2xl font-bold">Courses (12)</h2>
