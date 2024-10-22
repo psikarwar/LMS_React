@@ -3,6 +3,7 @@ import ChapterTitle from './ChapterTitle/ChapterTitle';
 import ChapterTabs from './ChapterTabs/ChapterTabs';
 import ChapterHeading from './ChapteraHeading/ChapterHeading';
 import ChapDescription from './ChapteraHeading/ChapDescription/ChapDescription';
+import { useParams } from 'react-router-dom';
 
 const chapters = [
   { id: 1, title: 'The Solid State' },
@@ -19,7 +20,11 @@ const chapters = [
 
 const ChapterDetails: React.FC = () => {
   // Get the first chapter or any specific logic you prefer
-  const chapter = chapters[0]; // For example, the first chapter
+  const id=useParams();
+  const Id=Number(id)
+  console.log(id);
+  console.log(Id);
+  const chapter = chapters[Id]; // For example, the first chapter
   
   const [activeTab, setActiveTab] = useState('Details');
   

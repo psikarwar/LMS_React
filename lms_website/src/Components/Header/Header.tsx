@@ -5,7 +5,7 @@ const Header: React.FC = () => {
   return (
     <header className="flex items-center justify-between px-4 py-4 bg-white border-b border-slate-800 md:px-10 lg:px-20">
       <div className="flex items-center">
-       <Link to ="/homescreen"> <img src="./assets/logo.svg" alt="Logo" className="w-8 h-10" />  </Link>
+       <Link to ="/"> <img src="./assets/logo.svg" alt="Logo" className="w-8 h-10" />  </Link>
         <span className="ml-1 text-lg font-medium text-slate-800">Byway</span>
       </div>
       <nav className="flex items-center">

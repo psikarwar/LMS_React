@@ -33,7 +33,7 @@ const ChapterInfo: React.FC<ChapterInfoProps> = ({ data }) => {
               <td className="px-4 py-2">{chapter.chapter}</td>
               <td className="px-4 py-2">
                 <Link
-                  to={`/chapterdetail/${chapter.title.toLowerCase().replace(/\s+/g, '-')}`} // Create a simple path
+                  to={`chapterdetail/${chapter.id}`} // Create a simple path
                   className="text-blue-600 hover:underline"
                 >
                   {chapter.title}

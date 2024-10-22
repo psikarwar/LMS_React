@@ -1,5 +1,5 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 // Sample dynamic data
 const coursesData = [
@@ -44,9 +44,12 @@ const Maincourse: React.FC = () => {
       {/* Header Section */}
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-2xl font-semibold">Courses</h1>
-      <NavLink to ="/admincourse"> <button className="bg-blue-600 text-white py-2 px-6 rounded-lg font-medium">
-          <span>Add Course</span>
-        </button></NavLink>
+        <NavLink to="Courses">
+          {" "}
+          <button className="bg-blue-600 text-white py-2 px-6 rounded-lg font-medium">
+            <span>Add Course</span>
+          </button>
+        </NavLink>
       </div>
 
       {/* Course Cards */}
@@ -57,8 +60,14 @@ const Maincourse: React.FC = () => {
             className="bg-white p-6 rounded-lg shadow border border-gray-200"
           >
             {/* Chip for Free or Paid */}
-            <div className={`inline-block px-2 py-1 rounded-full text-xs font-bold mb-4 ${course.isFree ? 'bg-gray-200 text-gray-900' : 'bg-blue-600 text-white'}`}>
-              {course.isFree ? 'Free' : 'Paid'}
+            <div
+              className={`inline-block px-2 py-1 rounded-full text-xs font-bold mb-4 ${
+                course.isFree
+                  ? "bg-gray-200 text-gray-900"
+                  : "bg-blue-600 text-white"
+              }`}
+            >
+              {course.isFree ? "Free" : "Paid"}
             </div>
 
             {/* Course Title */}
