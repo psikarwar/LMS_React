@@ -1,5 +1,5 @@
 import React from 'react';
-import MessageCard from '../MessagesCard/MessagesCard';
+import MessageCard from '../../MessagesCard/MessagesCard';
 import search from '../../assets/myassets/search.svg';
 import ch from '../../assets/icon-down-chevron.svg'
 import el1 from '../../../../assets/ellipse-140.svg'

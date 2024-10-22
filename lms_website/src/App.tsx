@@ -26,7 +26,7 @@ import ChapterSeo from "./Components/Backend/Courses/Chapter/ChapterSeo/ChapterS
 import Commission from "./Components/Backend/Commission/Commission";
 // import AdminDashboard from './Components/Backend/AdminLayout/AdminDashboard';
 import EditCoupon from "./Components/Backend/Courses/Promotion/EditCoupon/EditCoupon";
-import ReviewPage from "./Components/Backend/ReviewPage/ReviewPage";
+// import ReviewPage from "./Components/Backend/ReviewPage/ReviewPage";
 import Notification from "./Components/Backend/Communication/Notification/Notification";
 import Message from "./Components/Backend/Communication/Message/Message";
 import Details from "./Components/Backend/Courses/Details/Details";

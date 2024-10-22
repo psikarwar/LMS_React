@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 // import Footer from '../Footer/Footer'; // Assuming you have a Footer component
 import Profile from '../Profile/Profile'; // Profile component
 import ProfilePage from '../ProfilePage/ProfilePage';
-import MyCourses from '../MyCourses/MyCourses';
-import TeachersMenu from '../TeachersMenu/TeachersMenu';
-import MessagesMenu from '../MessageMenu/MessagesMenu';
-import MyReviewMenu from '../MyReviewMenu/MyReviewMenu';
+import MyCourses from '../Frontend/MyCourses/MyCourses';
+import TeachersMenu from '../Frontend/TeachersMenu/TeachersMenu';
+import MessagesMenu from '../Frontend/MessageMenu/MessagesMenu';
+import MyReviewMenu from '../Frontend/MyReviewMenu/MyReviewMenu';
 
 const MainLayout: React.FC = () => {
   // State to track which section is active
