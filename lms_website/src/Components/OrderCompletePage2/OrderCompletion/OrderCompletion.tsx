@@ -40,7 +40,7 @@ const courseChapters = [
 
 const OrderCompletion: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center px-4 sm:px-6 lg:px-8">
       <div className="w-full max-w-md bg-white rounded-2xl shadow-md overflow-hidden">
         <div className="px-6 py-4 border-b border-gray-200">
           <h1 className="text-xl font-semibold text-gray-900">Course Completion</h1>
@@ -49,7 +49,7 @@ const OrderCompletion: React.FC = () => {
         {/* Course Section */}
         <div className="cursor-pointer px-6 py-4 flex justify-between items-center border-b border-gray-200 hover:bg-gray-50">
           <div className="flex items-center space-x-4">
-            <img src="./assets/chevron-down.svg" alt="Expand" />
+            <img src="./assets/chevron-down.svg" alt="Expand" className="w-4 h-4" />
             <span className="text-lg font-semibold text-gray-900">Introduction to UX Design</span>
           </div>
         </div>
@@ -58,9 +58,7 @@ const OrderCompletion: React.FC = () => {
         {courseChapters.map((chapter) => (
           <div
             key={chapter.number}
-            className={`px-6 py-4 flex justify-between items-center border-b border-gray-200 ${
-              chapter.dark ? "bg-gray-900 text-white" : ""
-            }`}
+            className={`px-6 py-4 flex justify-between items-center border-b border-gray-200 ${chapter.dark ? "bg-gray-900 text-white" : ""}`}
           >
             <div className="flex items-center space-x-4">
               <img className="w-5 h-5" src={chapter.checkbox} alt={`Checkbox for chapter ${chapter.number}`} />

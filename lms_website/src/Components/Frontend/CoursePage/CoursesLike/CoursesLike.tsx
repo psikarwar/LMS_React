@@ -22,9 +22,9 @@ const CourseCard: React.FC<CourseCardProps> = ({
   price,
 }) => {
   return (
-    <div className="bg-white rounded-lg border border-gray-300 p-4 w-1/4 max-w-xs">
+    <div className="bg-white rounded-lg border border-gray-300 p-4 flex-shrink-0 w-[23%]"> 
       {/* Adjust image size */}
-      <img src={image} alt={title} className="w-full h-32 rounded-lg object-cover" />
+      <img src={image} alt={title} className="w-full h-40 rounded-lg object-cover" />
       <div className="mt-4">
         <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
         <p className="text-sm text-gray-500">{author}</p>
@@ -90,8 +90,8 @@ const CoursesLike: React.FC = () => {
   return (
     <div className="p-6 font-sans text-gray-900">
       <h2 className="text-xl font-semibold mb-6">More Courses Like This</h2>
-      {/* Adjust layout: Smaller gap and ensure all 4 cards are in the same row */}
-      <div className="flex gap-2 justify-between">
+      {/* Flex layout with gap and four cards in one row */}
+      <div className="flex justify-between gap-4">
         {courses.map((course, index) => (
           <CourseCard key={index} {...course} />
         ))}

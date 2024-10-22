@@ -20,7 +20,7 @@ const categories: Category[] = [
 
 const TopCategories: React.FC = () => {
   return (
-    <div className="px-6 py-6 max-w-screen-xl mx-auto">
+    <div className="px-6 py-6 max-w-screen-xl mx-auto ml-1 ">
       <div className="flex justify-between items-left mb-6">
         <h2 className="font-inter font-semibold text-2xl leading-[140%] text-gray-900" >
           Top Categories

@@ -12,25 +12,25 @@ interface CourseSyllabusProps {
 
 const CourseSyllabus: React.FC<CourseSyllabusProps> = ({ syllabus }) => {
   return (
-    <div className="max-w-2xl font-inter">
+    <div className="max-w-2xl mx-auto font-inter p-4">
       <h2 className="font-semibold text-lg text-gray-900 mb-4">Syllabus</h2>
 
-      <div className="bg-white rounded-lg border border-gray-300 overflow-hidden">
+      <div className="bg-white rounded-lg border border-gray-300 overflow-hidden shadow">
         {syllabus.map((item, index) => (
           <React.Fragment key={index}>
-            <div className="flex justify-between items-center p-6 border-b border-gray-300">
-              <div className="flex items-center gap-4 font-semibold text-lg text-gray-900">
-                <img src="./assets/chevron-down.svg" alt="expand" />
+            <div className="flex justify-between items-center p-4 md:p-6 border-b border-gray-300">
+              <div className="flex items-center gap-2 md:gap-4 font-semibold text-lg text-gray-900">
+                <img src="./assets/chevron-down.svg" alt="expand" className="w-4 h-4 md:w-5 md:h-5" />
                 <span>{item.title}</span>
               </div>
-              <div className="flex gap-4 font-normal text-sm text-gray-600">
+              <div className="flex gap-2 md:gap-4 font-normal text-sm text-gray-600">
                 <span>{item.lessons} Lessons</span>
                 <span>{item.duration}</span>
               </div>
             </div>
 
             {index < syllabus.length - 1 && (
-              <div className="h-px bg-gray-300 mx-6" />
+              <div className="h-px bg-gray-300 mx-4 md:mx-6" />
             )}
           </React.Fragment>
         ))}
