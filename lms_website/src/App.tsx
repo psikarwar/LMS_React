@@ -152,15 +152,21 @@ const router = createBrowserRouter(
           <Route path="reviewpage" element={<ReviewPage/>} />
           <Route path="setting" element={<Setting />} />
         </Route>
-        
+
+        <Route path="communication" element={<Communication />}>
+          <Route path="commn-review" element={<CommunicationReview />} />
+          <Route path="message" element={<Message />} />
+
+          {/* Nested Notification Routes */}
+          <Route path="notification" element={<Notification />}>
+            <Route path="notification-send" element={<NotificationSend />} />
+          </Route>
+        </Route>
+
         
         <Route path="editcoupon" element={<EditCoupon />} />
         <Route path="createcoupon" element={<CreateCoupon />} />
-        <Route path="commn-review" element={<CommunicationReview />} />
-        <Route path="notification" element={<Notification />} />
-        <Route path="message" element={<Message />} />
-        <Route path="notification-send" element={<NotificationSend />} />
-        <Route path="communication" element={<Communication />} />
+        
         <Route path="setting" element={<Setting />} />
         <Route path="revenue" element={<Revenue />} />
       </Route>

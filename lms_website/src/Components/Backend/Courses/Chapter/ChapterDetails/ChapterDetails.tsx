@@ -20,11 +20,15 @@ const chapters = [
 
 const ChapterDetails: React.FC = () => {
   // Get the first chapter or any specific logic you prefer
-  const id=useParams();
-  const Id=Number(id)
-  console.log(id);
-  console.log(Id);
-  const chapter = chapters[Id]; // For example, the first chapter
+  const id = Number(useParams());
+  
+  // const Id=Number(id)
+  // console.log(id);
+  // console.log(Id);
+  const found = chapters.find((element) => element.id== id);
+  const chapter = found
+    // chapters[id];
+  // For example, the first chapter
   
   const [activeTab, setActiveTab] = useState('Details');
   

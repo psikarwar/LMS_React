@@ -51,14 +51,17 @@
 
 
 import React from 'react';
-
+import logo from '../../../../assets/logo.svg';
+import { Link } from 'react-router-dom';
 const Footer: React.FC = () => {
   return (
     <footer className="bg-slate-800 text-slate-300 py-10 px-6 md:px-10 lg:px-20">
       <div className="max-w-7xl mx-auto grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
         {/* About Section */}
         <div>
-          <img src="./assets/image-4.svg" alt="Byway Logo" className="w-28 h-10" />
+          <Link to="/" className='flex justify-center items-center'>
+          <img src={logo} alt="Logo" className="w-8 h-10 text-lg font-medium" /> Byway
+          <span className="ml-1 text-lg font-medium text-slate-800">Byway</span> </Link>
           <p className="mt-4 text-sm leading-relaxed">
             Empowering learners through accessible and engaging online education. Byway is a leading online learning platform dedicated to providing high-quality, flexible, and affordable educational experiences.
           </p>

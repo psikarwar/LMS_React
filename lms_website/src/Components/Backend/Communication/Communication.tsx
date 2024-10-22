@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Outlet } from 'react-router-dom'
 import Tab from '../Tab/Tab'
 import im1 from '../../../../../assets/icon-horizontal-dots.svg';
 
@@ -14,7 +14,7 @@ const Communication : React.FC= () => {
                 {/* Tab Navigation */}
       <nav className="flex flex-wrap gap-4 my-4 border-b border-gray-300">
         <NavLink
-          to="/commn-review"
+          to="commn-review"
           className={({ isActive }: { isActive: boolean }) =>
             `tab ${isActive ? 'active' : ''}`
           }
@@ -23,7 +23,7 @@ const Communication : React.FC= () => {
           </NavLink>
           
         <NavLink
-          to="/message"
+          to="message"
           className={({ isActive }: { isActive: boolean }) =>
             `tab ${isActive ? 'active' : ''}`
           }
@@ -33,7 +33,7 @@ const Communication : React.FC= () => {
           
         
         <NavLink
-          to="/notification"
+          to="notification"
           className={({ isActive }: { isActive: boolean }) =>
             `tab ${isActive ? 'active' : ''}`
           }
@@ -44,7 +44,11 @@ const Communication : React.FC= () => {
           
         
        
-      </nav>
+        </nav>
+         <section className="mt-4">
+        {/* React Router will render content based on active route */}
+        <Outlet />
+      </section>
             </div>
       </>
   )

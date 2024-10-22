@@ -62,24 +62,27 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../../../../assets/logo.svg';
 
 const Header: React.FC = () => {
   return (
     <header className="flex items-center justify-between px-4 py-4 bg-white border-b border-slate-800 md:px-10 lg:px-20">
       {/* Logo Section */}
       <div className="flex items-center">
-        <Link to="/">
-          <img src="./assets/logo.svg" alt="Logo" className="w-8 h-10" />
-        </Link>
-        <span className="ml-1 text-lg font-medium text-slate-800">Byway</span>
+        <Link to="/" className='flex justify-center items-center'>
+          <img src={logo} alt="Logo" className="w-8 h-10" />
+       
+        <span className="ml-1 text-lg font-medium text-slate-800">Byway</span> </Link>
       </div>
 
       {/* Navigation */}
       <nav className="flex items-center">
         {/* Categories - Hidden on small screens */}
+        <Link to="category">
         <span className="hidden mx-2 text-base font-medium text-slate-800 md:block md:mx-6 lg:mx-10">
           Categories
-        </span>
+          </span>
+          </Link>
 
         {/* Search Bar - Hidden on small screens, visible on md+ */}
         <div className="hidden md:flex items-center px-4 py-2 border rounded-lg border-slate-800 lg:px-6">
@@ -103,12 +106,15 @@ const Header: React.FC = () => {
         />
 
         {/* Teach on Byway - Hidden on small screens */}
+         <Link to="/">
         <span className="hidden mx-6 text-base font-medium text-slate-800 lg:block">
           Teach on Byway
-        </span>
+          </span>
+          </Link>
 
         {/* Cart Icon */}
-        <img src="./assets/icon-cart.svg" alt="Cart" className="w-6 h-6 mr-6" />
+        <Link to ="shopping">
+        <img src="./assets/icon-cart.svg" alt="Cart" className="w-6 h-6 mr-6" /> </Link>
 
         {/* Log In Button */}
         <Link to="/login">

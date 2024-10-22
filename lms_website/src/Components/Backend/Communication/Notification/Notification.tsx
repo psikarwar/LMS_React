@@ -23,7 +23,7 @@ const Notification :React.FC = () => {
             <img src={dicon} alt="dropdown" className="w-6 h-6" />
           </div>
         </div>
-        <NavLink to="/notification-send">
+        <NavLink to="notification-send">
         <button className="flex items-center bg-white border border-gray-300 py-2 px-6 rounded-md cursor-pointer text-sm font-medium text-gray-900">
           Make a New Announcement
           <img src={broadcast} alt="broadcast" className="ml-2 w-6 h-6" />

@@ -1,12 +1,12 @@
 import React from 'react';
-
+import girl from './learninggirl.svg';
 const LearningImage: React.FC = () => {
   return (
     <div className="absolute inset-1 z-0">
       <img
-        src="./assets/frame-427319048.svg"
+        src={girl}
         alt="Learning"
-        className="max-w-fit h-screen object-left"
+        className="w-fit h-full object-left"
       />
     </div>
   );
