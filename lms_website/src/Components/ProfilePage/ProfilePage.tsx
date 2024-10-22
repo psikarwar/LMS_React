@@ -1,6 +1,6 @@
 import React from 'react';
 // import './ProfilePage.css'; // If you're still using any custom CSS
-
+import im1 from '../../../../assets/rectangle-1128.svg'
 const ProfilePage: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gray-100">
@@ -23,10 +23,10 @@ const ProfilePage: React.FC = () => {
             </div>
           </div>
 
-          <div className="w-full md:w-[950px] bg-white rounded-lg border border-gray-200 p-5 mb-5">
+          <div className="w-full bg-white rounded-lg border border-gray-200 p-5 mb-5">
             <h3 className="font-semibold text-lg leading-tight text-gray-900 mb-5">Image Preview</h3>
             <div className="bg-gray-200 p-2 rounded-lg mb-5">
-              <img src="./assets/rectangle-1128.svg" alt="Preview" className="w-full h-auto rounded" />
+              <img src={im1 } alt="Preview" className="w-full h-auto rounded" />
             </div>
             <h4 className="font-semibold text-lg leading-tight text-gray-900 mb-5">Add/Change Image</h4>
             <div className="flex flex-col md:flex-row items-center mb-5">
