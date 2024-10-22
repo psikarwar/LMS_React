@@ -7,7 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 // import Header from './Components/Header/Header';
-
+import Signup from "./Components/Frontend/SignUp/Signup";
 // import HomeScreen from './Components/HomeScreen/HomeScreen';s
 import Login from "./Components/Frontend/LoginPage/Login";
 import CoursePage from "./Components/Frontend/CoursePage/CoursePage";
@@ -46,7 +46,7 @@ import Courses from "./Components/Backend/Courses/Courses";
 import FrontenComponenet from "./Components/FrontenComponenet";
 import LayoutComponent from "./Components/LayoutComponent";
 import Chapter from "./Components/Backend/Courses/Chapter/Chapter";
-import Signup from "./Components/Frontend/SignUp/Signup";
+import ReviewPage from "./Components/Backend/ReviewPage/ReviewPage";
 // import FrontenComponenet from "./Components/FrontenComponenet";
 // import Maincourse from "./Components/Backend/Courses/maincourse";
 // import Courses from "./Components/Backend/Courses/Courses";
@@ -149,6 +149,7 @@ const router = createBrowserRouter(
           <Route path="customer" element={<Customer />} />
           <Route path="promotion" element={<Promotion />} />
           <Route path="detail" element={<Details />} />
+          <Route path="reviewpage" element={<ReviewPage/>} />
           <Route path="setting" element={<Setting />} />
         </Route>
         
