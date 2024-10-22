@@ -37,6 +37,7 @@
 
 // export default ReviewCard;
 import React from 'react';
+// import star from '../../../assets/icon-2.svg'
 
 interface ReviewCardProps {
   courseName: string;
@@ -61,7 +62,8 @@ const ReviewCard: React.FC<ReviewCardProps> = ({ courseName, rating, reviewText,
         {[...Array(5)].map((_, index) => (
           <img
             key={index}
-            src={`./assets/icon-${index + 2}.svg`}
+            src={`../../../assets/icon-${index + 2}.svg`}
+            
             alt="Star"
             className={index < rating ? "opacity-100" : "opacity-30"}
           />
