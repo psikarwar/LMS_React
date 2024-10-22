@@ -146,9 +146,9 @@
 
 // export default Profile;
 import React from 'react';
-import pp from '../../assets/myassets/pp.svg';
-import icon from '../../assets/myassets/iconshare.svg';
-import line from '../../assets/myassets/line.svg';
+import pp from '../../../assets/myassets/pp.svg';
+import icon from '../../../assets/myassets/iconshare.svg';
+import line from '../../../assets/myassets/line.svg';
 
 interface ProfileProps {
   activeSection?: string;

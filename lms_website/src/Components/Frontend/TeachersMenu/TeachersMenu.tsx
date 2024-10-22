@@ -2,9 +2,9 @@ import React from 'react';
 // import Profile from '../Profile/Profile';
 import InstructorCard from '../InstructorCard/InstructorCard';
 import Pagination from '../Pagination/Pagination';
-import im2 from '../../../../assets/icon-mail.svg';
-import search from '../../assets/myassets/search.svg';
-import ch from '../../assets/icon-down-chevron.svg'
+import im2 from '../../../../../assets/icon-mail.svg';
+import search from '../../../assets/myassets/search.svg';
+import ch from '../../../../../assets/icon-down-chevron.svg'
 
 
 interface Instructor {

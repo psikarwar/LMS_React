@@ -1,6 +1,6 @@
 import React from 'react';
 // import './ProfilePage.css'; // If you're still using any custom CSS
-import im1 from '../../../../assets/rectangle-1128.svg'
+import im1 from '../../../../../assets/rectangle-1128.svg'
 const ProfilePage: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gray-100">

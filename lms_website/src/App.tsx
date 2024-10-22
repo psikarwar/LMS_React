@@ -7,7 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 // import Header from './Components/Header/Header';
-import Signup from "./Components/SignUp/Signup";
+
 // import HomeScreen from './Components/HomeScreen/HomeScreen';s
 import Login from "./Components/Frontend/LoginPage/Login";
 import CoursePage from "./Components/Frontend/CoursePage/CoursePage";
@@ -46,6 +46,7 @@ import Courses from "./Components/Backend/Courses/Courses";
 import FrontenComponenet from "./Components/FrontenComponenet";
 import LayoutComponent from "./Components/LayoutComponent";
 import Chapter from "./Components/Backend/Courses/Chapter/Chapter";
+import Signup from "./Components/Frontend/SignUp/Signup";
 // import FrontenComponenet from "./Components/FrontenComponenet";
 // import Maincourse from "./Components/Backend/Courses/maincourse";
 // import Courses from "./Components/Backend/Courses/Courses";

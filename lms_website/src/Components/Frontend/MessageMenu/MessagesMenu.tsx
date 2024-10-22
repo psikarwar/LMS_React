@@ -1,9 +1,10 @@
 import React from 'react';
-import MessageCard from '../../MessagesCard/MessagesCard';
-import search from '../../assets/myassets/search.svg';
-import ch from '../../assets/icon-down-chevron.svg'
-import el1 from '../../../../assets/ellipse-140.svg'
-import el2 from '../../../../assets/ellipse-139.svg'
+
+import search from '../../../assets/myassets/search.svg';
+import ch from '../../../../../assets/icon-down-chevron.svg'
+import el1 from '../../../../../assets/ellipse-140.svg'
+import el2 from '../../../../../assets/ellipse-139.svg'
+import MessageCard from '../MessagesCard/MessagesCard';
 
 
 const MessagesMenu: React.FC = () => {

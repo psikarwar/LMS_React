@@ -111,14 +111,14 @@ const HomeScreen: React.FC = () => {
 
       <h2
         className="font-inter font-semibold text-2xl leading-[150%] text-gray-900"
-        style={{ marginLeft: '1rem' }}
+        style={{ marginLeft: '3rem' }}
       >
         Top Courses
       </h2>
       
       <div
         className="p-4 grid grid-cols-4 gap-11 w-fit h-fit"
-        style={{ marginLeft: '1rem' }}
+        style={{ marginLeft: '2rem' }}
       >
         {/* Render top 4 courses */}
         {courses.slice(0, 4).map((course, index) => (

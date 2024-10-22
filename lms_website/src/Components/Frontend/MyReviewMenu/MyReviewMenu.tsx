@@ -1,7 +1,7 @@
 import React from 'react';
 import ReviewCard from '../ReviewCard/ReviewCard';
 import Pagination from '../Pagination/Pagination';
-import option from '../../../../assets/icon-horizontal-dots.svg'
+import option from '../../../../../assets/icon-horizontal-dots.svg'
 const MyReviewMenu: React.FC = () => {
     const reviews = [
         {
