@@ -1,4 +1,5 @@
 import React from 'react';
+import img1 from '../../../../assets/rectangle-1080.svg';
 
 // Define Course type
 type Course = {
@@ -23,7 +24,7 @@ const FeaturedCourses: React.FC<{ courses: Course[] }> = ({ courses }) => {
         {courses.map((course) => (
           <div key={course.id} className="bg-white border border-gray-200 rounded-xl p-4 w-full sm:w-[calc(50%-20px)] lg:w-[calc(25%-20px)]">
             <img
-              src={course.image}
+              src={img1}
               alt={course.title}
               className="w-full h-auto rounded-lg"
             />

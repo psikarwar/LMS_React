@@ -13,9 +13,9 @@ const PopularMentor: React.FC<{ mentors: Mentor[] }> = ({ mentors }) => {
   return (
     <div className="p-6 font-inter">
       {/* Align the <h2> to the left */}
-      <h2 className="font-semibold text-2xl leading-[140%] text-gray-900 mb-6 text-left">
+      {/* <h2 className="font-semibold text-2xl leading-[140%] text-gray-900 mb-6 text-left">
         Top Instructors
-      </h2>
+      </h2> */}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
         {mentors.map((mentor, index) => (

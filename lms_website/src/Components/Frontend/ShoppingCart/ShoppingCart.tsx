@@ -40,15 +40,15 @@ const ShoppingCart: React.FC = () => {
       onClickRemove: () => alert('Removed Course 2!'),
     },
     {
-      imageSrc: './path/to/image2.jpg', // Replace with actual image paths
-      title: 'Course Title 2',
-      instructor: 'Instructor 2',
-      rating: 4.0,
-      ratingCount: 20,
-      duration: '1h 45m',
-      price: '$40',
-      onClickSave: () => alert('Saved Course 2!'),
-      onClickRemove: () => alert('Removed Course 2!'),
+      imageSrc: './path/to/image3.jpg', // Replace with actual image paths
+      title: 'Course Title 3',
+      instructor: 'Instructor 3',
+      rating: 4.2,
+      ratingCount: 15,
+      duration: '3h 0m',
+      price: '$60',
+      onClickSave: () => alert('Saved Course 3!'),
+      onClickRemove: () => alert('Removed Course 3!'),
     },
     // Add more course data as needed
   ];
@@ -69,9 +69,9 @@ const ShoppingCart: React.FC = () => {
       {/* Render ShoppingCartMenu component */}
       <ShoppingCartMenu title="Shopping Cart" items={breadcrumbItems} />
 
-      <main className="flex justify-center items-start h-screen flex-row">
-        <div className="flex flex-col gap-4 w-2/3"> {/* Container for ShoppingCartImg components */}
-          <h1 className="text-3xl font-bold mb-4">Shopping Cart</h1>
+      <main className="flex flex-col md:flex-row justify-center items-start h-auto md:h-screen">
+        <div className="flex flex-col gap-4 w-full md:w-2/3 p-4"> {/* Container for ShoppingCartImg components */}
+          <h1 className="text-2xl md:text-3xl font-bold mb-4">Shopping Cart</h1>
           {/* Render course cards */}
           {courseData.map((course, index) => (
             <ShoppingCartImg
@@ -88,7 +88,7 @@ const ShoppingCart: React.FC = () => {
             />
           ))}
         </div>
-        <div className="w-1/3 p-4"> {/* Container for ShoppingOrder */}
+        <div className="w-full md:w-1/3 p-4"> {/* Container for ShoppingOrder */}
           <ShoppingOrder
             price={orderDetails.price}
             discount={orderDetails.discount}

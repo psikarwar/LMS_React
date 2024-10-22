@@ -15,13 +15,13 @@ const CheckoutPage: React.FC = () => {
           <span>Details</span>
           <img src="./assets/icon-chevron-right-small.svg" alt="Chevron" className="mx-2" />
           <Link to="/shopping">
-          <span>Shopping Cart</span>
+            <span>Shopping Cart</span>
           </Link>
           <img src="./assets/icon-chevron-right-small.svg" alt="Chevron" className="mx-2" />
           <span className="text-blue-600 font-semibold">Checkout</span>
         </div>
 
-        <main className="flex flex-col lg:flex-row justify-between space-x-0 lg:space-x-8">
+        <main className="flex flex-col lg:flex-row justify-between space-y-6 lg:space-y-0 lg:space-x-8">
           <section className="bg-white p-6 rounded-xl shadow w-full lg:w-1/2">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Checkout Page</h2>
             <div className="space-y-4">
@@ -93,7 +93,7 @@ const CheckoutPage: React.FC = () => {
             </div>
           </section>
 
-          <aside className="bg-white p-6 rounded-xl shadow w-full lg:w-1/2 mt-6 lg:mt-0">
+          <aside className="bg-white p-6 rounded-xl shadow w-full lg:w-1/2">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Order Details</h2>
             <div className="flex mb-6">
               <img

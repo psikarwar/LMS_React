@@ -22,9 +22,9 @@ const CourseReviews: React.FC<CourseReviewsProps> = ({
   reviews,
 }) => {
   return (
-    <div className="flex flex-col md:flex-row gap-8 font-inter text-gray-700 p-6 bg-gray-50 rounded-lg shadow-md">
+    <div className="flex flex-col md:flex-row gap-8 font-inter text-gray-700 p-6 rounded-lg shadow-md mx-auto max-w-6xl">
       {/* Average Rating Section */}
-      <div className="w-full md:w-64 bg-white rounded-lg p-4 shadow-md">
+      <div className="w-full md:w-1/3 bg-white rounded-lg p-4 shadow-md">
         <div className="flex items-center gap-2 font-semibold text-2xl text-gray-900">
           <img src="./assets/icon.svg" alt="Average rating" className="w-8 h-8" />
           <span>{averageRating.toFixed(1)}</span>
@@ -50,11 +50,11 @@ const CourseReviews: React.FC<CourseReviewsProps> = ({
       </div>
 
       {/* Reviews List Section */}
-      <div className="flex flex-col gap-4 w-full">
+      <div className="flex flex-col gap-6 w-full md:w-2/3 md:self-end">
         {reviews.map((review, index) => (
           <ReviewCard key={index} {...review} />
         ))}
-        <button className="px-6 py-2 border border-gray-900 rounded-lg bg-transparent font-medium text-sm text-gray-900 hover:bg-gray-200 w-full md:w-auto">
+        <button className="px-6 py-2 border border-gray-900 rounded-lg bg-transparent font-medium text-sm text-gray-900 hover:bg-gray-200 self-center md:self-start">
           View more Reviews
         </button>
       </div>
@@ -64,7 +64,7 @@ const CourseReviews: React.FC<CourseReviewsProps> = ({
 
 const ReviewCard: React.FC<Review> = ({ reviewerName, rating, reviewDate, reviewText }) => {
   return (
-    <div className="w-full max-w-sm bg-white rounded-lg border border-gray-300 p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div className="w-full bg-white rounded-lg border border-gray-300 p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 md:max-w-full">
       <div className="flex items-center gap-3 mb-4">
         <img src="./assets/ellipse-19.svg" alt="Reviewer" className="w-12 h-12 rounded-full border-2 border-gray-200" />
         <div className="flex flex-col">

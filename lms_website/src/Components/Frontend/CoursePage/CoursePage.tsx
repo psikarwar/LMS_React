@@ -1,7 +1,6 @@
 import React from 'react';
 
 // Import the necessary components
-import CourseCustomer from './CourseCustomer/CourseCustomer'; 
 import CourseDesign from './CourseDesign/CourseDesign';
 import CourseImg from './CourseImg/CourseImg';
 import CourseMenu from './CourseMenu/CourseMenu';
@@ -10,6 +9,7 @@ import CourseInstructor from './CourseInstructor/CourseInstructor';
 import CourseSyllabus from './CourseSyllabus/CourseSyllabus';
 import CourseReviews from './CourseReviews/CourseReviews';
 import CoursesLike from './CoursesLike/CoursesLike';
+import Feedback from '../../HomeScreen/stats/Feedback/Feedback';
 
 const CoursePage: React.FC = () => {
   // Syllabus data
@@ -34,14 +34,20 @@ const CoursePage: React.FC = () => {
       reviewDate: '15th April, 2024',
       reviewText: 'Very informative and engaging course.',
     },
+    {
+      reviewerName: 'Jane Smith',
+      rating: 4,
+      reviewDate: '15th April, 2024',
+      reviewText: 'Very informative and engaging course.',
+    },
     // Add more reviews here...
   ];
 
   return (
     <div className="w-full bg-white">
       {/* CourseDesign and CourseImg layout */}
-      <div className="flex justify-between items-start p-6">
-        <div className="w-2/3">
+      <div className="flex flex-col md:flex-row justify-between items-start p-6">
+        <div className="md:w-2/3 w-full">
           <CourseDesign
             title="Introduction to User Experience Design"
             description="This course is meticulously crafted to provide you with a foundational understanding of the principles, methodologies, and tools that drive exceptional user experiences in the digital landscape."
@@ -76,20 +82,24 @@ const CoursePage: React.FC = () => {
             ]}
             reviews={reviewsData}
           />
-          
-          {/* Adding CourseCustomer */}
-          <CourseCustomer />
-
-          {/* Adding CoursesLike below CourseCustomer */}
-          <CoursesLike />
         </div>
 
-        <div className="w-1/3 flex flex-col items-center">
+        <div className="md:w-1/3 w-full flex flex-col items-center mt-6 md:mt-0">
           <CourseImg />
           <div className="mt-6 w-full">
             <CourseMenu />
           </div>
         </div>
+      </div>
+
+      {/* Feedback in full width */}
+      <div className="w-full mt-6">
+        <Feedback />
+      </div>
+
+      {/* CoursesLike in full width and responsive layout */}
+      <div className="w-full mt-6">
+        <CoursesLike />
       </div>
     </div>
   );

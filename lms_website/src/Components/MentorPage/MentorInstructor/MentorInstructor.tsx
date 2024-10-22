@@ -15,8 +15,7 @@ const MentorInstructor: React.FC<MentorInstructorProps> = ({
   role,
   description,
   totalStudents,
-  reviews,
-  imageSrc, // Destructure the imageSrc prop
+  reviews, // Destructure the imageSrc prop
 }) => {
   return (
     <div className="flex flex-col lg:flex-row gap-4 text-slate-700 p-4 lg:p-8">

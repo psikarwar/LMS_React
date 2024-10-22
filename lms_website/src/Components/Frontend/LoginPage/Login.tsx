@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import Header from '../../Header/Header'; // Adjust the path according to your project structure
 
 const Login: React.FC = () => {
   return (
@@ -35,7 +34,8 @@ const Login: React.FC = () => {
           </Link>
           <div className="flex items-center gap-3 justify-center mb-6">
             <img src="./assets/line-34.svg" alt="Line" className="hidden lg:block" />
-            <span className="text-gray-400">Sign in with</span>
+            {/* Added whitespace-nowrap to keep the text in one line */}
+            <span className="text-gray-400 whitespace-nowrap">Sign in with</span>
             <img src="./assets/line-35.svg" alt="Line" className="hidden lg:block" />
           </div>
           <div className="flex flex-col lg:flex-row gap-4">
@@ -53,9 +53,11 @@ const Login: React.FC = () => {
             </button>
           </div>
         </div>
-        <div className="max-w-2xl mx-auto mt-10 lg:mt-0">
+        <div className="max-w-2xl mx-auto mt-10 lg:mt-0 lg:ml-80">
           {/* Set the height of the image to 32rem explicitly */}
-          <img src="./assets/frame-427319048.svg" alt="People reading" className="w-full" style={{ height: '32rem' }} />
+          <img src="./assets/frame-427319048.svg" alt="People reading"  
+className
+="max-w-full h-screen object-right" style={{ height: '32rem' }} />
         </div>
       </main>
     </div>

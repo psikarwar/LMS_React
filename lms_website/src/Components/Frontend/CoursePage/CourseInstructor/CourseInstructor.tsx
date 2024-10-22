@@ -20,7 +20,7 @@ const CourseInstructor: React.FC<InstructorProps> = ({
   description,
 }) => {
   return (
-    <div className="flex flex-col gap-4 font-inter max-w-2xl text-gray-800 p-4 md:p-6 lg:p-8 mx-auto">
+    <div className="flex flex-col gap-4 font-inter text-gray-800 p-4 md:p-6 lg:p-8 lg:max-w-4xl mx-auto lg:ml-0">
       <h2 className="font-semibold text-xl text-gray-900 mt-4">Instructor</h2>
 
       <div className="mt-6 md:mt-8">

@@ -28,7 +28,8 @@ const CourseDesign: React.FC<CourseDesignProps> = ({
     <div className="max-w-4xl mx-auto my-10 p-4 sm:p-6 bg-gray-50 text-gray-800">
       {/* Breadcrumb */}
       <nav className="flex items-center gap-2 mb-4 sm:mb-8 text-xs sm:text-sm text-gray-500">
-        <span className="hover:text-blue-500 cursor-pointer">Home</span>
+        <Link to="/homescreen">
+        <span className="hover:text-blue-500 cursor-pointer">Home</span></Link> 
         <img src="./assets/icon-chevron-right-small.svg" alt="chevron right" />
         <Link to="/category">
         <span className="hover:text-blue-500 cursor-pointer">Categories</span>
