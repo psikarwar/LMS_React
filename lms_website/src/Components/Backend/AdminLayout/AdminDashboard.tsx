@@ -1,18 +1,25 @@
-import React from 'react';
-import { Outlet } from 'react-router-dom';
+import React, { useState } from 'react';
 import Sidebar from './Sidebar/Sidebar'; // Import the Sidebar component
+import { Outlet } from 'react-router-dom';
 
 const AdminDashboard: React.FC = () => {
+  const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
+
+  const handleSidebarCollapse = (collapsed: boolean) => {
+    setIsSidebarCollapsed(collapsed);
+  };
   return (
-    <div className="flex flex-row h-screen">
-      
-      {/* Sidebar */}
-      <Sidebar />
+    <div className="flex">
+      {/* Sidebar Component */}
+      <Sidebar onCollapse={handleSidebarCollapse} />
 
       {/* Main content area */}
-      <div className="flex-1 p-8 ml-60"> {/* Sidebar width accounted */}
-        
-        <Outlet /> {/* This will render the respective component based on the route */}
+      <div
+        className={`transition-all duration-300 ${
+          isSidebarCollapsed ? 'ml-20' : 'ml-60'
+        } flex-1 p-6`}
+      >
+        {<Outlet/>} {/* This represents your main content */}
       </div>
     </div>
   );
