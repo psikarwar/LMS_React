@@ -1,7 +1,7 @@
 import React from 'react';
 import ReviewCard from '../ReviewCard/ReviewCard';
 import Pagination from '../Pagination/Pagination';
-import option from '../../../../assets/icon-horizontal-dots.svg'
+import option from '../../../../../assets/icon-horizontal-dots.svg'
 const MyReviewMenu: React.FC = () => {
     const reviews = [
         {
@@ -40,10 +40,10 @@ const MyReviewMenu: React.FC = () => {
     
     return (
         <div className="font-inter">
-            <main className="flex flex-col p-5 md:p-10">       
+            <main className="flex-1 flex px-2 py-4">       
                 <section className="flex-1">
                     <header className="mb-5">
-                        <h2 className="text-lg font-semibold">Reviews (12)</h2>
+                        <h2 className="font-semibold text-xl sm:text-2xl text-gray-900">Reviews (12)</h2>
                     </header>
 
                     <div className="flex flex-col gap-4">

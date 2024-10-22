@@ -1,9 +1,9 @@
 import React from 'react';
 import MessageCard from '../MessagesCard/MessagesCard';
-import search from '../../assets/myassets/search.svg';
-import ch from '../../assets/icon-down-chevron.svg'
-import el1 from '../../../../assets/ellipse-140.svg'
-import el2 from '../../../../assets/ellipse-139.svg'
+import search from '../../../assets/myassets/search.svg';
+import ch from '../../../../../assets/icon-down-chevron.svg'
+import el1 from '../../../../../assets/ellipse-140.svg'
+import el2 from '../../../../../assets/ellipse-139.svg'
 
 
 const MessagesMenu: React.FC = () => {
@@ -24,20 +24,20 @@ const MessagesMenu: React.FC = () => {
 
   return (
     <div className="bg-white font-sans">
-      <main className="flex flex-col sm:flex-row px-5 sm:px-20 py-10">
-        <section className="flex-grow sm:px-10">
+      <main className="flex-1 flex px-2 py-4  ">
+        <section className="flex-grow">
           <h3 className="font-semibold text-xl sm:text-2xl text-gray-900">Messages</h3>
 
-          <div className="flex flex-col sm:flex-row justify-between my-6">
-            <div className="flex items-center px-4 py-2 border border-gray-200 rounded-lg bg-white w-full sm:w-auto mb-4 sm:mb-0">
+          <div className="flex flex-col gap-4 sm:flex-row justify-between my-6">
+            <div className="flex items-center  px-4 py-2 border border-gray-200 rounded-lg bg-white w-full sm:w-auto mb-4 sm:mb-0">
               {/* <span className="text-sm sm:text-base">Search User</span> */}
               <input type='text' placeholder='Search User'/>
-              <img src={search} alt="Search" className="ml-2 w-5 h-5" />
+              <img src={search} alt="Search" className="w-4 h-4 " />
             </div>
 
             <div className="flex gap-4 sm:gap-6">
-              <div className="flex items-center gap-2 sm:gap-4">
-                <span className="text-sm sm:text-base">Sort By</span>
+              <div className="flex items-center gap-1 sm:gap-4">
+                <span className="text sm:text-base">Sort By</span>
                 <button className="flex items-center px-4 py-2 border border-gray-200 rounded-lg bg-white">
                   <span className="text-sm sm:text-base">Relevance</span>
                   <img src={ch} alt="Chevron" className="ml-2 w-4 h-4" />

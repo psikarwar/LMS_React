@@ -32,15 +32,15 @@ const ChapterTabs: React.FC<ChapterTabsProps> = ({ tabs, activeTab, onTabChange 
             ${activeTab === tab ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-600 hover:text-blue-600'}`}
         >
           {tab === 'Resources' ? (
-            <Link to="/chapterresource">
+            <Link to="chapterresource">
               {tab}
             </Link>
           ) : tab === 'Details' ? (
-            <Link to="/chapterdetail">
+            <Link to="chapterdetail">
               {tab}
             </Link>
           ) : tab === 'SEO' ? ( // Updated to 'SEO'
-            <Link to="/chapterseo">
+            <Link to="chapterseo">
               {tab}
             </Link>
           ) : (
