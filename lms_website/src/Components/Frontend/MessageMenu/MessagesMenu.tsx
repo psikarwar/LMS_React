@@ -24,7 +24,7 @@ const MessagesMenu: React.FC = () => {
 
   return (
     <div className="bg-white font-sans">
-      <main className="flex flex-col sm:flex-row px-5 sm:px-20 py-10">
+      <main className="flex-1 flex px-2 py-4  ">
         <section className="flex-grow">
           <h3 className="font-semibold text-xl sm:text-2xl text-gray-900">Messages</h3>
 

@@ -2,6 +2,7 @@ import React from 'react';
 import AnalyticsBanner from './AnalyticsBanner';
 import Transactions from './Transactions';
 import LineChart from '../../LineChart/LineChart';
+import im1 from '../../../../../assets/icon-horizontal-dots.svg'
 
 const Revenue: React.FC = () => {
     const labels = ['January', 'February', 'March', 'April', 'May', 'June'];
@@ -30,7 +31,7 @@ const Revenue: React.FC = () => {
     <div className="p-6">
       <div className="flex justify-between items-center mb-6" >
         <h1 className="text-2xl font-bold">Revenue Analytics</h1>
-        <img src="./assets/icon-horizontal-dots.svg" alt="Options" className="h-6 w-6 cursor-pointer" />
+        <img src={im1} alt="Options" className="h-6 w-6 cursor-pointer" />
       </div>
       <AnalyticsBanner />
       <LineChart labels={labels} datasets={datasets} canvasWidth="max-w-xl" canvasHeight="h-80" />
