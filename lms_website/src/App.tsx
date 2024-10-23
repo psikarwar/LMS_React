@@ -47,6 +47,7 @@ import FrontenComponenet from "./Components/FrontenComponenet";
 import LayoutComponent from "./Components/LayoutComponent";
 import Chapter from "./Components/Backend/Courses/Chapter/Chapter";
 import ReviewPage from "./Components/Backend/ReviewPage/ReviewPage";
+// import MentorPage from "./Components/MentorPage/MentorPage";
 // import FrontenComponenet from "./Components/FrontenComponenet";
 // import Maincourse from "./Components/Backend/Courses/maincourse";
 // import Courses from "./Components/Backend/Courses/Courses";
@@ -136,6 +137,7 @@ const router = createBrowserRouter(
         <Route path="checkout" element={<CheckoutPage />} />
         <Route path="ordercom" element={<OrderCompletePage />} />
         <Route path="ordercompl" element={<OrderCompletePag2 />} />
+        {/* <Route path="mentor" element={<MentorPage />} /> */}
       </Route>
       <Route path="/admin" element={<AdminDashboard />}>
         <Route index element={<DashBoard />} />
