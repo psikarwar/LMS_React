@@ -70,9 +70,12 @@
 
 // export default Profile;
 import React from 'react';
-import pp from '../../../assets/myassets/pp.svg';
-import icon from '../../../assets/myassets/iconshare.svg';
-import line from '../../../assets/myassets/line.svg';
+// import pp from '../../../assets/myassets/pp.svg';
+import { pp } from '../../images';
+// import icon from '../../../assets/myassets/iconshare.svg';
+import { iconshare } from '../../images';
+// import line from '../../../assets/myassets/line.svg';
+import { line1 } from '../../images';
 
 interface ProfileProps {
   activeSection?: string;
@@ -87,10 +90,10 @@ const Profile: React.FC<ProfileProps> = ({ activeSection, setActiveSection }) =>
         <h2 className="font-semibold text-lg sm:text-xl md:text-2xl text-slate-900">John Doe</h2>
         <button className="flex items-center gap-2 px-4 py-2 sm:px-6 sm:py-3 bg-white border border-gray-300 rounded-lg font-medium text-xs sm:text-sm md:text-base text-slate-900 cursor-pointer">
           <span>Share Profile</span>
-          <img src={icon} alt="Share" className="w-5 sm:w-6" />
+          <img src={iconshare} alt="Share" className="w-5 sm:w-6" />
         </button>
       </div>
-      <img src={line} alt="Line" className="w-full my-4 sm:my-6 md:my-8" />
+      <img src={line1} alt="Line" className="w-full my-4 sm:my-6 md:my-8" />
 
       {/* Navigation Buttons */}
       <nav className="flex flex-col gap-2">

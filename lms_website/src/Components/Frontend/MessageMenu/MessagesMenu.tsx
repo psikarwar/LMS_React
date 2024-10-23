@@ -1,15 +1,14 @@
 import React from 'react';
 import MessageCard from '../MessagesCard/MessagesCard';
-import search from '../../../assets/myassets/search.svg';
-import ch from '../../../../../assets/icon-down-chevron.svg'
-import el1 from '../../../../../assets/ellipse-140.svg'
+import { search } from '../../images';
+import { ellipse140 } from '../../images';
 import { ellipse139 } from '../../images'; 
-
+import { icondown } from '../../images';
 const MessagesMenu: React.FC = () => {
   const messages = [
     {
       userName: 'Ronald Richards',
-      userImage: el1,
+      userImage: ellipse140,
       date: '18th March, 2024',
       messageContent: 'Thank you for asking your doubt, I’ll send you a pdf file which covers the problems you are facing...',
     },
@@ -39,7 +38,7 @@ const MessagesMenu: React.FC = () => {
                 <span className="text sm:text-base">Sort By</span>
                 <button className="flex items-center px-4 py-2 border border-gray-200 rounded-lg bg-white">
                   <span className="text-sm sm:text-base">Relevance</span>
-                  <img src={ch} alt="Chevron" className="ml-2 w-4 h-4" />
+                  <img src={icondown} alt="Chevron" className="ml-2 w-4 h-4" />
                 </button>
               </div>
 

@@ -3,7 +3,8 @@ import React from 'react';
 import InstructorCard from '../InstructorCard/InstructorCard';
 import Pagination from '../Pagination/Pagination';
 import im2 from '../../../../../assets/icon-mail.svg';
-import search from '../../../assets/myassets/search.svg';
+// import search from '../../../assets/myassets/search.svg';
+import { search } from '../../images';
 import ch from '../../../../../assets/icon-down-chevron.svg'
 
 

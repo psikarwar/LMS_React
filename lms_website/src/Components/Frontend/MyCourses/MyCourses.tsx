@@ -65,7 +65,8 @@
 import React from 'react';
 import './MyCourses.css'; // Import custom CSS for additional styles
 import Pagination from '../Pagination/Pagination';
-import search from '../../../assets/myassets/search.svg';
+// import search from '../../../assets/myassets/search.svg';
+import { search } from '../../images';
 
 
 const MyCourses: React.FC = () => {
