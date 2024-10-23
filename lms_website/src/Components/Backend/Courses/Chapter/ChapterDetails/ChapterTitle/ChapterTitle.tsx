@@ -1,5 +1,5 @@
 import React from 'react';
-import backimg from '../../../../../../../assets/icon-back.svg';
+import { iconbackimg } from '../../../../../images';
 
 interface ChapterTitleProps {
   chapterTitle: string;
@@ -9,7 +9,7 @@ const ChapterTitle: React.FC<ChapterTitleProps> = ({ }) => {
   return (
     <div className="flex items-center justify-between p-2 bg-white">
       <div className="flex items-center gap-2">
-        <img src={backimg} alt="Back" className="w-6 h-6" />
+        <img src={iconbackimg} alt="Back" className="w-6 h-6" />
         <span className="font-semibold text-lg text-gray-800">Chapter-1 The Solid State</span>
       </div>
       <div className="flex gap-2">

@@ -1,4 +1,5 @@
 import React from 'react';
+import { iconplusimg } from '../../../../images';
 
 const SettingContent: React.FC = () => {
   return (
@@ -22,7 +23,7 @@ const SettingContent: React.FC = () => {
         </div>
         <button className="flex items-center py-2 px-6 bg-transparent border-none cursor-pointer">
           <span className="text-sm font-medium leading-6 text-blue-600">Add More Requirements</span>
-          <img src="./assets/icon-plus.svg" alt="plus icon" className="ml-2 w-6 h-6" />
+          <img src={iconplusimg} alt="plus icon" className="ml-2 w-6 h-6" />
         </button>
       </div>
 

@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import { file4img, iconaddimg } from '../../../../../images';
 
 // Props interface to make the component dynamic
 interface ResourcesContentProps {
@@ -77,7 +78,7 @@ const ResourcesContent: React.FC<ResourcesContentProps> = ({
       <div className="flex flex-col gap-2">
         <div className="text-sm font-normal text-[#334155]">Upload File</div>
         <div className="flex flex-col items-center gap-3 p-5 bg-white border border-gray-300 rounded-lg w-[600px] h-[160px] justify-center">
-          <img src="./assets/file-attachment-04.svg" alt="Upload icon" />
+          <img src={file4img} alt="Upload icon" />
           <div className="text-lg font-semibold text-[#0f172a] text-center">
             {fileUploadText}{' '}
             <span className="text-[#1d4ed8] cursor-pointer" onClick={handleFileUploadClick}>
@@ -100,7 +101,7 @@ const ResourcesContent: React.FC<ResourcesContentProps> = ({
       <div className="flex flex-col gap-2">
         <div className="text-sm font-normal text-[#334155]">Upload Thumbnail</div>
         <div className="flex flex-col items-center gap-3 p-5 bg-white border border-gray-300 rounded-lg w-[600px] h-[160px] justify-center">
-          <img src="./assets/icon-add-image.svg" alt="Upload icon" />
+          <img src={iconaddimg} alt="Upload icon" />
           <div className="text-lg font-semibold text-[#0f172a] text-center">
             {thumbnailUploadText}{' '}
             <span className="text-[#1d4ed8] cursor-pointer" onClick={handleThumbnailUploadClick}>

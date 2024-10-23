@@ -129,4 +129,37 @@ import broadcast from '../newassets/Backendimg/Broadcast.svg';
 import dicon from '../newassets/Backendimg/icon-down-chevron.svg';
 import xmas from '../newassets/Backendimg/xmas.svg';
 import im1 from '../newassets/Backendimg/dot.svg';
-export {graph1,graph2,graph3 , Cb , communication, course , Revenue, setting , playsquare,plusicon,richt,rect,iconx,addimage,downarrow,broadcast,dicon,xmas,im1};
+
+// Drashti
+import sortimg from '../newassets/Backendimg/sort.svg'
+import iconbackimg from '../newassets/Backendimg/icon-back.svg'
+import file4img from '../newassets/Backendimg/file-attachment-04.svg'
+import iconaddimg from '../newassets/Backendimg/icon-add-image.svg'
+import iconplusimg from '../newassets/Backendimg/icon-plus.svg'
+import iconarrowup from '../newassets/Backendimg/icon-arrow-narrow-up.svg'
+import iconarrowup2img from '../newassets/Backendimg/icon-arrow-narrow-up-2.svg'
+import iconarrowup3img from '../newassets/Backendimg/icon-arrow-narrow-up-3.svg'
+import searchimg from '../newassets/Backendimg/search.svg'
+import iconfilter1img from '../newassets/Backendimg/icon-filter copy.svg'
+import downiconimg from '../newassets/Backendimg/icon-down-chevron.svg'
+import downicon2img from '../newassets/Backendimg/icon-down-chevron-2.svg'
+import downicon3img from '../newassets/Backendimg/icon-down-chevron-3.svg'
+import downicon4img from '../newassets/Backendimg/icon-down-chevron-4.svg'
+import downicon5img from '../newassets/Backendimg/icon-down-chevron-5.svg'
+import downicon7img from '../newassets/Backendimg/icon-down-chevron-7.svg'
+import downicon8img from '../newassets/Backendimg/icon-down-chevron-8.svg'
+import downicon9img from '../newassets/Backendimg/icon-down-chevron-9.svg'
+import downicon10img from '../newassets/Backendimg/icon-down-chevron-10.svg'
+import msgimg1 from '../newassets/Backendimg/msgimg1.svg'
+import elipseimg2 from '../newassets/Backendimg/ellipse-1-2.svg'
+import elipseimg3 from '../newassets/Backendimg/ellipse-1-3.svg'
+import elipseimg4 from '../newassets/Backendimg/ellipse-1-4.svg'
+import elipseimg5 from '../newassets/Backendimg/ellipse-1-5.svg'
+import elipseimg6 from '../newassets/Backendimg/ellipse-1-6.svg'
+import elipseimg7 from '../newassets/Backendimg/ellipse-1-7.svg'
+
+export {graph1,graph2,graph3 , Cb , communication, course , Revenue, setting , playsquare,plusicon,richt,rect,iconx,addimage,downarrow,broadcast,dicon,xmas,im1,
+    sortimg, iconbackimg, file4img, iconaddimg, iconplusimg, iconarrowup, iconarrowup2img, iconarrowup3img,
+    searchimg, iconfilter1img, downiconimg, downicon2img, downicon3img, downicon4img, downicon5img, downicon7img,
+downicon8img, downicon9img, downicon10img, msgimg1, elipseimg2, elipseimg3, elipseimg4, elipseimg5,
+elipseimg6, elipseimg7 };

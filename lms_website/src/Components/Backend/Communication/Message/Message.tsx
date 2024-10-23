@@ -1,12 +1,12 @@
 import React from "react";
 import SearchUser from "./SearchUser/SearchUser"; // Adjust the path if necessary
 import Messagebox from "./MessageBox/MessageBox"; // Import the Messagebox component
-
+import { msgimg1 } from "../../../images";
 const Message: React.FC = () => {
   const user = {
     name: "Jack Harrow",
     role: "Student",
-    image: "./assets/ellipse-1.svg",
+    image: msgimg1,
   };
 
   // Fixing the 'type' property to match "received" | "sent"

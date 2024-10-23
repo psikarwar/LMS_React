@@ -1,4 +1,5 @@
 import React from 'react';
+import { iconfilter1img, searchimg } from '../../../../images';
 
 interface Offer {
   offerName: string;
@@ -27,13 +28,13 @@ const PromotionInfo: React.FC = () => {
             placeholder="Search User"
             className="border-none outline-none text-sm text-gray-700 flex-grow mr-3"
           />
-          <img src="./assets/search.svg" alt="Search" className="w-6 h-6 cursor-pointer" />
+          <img src={searchimg} alt="Search" className="w-6 h-6 cursor-pointer" />
         </div>
         <div className="flex gap-4">
           <button className="px-4 py-2 bg-white border border-gray-300 rounded-lg text-sm font-medium">Hide Stats</button>
           <button className="px-4 py-2 bg-white border border-gray-300 rounded-lg flex items-center gap-2 text-sm font-medium">
             Filter
-            <img src="./assets/icon-filter.svg" alt="Filter Icon" className="w-5 h-5" />
+            <img src={iconfilter1img} alt="Filter Icon" className="w-5 h-5" />
           </button>
         </div>
       </div>

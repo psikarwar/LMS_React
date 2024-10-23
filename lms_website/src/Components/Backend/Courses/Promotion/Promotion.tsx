@@ -4,6 +4,7 @@ import LineChart from '../../../LineChart/LineChart'; // Existing import for Lin
 import TotalCoupons from './TotalCoupons/TotalCoupons';
 import PromotionInfo from './PromotionInfo/PromotionInfo'; // Import the PromotionInfo component
 import PromotionNext from './PromotionNext/PromotionNext'; // Import the new PromotionNext component
+import { iconplusimg } from '../../../images';
 
 const Promotion: React.FC = () => {
   // Sample data for the LineChart component
@@ -33,7 +34,7 @@ const Promotion: React.FC = () => {
       <PromotionCoupon
         label="Coupons"
         buttonText="Create New Coupon"
-        iconSrc="./assets/icon-plus.svg" // Ensure the correct path to your icon
+        iconSrc= {iconplusimg} // Ensure the correct path to your icon
         buttonLink="/create-new-coupon"  // Link to the coupon creation page
       />
 

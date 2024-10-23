@@ -1,4 +1,5 @@
 import React from 'react';
+import { iconarrowup, iconarrowup2img, iconarrowup3img } from '../../../../images';
 
 interface CardProps {
   header: string;
@@ -28,19 +29,19 @@ const TotalCoupons: React.FC = () => {
       header: '$200.00',
       subheader: 'Total Redeemed',
       percentage: '8%',
-      iconSrc: './assets/icon-arrow-narrow-up.svg', // Adjust the path as needed
+      iconSrc: iconarrowup, // Adjust the path as needed
     },
     {
       header: '551',
       subheader: 'Total Coupons',
       percentage: '8%',
-      iconSrc: './assets/icon-arrow-narrow-up-2.svg', // Adjust the path as needed
+      iconSrc: iconarrowup2img // Adjust the path as needed
     },
     {
       header: '$8,723',
       subheader: 'Redeemed Amount',
       percentage: '8%',
-      iconSrc: './assets/icon-arrow-narrow-up-3.svg', // Adjust the path as needed
+      iconSrc: iconarrowup3img // Adjust the path as needed
     },
   ];
 
