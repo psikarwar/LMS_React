@@ -18,7 +18,7 @@ const ShoppingCart: React.FC = () => {
   // Dummy data for course cards
   const courseData = [
     {
-      imageSrc: './path/to/image1.jpg', // Replace with actual image paths
+      imageSrc: 'image3img', // Replace with actual image paths
       title: 'Course Title 1',
       instructor: 'Instructor 1',
       rating: 4.5,
@@ -29,7 +29,7 @@ const ShoppingCart: React.FC = () => {
       onClickRemove: () => alert('Removed Course 1!'),
     },
     {
-      imageSrc: './path/to/image2.jpg', // Replace with actual image paths
+      imageSrc: 'image3img', // Replace with actual image paths
       title: 'Course Title 2',
       instructor: 'Instructor 2',
       rating: 4.0,
@@ -40,7 +40,7 @@ const ShoppingCart: React.FC = () => {
       onClickRemove: () => alert('Removed Course 2!'),
     },
     {
-      imageSrc: './path/to/image3.jpg', // Replace with actual image paths
+      imageSrc: 'image3img', // Replace with actual image paths
       title: 'Course Title 3',
       instructor: 'Instructor 3',
       rating: 4.2,

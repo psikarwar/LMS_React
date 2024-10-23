@@ -1,39 +1,40 @@
 import React from 'react';
+import { checkboximg, checkimg2, checkimg3, checkimg4, checkimg5, videorecimg } from '../../images';
 
 const courseChapters = [
   {
     number: 1,
     title: "What is User Experience (UX) Design?",
-    checkbox: "./assets/checkbox.svg",
-    video: "./assets/video-recorder.svg",
+    checkbox: checkboximg,
+    video: videorecimg,
     dark: false,
   },
   {
     number: 2,
     title: "Historical Overview of UX Design",
-    checkbox: "./assets/checkbox-2.svg",
-    video: "./assets/video-recorder-2.svg",
+    checkbox: checkimg2,
+    video: videorecimg,
     dark: false,
   },
   {
     number: 3,
     title: "Understanding User-Centered Design",
-    checkbox: "./assets/checkbox-3.svg",
-    video: "./assets/video-recorder-3.svg",
+    checkbox: checkimg3,
+    video: videorecimg,
     dark: true,
   },
   {
     number: 4,
     title: "The Role of UX Design in Digital Products",
-    checkbox: "./assets/checkbox-4.svg",
-    video: "./assets/video-recorder-4.svg",
+    checkbox: checkimg4,
+    video: videorecimg,
     dark: false,
   },
   {
     number: 5,
     title: "Introduction to UX Design Tools and Techniques",
-    checkbox: "./assets/checkbox-5.svg",
-    video: "./assets/video-recorder-5.svg",
+    checkbox: checkimg5,
+    video: videorecimg,
     dark: false,
   },
 ];

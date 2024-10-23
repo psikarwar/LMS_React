@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { iconsvg2img, iconsvg3img, iconsvg4img, iconsvg5img, iconsvgimg } from '../../../images';
 
 type CategoryRatingProps = {
   title: string;
@@ -39,11 +40,11 @@ const FilterComponent: React.FC = () => {
     <div className="space-y-2">
       {/* Example ratings content (can be dynamically generated or fetched) */}
       <div className="flex space-x-1">
-        <img src="./assets/icon.svg" alt="Star icon" />
-        <img src="./assets/icon-2.svg" alt="Star icon" />
-        <img src="./assets/icon-3.svg" alt="Star icon" />
-        <img src="./assets/icon-4.svg" alt="Star icon" />
-        <img src="./assets/icon-5.svg" alt="Star icon" />
+        <img src={iconsvgimg} alt="Star icon" />
+        <img src={iconsvg2img} alt="Star icon" />
+        <img src={iconsvg3img} alt="Star icon" />
+        <img src={iconsvg4img} alt="Star icon" />
+        <img src={iconsvg5img} alt="Star icon" />
       </div>
     </div>
   );

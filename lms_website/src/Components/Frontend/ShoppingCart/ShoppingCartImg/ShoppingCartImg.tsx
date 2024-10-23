@@ -1,6 +1,6 @@
 // src/Components/Frontend/ShoppingCart/ShoppingCartImg.tsx
 import React from 'react';
-import img1 from '../../../../assets/image 3.svg';
+import { image3img, phosphorimg } from '../../../images';
 
 interface CourseCardProps {
   imageSrc: string;
@@ -27,7 +27,7 @@ const ShoppingCartImg: React.FC<CourseCardProps> = ({
   return (
     <div className="flex flex-col sm:flex-row items-center w-full max-w-[880px] h-auto bg-white rounded-lg border border-gray-300 p-4 box-border">
       <div className="flex items-start w-full">
-        <img src={img1} alt={title} className="w-[192px] h-[108px] object-cover rounded-lg" />
+        <img src={image3img} alt={title} className="w-[192px] h-[108px] object-cover rounded-lg" />
 
         <div className="flex flex-col gap-2 ml-4">
           <div className="font-semibold text-lg text-black">{title}</div>
@@ -38,7 +38,7 @@ const ShoppingCartImg: React.FC<CourseCardProps> = ({
               <span className="font-medium text-base text-yellow-500">{rating.toFixed(1)}</span>
               {[...Array(5)].map((_, index) => (
                 <img
-                  src={`./assets/phosphor-icons-star-${index + 3}.svg`}
+                  src={phosphorimg}
                   alt="star"
                   key={index}
                   className="w-4 h-4" // Responsive size

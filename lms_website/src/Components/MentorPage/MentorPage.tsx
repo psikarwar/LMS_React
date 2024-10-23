@@ -119,6 +119,7 @@ import React from 'react';
 import MentorInstructor from './MentorInstructor/MentorInstructor';
 import DesignCourse from '../Frontend/CategoryPage/DesignCourse/DesignCourse';
 import CourseReviews from '../Frontend/CoursePage/CourseReviews/CourseReviews'; // Import CourseReviews component
+import { rect1080img } from '../images';
 
 const MentorPage: React.FC = () => {
   const courses = [
@@ -131,7 +132,7 @@ const MentorPage: React.FC = () => {
       lectures: 155,
       level: "Beginner",
       price: "149.9",
-      imageSrc: "./assets/rectangle-1080.svg",
+      imageSrc: rect1080img
     },
     {
       title: "Beginner’s Guide to Design",
@@ -142,7 +143,7 @@ const MentorPage: React.FC = () => {
       lectures: 155,
       level: "Beginner",
       price: "149.9",
-      imageSrc: "./assets/rectangle-1080.svg",
+      imageSrc: rect1080img
     },
     {
       title: "Beginner’s Guide to Design",
@@ -153,7 +154,7 @@ const MentorPage: React.FC = () => {
       lectures: 155,
       level: "Beginner",
       price: "149.9",
-      imageSrc: "./assets/rectangle-1080.svg",
+      imageSrc: rect1080img
     },
     {
       title: "Beginner’s Guide to Design",
@@ -164,7 +165,7 @@ const MentorPage: React.FC = () => {
       lectures: 155,
       level: "Beginner",
       price: "149.9",
-      imageSrc: "./assets/rectangle-1080.svg",
+      imageSrc: rect1080img
     },
     {
       title: "Beginner’s Guide to Design",
@@ -175,7 +176,7 @@ const MentorPage: React.FC = () => {
       lectures: 155,
       level: "Beginner",
       price: "149.9",
-      imageSrc: "./assets/rectangle-1080.svg",
+      imageSrc: rect1080img
     },
     // Add more course data as needed
   ];

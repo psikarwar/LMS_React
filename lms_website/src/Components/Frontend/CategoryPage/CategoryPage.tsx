@@ -4,6 +4,7 @@ import PopularMentors from './PopularMentor/PopularMentor';
 // import Footer from '../../Footer/Footer';
 import CategoryRating from './CategoryRating/CategoryRating'; // Import the CategoryRating component
 import rightimg from '../../../../assets/chevron-right.svg';
+import { icondown, iconfilterimg, lefticonimg, rect1136img, rect1080img } from '../../images';
 
 // Mentor data arrays (same as provided)
 const mentorsSet1 = [
@@ -12,35 +13,35 @@ const mentorsSet1 = [
     role: 'UI/UX Designer',
     rating: '4.9',
     students: '2400 Students',
-    image: './assets/rectangle-1136.svg',
+    image: rect1136img
   },
   {
     name: 'Ronald Richards',
     role: 'UI/UX Designer',
     rating: '4.9',
     students: '2400 Students',
-    image: './assets/rectangle-1136.svg',
+    image: rect1136img,
   },
   {
     name: 'Ronald Richards',
     role: 'UI/UX Designer',
     rating: '4.9',
     students: '2400 Students',
-    image: './assets/rectangle-1136.svg',
+    image: rect1136img,
   },
   {
     name: 'Ronald Richards',
     role: 'UI/UX Designer',
     rating: '4.9',
     students: '2400 Students',
-    image: './assets/rectangle-1136.svg',
+    image: rect1136img,
   },
   {
     name: 'Ronald Richards',
     role: 'UI/UX Designer',
     rating: '4.9',
     students: '2400 Students',
-    image: './assets/rectangle-1136.svg',
+    image: rect1136img,
   },
   // Repeat as necessary
 ];
@@ -56,7 +57,7 @@ const courses = [
     lectures: 155,
     level: "Beginner",
     price: "149.9",
-    imageSrc: "./assets/rectangle-1080.svg",
+    imageSrc: rect1080img
   },
   {
     title: "Beginner’s Guide to Design",
@@ -67,7 +68,7 @@ const courses = [
     lectures: 155,
     level: "Beginner",
     price: "149.9",
-    imageSrc: "./assets/rectangle-1080.svg",
+    imageSrc: rect1080img
   },
   {
     title: "Beginner’s Guide to Design",
@@ -78,7 +79,7 @@ const courses = [
     lectures: 155,
     level: "Beginner",
     price: "149.9",
-    imageSrc: "./assets/rectangle-1080.svg",
+    imageSrc: rect1080img
   },
   {
     title: "Beginner’s Guide to Design",
@@ -89,7 +90,7 @@ const courses = [
     lectures: 155,
     level: "Beginner",
     price: "149.9",
-    imageSrc: "./assets/rectangle-1080.svg",
+    imageSrc: rect1080img
   },
   {
     title: "Beginner’s Guide to Design",
@@ -100,7 +101,7 @@ const courses = [
     lectures: 155,
     level: "Beginner",
     price: "149.9",
-    imageSrc: "./assets/rectangle-1080.svg",
+    imageSrc: rect1080img
   },
   {
     title: "Beginner’s Guide to Design",
@@ -111,7 +112,7 @@ const courses = [
     lectures: 155,
     level: "Beginner",
     price: "149.9",
-    imageSrc: "./assets/rectangle-1080.svg",
+    imageSrc: rect1080img
   },
   {
     title: "Beginner’s Guide to Design",
@@ -122,7 +123,7 @@ const courses = [
     lectures: 155,
     level: "Beginner",
     price: "149.9",
-    imageSrc: "./assets/rectangle-1080.svg",
+    imageSrc: rect1080img
   },
   {
     title: "Beginner’s Guide to Design",
@@ -133,7 +134,7 @@ const courses = [
     lectures: 155,
     level: "Beginner",
     price: "149.9",
-    imageSrc: "./assets/rectangle-1080.svg",
+    imageSrc: rect1080img
   },
   {
     title: "Beginner’s Guide to Design",
@@ -144,7 +145,7 @@ const courses = [
     lectures: 155,
     level: "Beginner",
     price: "149.9",
-    imageSrc: "./assets/rectangle-1080.svg",
+    imageSrc: rect1080img
   },  
   // Repeat as necessary
 ];
@@ -162,14 +163,14 @@ function CategoryPage() {
 
         <div className="flex justify-between mb-10 flex-wrap">
           <button className="flex items-center px-6 py-2.5 bg-white border border-gray-200 rounded-lg text-sm cursor-pointer">
-            <img src="./assets/icon-filter.svg" alt="Filter Icon" className="mr-2" />
+            <img src={iconfilterimg} alt="Filter Icon" className="mr-2" />
             Filter
           </button>
           <div className="flex items-center">
             <span className="text-base mr-4">Sort By</span>
             <button className="flex items-center px-6 py-2.5 bg-white border border-gray-200 rounded-lg text-sm cursor-pointer">
               Relevance
-              <img src="./assets/icon-down-chevron.svg" alt="Down Chevron" className="ml-2" />
+              <img src={icondown} alt="Down Chevron" className="ml-2" />
             </button>
           </div>
         </div>
@@ -206,7 +207,7 @@ function CategoryPage() {
             {/* Pagination */}
             <div className="flex justify-center items-center gap-2 mt-10">
               <button className="bg-white border border-gray-200 rounded-lg p-3 cursor-pointer">
-                <img src="./assets/icon-left-chevron.svg" alt="Left Chevron" />
+                <img src={lefticonimg} alt="Left Chevron" />
               </button>
               <button className="bg-white border border-gray-200 rounded-lg p-3 font-semibold text-gray-900">1</button>
               <button className="bg-white border border-gray-200 rounded-lg p-3">2</button>

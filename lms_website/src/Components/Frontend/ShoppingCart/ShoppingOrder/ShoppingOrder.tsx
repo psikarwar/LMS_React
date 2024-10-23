@@ -1,5 +1,6 @@
 // src/Components/Frontend/ShoppingOrder/ShoppingOrder.tsx
 import React from 'react';
+import { lin23img } from '../../../images';
 
 interface OrderDetailsProps {
   price: string;
@@ -30,7 +31,7 @@ const ShoppingOrder: React.FC<OrderDetailsProps> = ({
           <span className="font-normal text-base text-gray-800">Tax</span>
           <span className="font-semibold text-lg text-gray-800 text-right">{tax}</span>
         </div>
-        <img src="./assets/line-23.svg" alt="separator" className="w-full" />
+        <img src={lin23img} alt="separator" className="w-full" />
         <div className="flex justify-between w-full pt-2 border-t border-gray-300">
           <span className="font-normal text-lg text-gray-800">Total</span>
           <span className="font-semibold text-xl text-gray-800 text-right">{total}</span>

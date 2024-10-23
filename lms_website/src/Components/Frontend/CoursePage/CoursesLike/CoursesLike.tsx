@@ -1,4 +1,5 @@
 import React from 'react';
+import { iconsvgimg, rect1080img } from '../../../images';
 
 type CourseCardProps = {
   image: string;
@@ -30,7 +31,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
         <p className="text-sm text-gray-500">{author}</p>
         <div className="flex items-center mt-2">
           {[...Array(5)].map((_, i) => (
-            <img key={i} src="./assets/icon.svg" alt="Star" className="w-4 h-4 mr-1" />
+            <img key={i} src={iconsvgimg} alt="Star" className="w-4 h-4 mr-1" />
           ))}
           <span className="ml-2 text-sm font-semibold text-gray-500">({ratingCount} Ratings)</span>
         </div>
@@ -46,7 +47,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
 const CoursesLike: React.FC = () => {
   const courses = [
     {
-      image: './assets/rectangle-1080.svg',
+      image: rect1080img,
       title: "Beginner’s Guide to Design",
       author: 'By Ronald Richards',
       ratingCount: 1200,
@@ -56,7 +57,7 @@ const CoursesLike: React.FC = () => {
       price: '$149.9',
     },
     {
-      image: './assets/rectangle-1080.svg',
+      image: rect1080img,
       title: 'Advanced UX Design',
       author: 'By Alice Johnson',
       ratingCount: 950,
@@ -66,7 +67,7 @@ const CoursesLike: React.FC = () => {
       price: '$199.9',
     },
     {
-      image: './assets/rectangle-1080.svg',
+      image: rect1080img,
       title: 'Advanced UX Design',
       author: 'By Alice Johnson',
       ratingCount: 950,
@@ -76,7 +77,7 @@ const CoursesLike: React.FC = () => {
       price: '$199.9',
     },
     {
-      image: './assets/rectangle-1080.svg',
+      image: rect1080img,
       title: 'Advanced UX Design',
       author: 'By Alice Johnson',
       ratingCount: 950,

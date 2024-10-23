@@ -1,5 +1,6 @@
 // src/Components/Frontend/ShoppingCart/ShoppingCartMenu/ShoppingCartMenu.tsx
 import React from 'react';
+import { iconrightimg } from '../../../images';
 
 interface BreadcrumbItem {
   label: string;
@@ -22,7 +23,7 @@ const ShoppingCartMenu: React.FC<ShoppingCartMenuProps> = ({ items }) => {
             </span>
             {index < items.length - 1 && (
               <img
-                src={`./assets/icon-chevron-right-small${index === items.length - 2 ? '-2' : ''}.svg`}
+                src={iconrightimg}
                 alt=">"
                 className="w-5 h-5"
               />

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { elipse5img, global2img, iconrightimg, phosphorimg } from '../../../images';
 
 interface CourseDesignProps {
   title: string;
@@ -30,11 +31,11 @@ const CourseDesign: React.FC<CourseDesignProps> = ({
       <nav className="flex items-center gap-2 mb-4 sm:mb-8 text-xs sm:text-sm text-gray-500">
         <Link to="/homescreen">
         <span className="hover:text-blue-500 cursor-pointer">Home</span></Link> 
-        <img src="./assets/icon-chevron-right-small.svg" alt="chevron right" />
+        <img src={iconrightimg} alt="chevron right" />
         <Link to="/category">
         <span className="hover:text-blue-500 cursor-pointer">Categories</span>
         </Link>
-        <img src="./assets/icon-chevron-right-small.svg" alt="chevron right" />
+        <img src={iconrightimg} alt="chevron right" />
         <span className="text-blue-600 cursor-pointer">Introduction to User Experience Design</span>
       </nav>
 
@@ -50,7 +51,7 @@ const CourseDesign: React.FC<CourseDesignProps> = ({
             {[...Array(5)].map((_, index) => (
               <img
                 key={index}
-                src="./assets/phosphor-icons-star.svg"
+                src={phosphorimg}
                 alt="star"
                 className="w-4 sm:w-5 h-4 sm:h-5"
               />
@@ -65,13 +66,13 @@ const CourseDesign: React.FC<CourseDesignProps> = ({
 
         {/* Creator */}
         <div className="flex items-center gap-2 mb-4">
-          <img src="./assets/ellipse-5.svg" alt="creator" className="w-6 sm:w-8 h-6 sm:h-8 rounded-full" />
+          <img src={elipse5img} alt="creator" className="w-6 sm:w-8 h-6 sm:h-8 rounded-full" />
           <span className="text-gray-600 text-xs sm:text-sm">Created by {creatorName}</span>
         </div>
 
         {/* Languages */}
         <div className="flex items-center gap-2">
-          <img src="./assets/globe-02.svg" alt="languages" className="w-4 sm:w-5 h-4 sm:h-5" />
+          <img src={global2img} alt="languages" className="w-4 sm:w-5 h-4 sm:h-5" />
           <span className="text-gray-600 text-xs sm:text-sm">{languages.join(', ')}</span>
         </div>
       </div>

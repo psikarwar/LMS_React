@@ -72,7 +72,7 @@ const CoursePage: React.FC = () => {
           <CourseInstructor
             name="Ronald Richards"
             role="UI/UX Designer"
-            imageSrc="./assets/ellipse-4.svg"
+            imageSrc= 'elipse4img'
             reviews={40445}
             students={500}
             courses={15}

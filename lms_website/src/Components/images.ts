@@ -7,6 +7,9 @@ import icondown from '../newassets/Frontendimg/icon-down-chevron-2.svg'
 import pp from '../newassets/Frontendimg/pp.svg'
 import line1 from '../newassets/Frontendimg/line.svg'
 import iconshare from '../newassets/Frontendimg/iconshare.svg'
+
+
+
 // export  {db};
 import iconmail from '../newassets/Frontendimg/icon-mail.svg'
 import iconfilter from '../newassets/Frontendimg/icon-filter.svg'

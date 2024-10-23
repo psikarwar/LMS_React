@@ -1,4 +1,5 @@
 import React from 'react';
+import { iconsvgimg, line55img } from '../../../images';
 
 // Define Mentor type
 type Mentor = {
@@ -38,13 +39,13 @@ const PopularMentor: React.FC<{ mentors: Mentor[] }> = ({ mentors }) => {
               </p>
               <img
                 className="w-[180px] mx-auto my-4"
-                src="./assets/line-55.svg"
+                src={line55img}
                 alt="Divider"
               />
               <div className="flex justify-between items-center text-xs leading-[14.52px]">
                 <div className="flex items-center">
                   <img
-                    src="./assets/icon.svg"
+                    src={iconsvgimg}
                     alt="Star"
                     className="mr-1"
                   />
