@@ -1,18 +1,11 @@
 // src/Components/Frontend/CheckoutPage.tsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { greaterthan, visa, paypal , rectangle1133 , percent } from '../../images';
-
-
-// import Header from '../../Header/Header'; // Import the Header component
-// import Footer from '../../Footer/Footer'; // Import the Footer component
+import { greaterthan, visa, paypal, rectangle1133, percent } from '../../images';
 
 const CheckoutPage: React.FC = () => {
   return (
     <div className="font-sans text-gray-800">
-      {/* Add the Header component */}
-      {/* <Header /> */}
-
       <div className="p-6 lg:p-20">
         <div className="flex items-center text-sm mb-6">
           <span>Details</span>
@@ -47,51 +40,55 @@ const CheckoutPage: React.FC = () => {
             </div>
             <h3 className="mt-6 text-xl font-semibold">Payment Method</h3>
             <div className="mt-4 space-y-6">
-              <div>
-                <input type="radio" name="payment" id="card" />
-                <label htmlFor="card" className="ml-2">Credit/Debit Card</label>
-                <img src={visa} alt="Card icons" className="ml-4" />
-                <div className="space-y-4 mt-4">
-                  <div className="mb-4">
-                    <label className="block font-semibold mb-1">Name of Card</label>
+              <div className="flex items-center justify-between">
+                <div className="flex items-center">
+                  <input type="radio" name="payment" id="card" />
+                  <label htmlFor="card" className="ml-2">Credit/Debit Card</label>
+                </div>
+                <img src={visa} alt="Card icons" className="w-12 h-auto" />
+              </div>
+              <div className="space-y-4 mt-4">
+                <div className="mb-4">
+                  <label className="block font-semibold mb-1">Name of Card</label>
+                  <input
+                    type="text"
+                    placeholder="Name of card"
+                    className="w-full p-3 border border-gray-300 rounded-lg"
+                  />
+                </div>
+                <div className="mb-4">
+                  <label className="block font-semibold mb-1">Card Number</label>
+                  <input
+                    type="text"
+                    placeholder="Card Number"
+                    className="w-full p-3 border border-gray-300 rounded-lg"
+                  />
+                </div>
+                <div className="flex flex-col sm:flex-row space-x-0 sm:space-x-4">
+                  <div className="w-full sm:w-1/2 mb-4">
+                    <label className="block font-semibold mb-1">Expiry Date</label>
                     <input
                       type="text"
-                      placeholder="Name of card"
+                      placeholder="MM/YY"
                       className="w-full p-3 border border-gray-300 rounded-lg"
                     />
                   </div>
-                  <div className="mb-4">
-                    <label className="block font-semibold mb-1">Card Number</label>
+                  <div className="w-full sm:w-1/2 mb-4">
+                    <label className="block font-semibold mb-1">CVC/CVV</label>
                     <input
                       type="text"
-                      placeholder="Card Number"
+                      placeholder="CVC/CVV"
                       className="w-full p-3 border border-gray-300 rounded-lg"
                     />
-                  </div>
-                  <div className="flex flex-col sm:flex-row space-x-0 sm:space-x-4">
-                    <div className="w-full sm:w-1/2 mb-4">
-                      <label className="block font-semibold mb-1">Expiry Date</label>
-                      <input
-                        type="text"
-                        placeholder="MM/YY"
-                        className="w-full p-3 border border-gray-300 rounded-lg"
-                      />
-                    </div>
-                    <div className="w-full sm:w-1/2 mb-4">
-                      <label className="block font-semibold mb-1">CVC/CVV</label>
-                      <input
-                        type="text"
-                        placeholder="CVC/CVV"
-                        className="w-full p-3 border border-gray-300 rounded-lg"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
-              <div>
-                <input type="radio" name="payment" id="paypal" />
-                <label htmlFor="paypal" className="ml-2">PayPal</label>
-                <img src={paypal} alt="PayPal" className="ml-4" />
+              <div className="flex items-center justify-between">
+                <div className="flex items-center">
+                  <input type="radio" name="payment" id="paypal" />
+                  <label htmlFor="paypal" className="ml-2">PayPal</label>
+                </div>
+                <img src={paypal} alt="PayPal" className="w-12 h-auto" />
               </div>
             </div>
           </section>
@@ -138,9 +135,6 @@ const CheckoutPage: React.FC = () => {
           </aside>
         </main>
       </div>
-
-      {/* Render the Footer component at the end */}
-      {/* <Footer /> */}
     </div>
   );
 };

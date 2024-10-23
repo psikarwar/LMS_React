@@ -1,5 +1,5 @@
 import React from 'react';
-import { checkboximg, checkimg2, checkimg3, checkimg4, checkimg5, videorecimg } from '../../images';
+import { checkboximg, checkimg2, checkimg3, checkimg4, checkimg5, icondown, videorecimg } from '../../images';
 
 const courseChapters = [
   {
@@ -50,7 +50,7 @@ const OrderCompletion: React.FC = () => {
         {/* Course Section */}
         <div className="cursor-pointer px-6 py-4 flex justify-between items-center border-b border-gray-200 hover:bg-gray-50">
           <div className="flex items-center space-x-4">
-            <img src="./assets/chevron-down.svg" alt="Expand" className="w-4 h-4" />
+            <img src={icondown} alt="Expand" className="w-4 h-4" />
             <span className="text-lg font-semibold text-gray-900">Introduction to UX Design</span>
           </div>
         </div>

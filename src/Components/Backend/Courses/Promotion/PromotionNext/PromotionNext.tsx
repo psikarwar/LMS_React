@@ -31,10 +31,10 @@ const PromotionNext: React.FC<PromotionNextProps> = ({ totalResults, resultsPerP
         {/* Previous Button */}
         <button
           className={`px-4 py-2 rounded-lg text-sm font-medium ${
-            currentPage === 1 ? 'text-gray-400 cursor-not-allowed' : 'text-gray-700'
+            currentPage === totalPages ? 'text-gray-400 cursor-not-allowed' : 'text-gray-900'
           }`}
           onClick={handlePrev}
-          disabled={currentPage === 1}
+          disabled={currentPage === totalPages}
         >
           Prev
         </button>

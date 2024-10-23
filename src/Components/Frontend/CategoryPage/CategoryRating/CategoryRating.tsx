@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { icondown, iconup } from '../../../images';
 // import { iconsvg2img, iconsvg3img, iconsvg4img, iconsvg5img, iconsvgimg } from '../../../images';
 
 type CategoryRatingProps = {
@@ -21,7 +22,7 @@ const CategoryRating: React.FC<CategoryRatingProps> = ({ title, content }) => {
       >
         {title}
         <img 
-          src={isOpen ? './assets/icon-chevron-up.svg' : './assets/icon-chevron-down.svg'} 
+          src={isOpen ? iconup : icondown} 
           alt="Toggle icon"
           className="w-4 h-4"
         />

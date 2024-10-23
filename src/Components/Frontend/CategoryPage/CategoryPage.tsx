@@ -13,14 +13,14 @@ const mentorsSet1 = [
     role: 'UI/UX Designer',
     rating: '4.9',
     students: '2400 Students',
-    image: iconchright
+    image: rect1136img
   },
   {
     name: 'Ronald Richards',
     role: 'UI/UX Designer',
     rating: '4.9',
     students: '2400 Students',
-    image: iconchright,
+    image: rect1136img,
   },
   {
     name: 'Ronald Richards',

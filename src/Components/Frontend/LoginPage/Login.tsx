@@ -8,7 +8,7 @@ const Login: React.FC = () => {
       {/* Include the Header component above the main content */}
       {/* <Header /> */}
 
-      <main className="flex flex-col lg:flex-row justify-between py-10 lg:px-20">
+      <main className="flex flex-col lg:flex-row justify-between py-10 lg:px-7"> {/* Reduced padding on the right side */}
         <div className="max-w-lg mx-auto lg:mx-0">
           <h2 className="text-3xl font-semibold text-gray-900 mb-6">Sign in to your account</h2>
           <div className="mb-6">
@@ -35,7 +35,6 @@ const Login: React.FC = () => {
           </Link>
           <div className="flex items-center gap-3 justify-center mb-6">
             <img src={lin34img} alt="Line" className="hidden lg:block" />
-            {/* Added whitespace-nowrap to keep the text in one line */}
             <span className="text-gray-400 whitespace-nowrap">Sign in with</span>
             <img src={line35img} alt="Line" className="hidden lg:block" />
           </div>
@@ -54,9 +53,12 @@ const Login: React.FC = () => {
             </button>
           </div>
         </div>
-        <div className="max-w-2xl mx-auto mt-10 lg:mt-0 lg:ml-80">
-          {/* Set the height of the image to 32rem explicitly */}
-          <img src={frameimg} alt="People reading"  className="max-w-full h-screen object-right" style={{ height: '32rem' }} />
+        <div className="max-w-2xl mx-auto mt-10 lg:mt-0 lg:relative lg:w-full "> {/* Reduced right padding */}
+          <img 
+            src={frameimg} 
+            alt="People reading" 
+            className="w-30 h-[30rem] object-cover lg:absolute lg:right-[-60px]"/>  {/* Adjusted right alignment */}
+           {/* Slightly more right */}
         </div>
       </main>
     </div>

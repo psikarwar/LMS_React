@@ -21,11 +21,13 @@ const SettingContent: React.FC = () => {
         <div className="flex p-4 bg-white border border-gray-300 rounded-lg">
           <div className="text-base font-normal leading-6 text-gray-600">Requirements</div>
         </div>
-        <button className="flex items-center py-2 px-6 bg-transparent border-none cursor-pointer">
-          <span className="text-sm font-medium leading-6 text-blue-600">Add More Requirements</span>
-          <img src={iconplusimg} alt="plus icon" className="ml-2 w-6 h-6" />
-        </button>
       </div>
+
+      {/* Moved the Add More Requirements button in the middle */}
+      <button className="flex items-center py-2 px-6 bg-transparent border-none cursor-pointer">
+        <span className="text-sm font-medium leading-6 text-blue-600">Add More Requirements</span>
+        <img src={iconplusimg} alt="plus icon" className="ml-2 w-6 h-6" />
+      </button>
 
       <div className="flex flex-col gap-2">
         <h2 className="text-lg font-semibold leading-6 text-gray-900">Who is this course for?</h2>
