@@ -141,6 +141,7 @@ const router = createBrowserRouter(
         <Route index element={<DashBoard />} />
         <Route path="Maincourse" element={<Maincourse />} />
         <Route path="Courses" element={<Courses />}>
+         <Route index element={<Commission />} />
           <Route path="commission" element={<Commission />} />
           <Route path="chapter" element={<Chapter />} />
           <Route path="/admin/Courses/chapter/chapterdetail/:id" element={<ChapterDetails />} />
