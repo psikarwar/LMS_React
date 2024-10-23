@@ -41,13 +41,14 @@ import girl from '../newassets/Frontendimg/learninggirl.svg';
 import facebook from '../newassets/Frontendimg/Facebbok.svg';
 import Google from '../newassets/Frontendimg/Google.svg';
 import Microsoft from '../newassets/Frontendimg/Microsoft.svg';
+import greaterthan from '../newassets/Frontendimg/greaterthan.svg';
  
 
 export {ellipse139,db,ellipse140,search,icondown,pp,line1,iconshare,iconmail,iconfilter
     ,iconhorizontal,icon2,icon3,icon4,icon5,icon6,iconchleft,iconchright,iconup,logo,
     magnifyingglass,iconcart, socialmedia,rectangle1080,rectangle1136,quotes,leftarrow,rightarrow,
     ellipse61,Eduimg1,Eduimg2,iconrightarrow,telescope,development,Marketing , Physics , girl , 
-    facebook , Google , Microsoft };
+    facebook , Google , Microsoft , greaterthan};
 
 //BackendImages
 import graph1 from '../newassets/Backendimg/icon-graph.svg'
