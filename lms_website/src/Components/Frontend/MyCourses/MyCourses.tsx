@@ -66,7 +66,7 @@ import React from 'react';
 import './MyCourses.css'; // Import custom CSS for additional styles
 import Pagination from '../Pagination/Pagination';
 // import search from '../../../assets/myassets/search.svg';
-import { search } from '../../images';
+import { search,iconfilter,icondown} from '../../images';
 
 
 const MyCourses: React.FC = () => {
@@ -88,10 +88,10 @@ const MyCourses: React.FC = () => {
               <div className="flex space-x-2">
                 <button className="flex items-center border border-gray-300 rounded-lg py-2 px-3">
                   Sort By
-                  <img src="./assets/icon-down-chevron.svg" alt="Sort" className="w-4 h-4 ml-1" />
+                  <img src={icondown} alt="Sort" className="w-4 h-4 ml-1" />
                 </button>
                 <button className="flex items-center border border-gray-300 rounded-lg py-2 px-3">
-                  <img src="./assets/icon-filter.svg" alt="Filter" className="w-4 h-4 mr-1" />
+                  <img src={iconfilter} alt="Filter" className="w-4 h-4 mr-1" />
                   Filter
                 </button>
               </div>

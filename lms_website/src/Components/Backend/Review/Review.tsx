@@ -1,4 +1,6 @@
 import React from 'react';
+import { icon2, icon3, icon4, icon5, icon6 } from '../../images';
+
 
 interface ReviewProps {
   courseName: string;
@@ -16,18 +18,21 @@ const Review: React.FC<ReviewProps> = ({
   rating,
   reviewText,
   optionsIconSrc,
-}) => (
+}) => {
+  const starIcons = [icon2, icon3, icon4, icon5, icon6];
+
+  return(
   <div className="p-6 bg-white border border-gray-300 rounded-lg lg:w-full sm:w-11/12 md:w-4/5 lg:w-2/3  ">
     <div className="mb-4">
       <div className="mt-4 flex items-center">
         <span className="mr-2 text-sm sm:text-base">Rating: </span>
         <div className="flex">
-          {[...Array(5)].map((_, index) => (
+        {starIcons.map((icon, index) => (
             <img
               key={index}
-              src={`./assets/icon-${index + 2}.svg`}
-              alt="Star"
-              className={`w-4 h-4 sm:w-5 sm:h-5 ${index < rating ? 'opacity-100' : 'opacity-30'}`}
+              src={icon}
+              alt={`Star ${index + 1}`}
+              className={index < rating ? "opacity-100" : "opacity-30"}
             />
           ))}
         </div>
@@ -43,7 +48,7 @@ const Review: React.FC<ReviewProps> = ({
     </div>
     <p className="text-gray-700 opacity-80 font-normal text-sm sm:text-base">{reviewText}</p>
   </div>
-);
+)};
 
 export default Review;
 

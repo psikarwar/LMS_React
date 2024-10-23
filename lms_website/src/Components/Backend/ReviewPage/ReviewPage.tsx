@@ -71,7 +71,7 @@ const ReviewPage: React.FC = () => {
   return (
     <div>
       <section className="flex flex-wrap gap-2 mb-6">
-        <Badge label="Total Reviews" value="1000" />
+        <Badge label="Total Reviews" value="1000" color='#000000' />
         <Badge label="1 star reviews" value="100" color="#ef4444" />
         <Badge label="2 star reviews" value="100" color="#ca8a04" />
         <Badge label="3 star reviews" value="100" color="#facc15" />

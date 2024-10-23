@@ -1,6 +1,5 @@
 import React from 'react';
-import search from '../../../../../assets/search.svg'
-import filter from '../../../../../assets/icon-filter.svg'
+import { iconfilter, search } from '../../images';
 
 const transactions = [
   { customer: 'Jon Doe', date: '12/04/2024', type: 'Credit', amount: '$95.00' },
@@ -35,7 +34,7 @@ const Transactions: React.FC = () => {
           </div>
           <div className="flex items-center cursor-pointer space-x-2">
             <span className="text-gray-700">Filter</span>
-            <img src={filter} alt="Filter" className="h-5 w-5" />
+            <img src={iconfilter} alt="Filter" className="h-5 w-5" />
           </div>
         </div>
       </div>
