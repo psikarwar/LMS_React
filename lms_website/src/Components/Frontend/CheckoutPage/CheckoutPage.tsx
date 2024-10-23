@@ -1,6 +1,7 @@
 // src/Components/Frontend/CheckoutPage.tsx
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { greaterthan } from '../../images';
 // import Header from '../../Header/Header'; // Import the Header component
 // import Footer from '../../Footer/Footer'; // Import the Footer component
 
@@ -13,11 +14,11 @@ const CheckoutPage: React.FC = () => {
       <div className="p-6 lg:p-20">
         <div className="flex items-center text-sm mb-6">
           <span>Details</span>
-          <img src="./assets/icon-chevron-right-small.svg" alt="Chevron" className="mx-2" />
+          <img src={greaterthan} alt="Chevron" className="mx-2" />
           <Link to="/shopping">
             <span>Shopping Cart</span>
           </Link>
-          <img src="./assets/icon-chevron-right-small.svg" alt="Chevron" className="mx-2" />
+          <img src={greaterthan} alt="Chevron" className="mx-2" />
           <span className="text-blue-600 font-semibold">Checkout</span>
         </div>
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import girl from './learninggirl.svg';
+import { girl } from '../../images';
 const LearningImage: React.FC = () => {
   return (
     <div className="absolute inset-1 z-0">

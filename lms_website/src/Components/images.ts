@@ -7,8 +7,7 @@ import icondown from '../newassets/Frontendimg/icon-down-chevron-2.svg'
 import pp from '../newassets/Frontendimg/pp.svg'
 import line1 from '../newassets/Frontendimg/line.svg'
 import iconshare from '../newassets/Frontendimg/iconshare.svg'
-
-export {ellipse139,db,ellipse140,search,icondown,pp,line1,iconshare};
+export {ellipse139,db,ellipse140,search,icondown,pp,line1,iconshare,};
 // export  {db};
 
 //BackendImages

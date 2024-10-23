@@ -1,4 +1,8 @@
 import React from 'react';
+import { facebook } from '../../images';
+import { Google } from '../../images';
+import { Microsoft } from '../../images';
+import { iconrightarrow } from '../../images';
 
 const App: React.FC = () => {
   return (
@@ -75,7 +79,7 @@ const App: React.FC = () => {
             className="w-full py-3 bg-slate-900 text-white text-center font-medium rounded-lg flex items-center justify-center gap-2 hover:bg-slate-800 transition"
           >
             <span>Create Account</span>
-            <img src="./assets/icon-arrow-narrow-right.svg" alt="arrow" />
+            <img src={iconrightarrow} alt="arrow" />
           </button>
         </form>
 
@@ -89,16 +93,16 @@ const App: React.FC = () => {
         {/* Social Sign-up Buttons */}
         <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
           <button className="flex items-center justify-center w-full md:w-1/3 py-3 border border-gray-300 rounded-lg bg-white hover:bg-gray-100">
-            <img src="./assets/facebook-logo-primary-2.svg" alt="Facebook" className="w-6 h-6" />
-            <span className="ml-2">Facebook</span>
+            <img src={facebook} alt="Facebook" className="w-18 h-6" />
+            <span className="ml-2"></span>
           </button>
           <button className="flex items-center justify-center w-full md:w-1/3 py-3 border border-gray-300 rounded-lg bg-white hover:bg-gray-100">
-            <img src="./assets/google.svg" alt="Google" className="w-6 h-6" />
-            <span className="ml-2 text-red-500">Google</span>
+            <img src={Google} alt="Google" className="w-18 h-6" />
+            <span className="ml-2 text-red-500"></span>
           </button>
           <button className="flex items-center justify-center w-full md:w-1/3 py-3 border border-gray-300 rounded-lg bg-white hover:bg-gray-100">
-            <img src="./assets/providers-image-1.svg" alt="Microsoft" className="w-6 h-6" />
-            <span className="ml-2">Microsoft</span>
+            <img src={Microsoft} alt="Microsoft" className="w-18 h-6" />
+            <span className="ml-2"></span>
           </button>
         </div>
       </div>
