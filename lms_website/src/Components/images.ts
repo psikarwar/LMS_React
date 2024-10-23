@@ -45,8 +45,7 @@ import facebook from '../newassets/Frontendimg/Facebbok.svg';
 import Google from '../newassets/Frontendimg/Google.svg';
 import Microsoft from '../newassets/Frontendimg/Microsoft.svg';
 
-
-import rightimg from '../newassets/Frontendimg/icon-arrow-narrow-right.svg'
+import rightimg from '../newassets/Frontendimg/iconrightarrow.svg';
 import lin34img from '../newassets/Frontendimg/line-34.svg'
 import line35img from '../newassets/Frontendimg/line-35.svg'
 import facebookimg from '../newassets/Frontendimg/facebook-logo-primary-2.svg'
@@ -95,8 +94,6 @@ import paypal from '../newassets/Frontendimg/paypal.svg';
 import rectangle1133 from '../newassets/Frontendimg/rectangle1133.svg';
 import percent from '../newassets/Frontendimg/percent.svg';
 import subwaytick from '../newassets/Frontendimg/subwaytick.svg';
- 
-
 export {ellipse139,db,ellipse140,search,icondown,pp,line1,iconshare,iconmail,iconfilter
     ,iconhorizontal,icon2,icon3,icon4,icon5,icon6,iconchleft,iconchright,iconup,logo,
     magnifyingglass,iconcart, socialmedia,rectangle1080,rectangle1136,quotes,leftarrow,rightarrow,

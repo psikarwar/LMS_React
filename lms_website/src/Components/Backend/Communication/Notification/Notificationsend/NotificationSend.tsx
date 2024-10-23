@@ -1,5 +1,6 @@
 import React from 'react'
-import im1 from '../../../../../assets/Backend/notification/dot.svg';
+import { im1 } from '../../../../images';
+import { rect1086img } from '../../../../images';
 import { NavLink } from 'react-router-dom';
 
 
@@ -42,7 +43,7 @@ const NotificationSend: React.FC = () => {
                 <div className="mt-6">
                     <span className="text-sm text-gray-700 mb-2 block">Upload Thumbnail</span>
                     <div className="flex flex-col items-center p-5 rounded-lg border border-gray-200 bg-white">
-                        <img src="./assets/icon-add-image.svg" alt="upload" className="w-6 h-6 mb-3" />
+                        <img src={rect1086img} alt="upload" className="w-6 h-6 mb-3" />
                         <span className="text-lg font-semibold text-gray-900 text-center">
                             Drag and drop files, or <span className="text-blue-500 cursor-pointer">Browse</span>
                         </span>

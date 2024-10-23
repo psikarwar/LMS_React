@@ -159,6 +159,7 @@ const router = createBrowserRouter(
         </Route>
 
         <Route path="communication" element={<Communication />}>
+          <Route index element={<CommunicationReview />} />
           <Route path="commn-review" element={<CommunicationReview />} />
           <Route path="message" element={<Message />} />
 
