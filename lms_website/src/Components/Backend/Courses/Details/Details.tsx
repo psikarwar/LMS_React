@@ -7,6 +7,8 @@ import iconp from '../../../../assets/Backend/detail/iconplus.svg';
 import richt from '../../../../assets/Backend/detail/richtext.svg';
 import rect from '../../../../assets/Backend/detail/rectangle1026.svg';
 import iconx from '../../../../assets/Backend/detail/iconx.svg'
+import addimage from '../../../../assets/Backend/detail/Addimage.svg';
+import downarrow from '../../../../assets/Backend/detail/downarrow.svg';
 
 const Details: React.FC = () => {
   return (
@@ -56,7 +58,7 @@ const Details: React.FC = () => {
             <div className="flex flex-col gap-2">
               <span className="text-sm font-normal text-gray-600">Upload Intro Image</span>
               <div className="p-5 border border-gray-200 bg-white rounded-lg flex flex-col items-center gap-3 text-center w-5/6">
-                <img src="./assets/icon-add-image.svg" alt="Upload Image Icon" className="w-6 h-6" />
+                <img src={addimage} alt="Upload Image Icon" className="w-6 h-6" />
                 <span className="text-lg font-semibold text-gray-900">
                   Drag and drop files, or <span className="text-blue-500 cursor-pointer">Browse</span>
                 </span>
@@ -98,7 +100,7 @@ const Details: React.FC = () => {
             <label className="text-sm text-gray-700 mb-2 block">Language</label>
             <div className="flex items-center justify-between relative">
               <span className="text-base text-gray-900">English</span>
-              <img src="./assets/icon-down-chevron.svg" alt="dropdown" className="w-6 h-6" />
+              <img src={downarrow} alt="dropdown" className="w-6 h-6" />
             </div>
           </div>
 
@@ -113,7 +115,7 @@ const Details: React.FC = () => {
                 <span className="text-xs font-semibold text-gray-900">Spanish</span>
                 <img src={iconx} alt="remove" className="w-4 h-4" />
               </div>
-               <img src="./assets/icon-down-chevron.svg" alt="dropdown" className="w-6 h-6 ml-20" />
+               <img src={downarrow} alt="dropdown" className="w-6 h-6 ml-24" />
             </div>
           </div>
 
@@ -121,7 +123,7 @@ const Details: React.FC = () => {
             <label className="text-sm text-gray-700 mb-2 block">Level</label>
             <div className="flex items-center justify-between relative">
               <span className="text-base text-yellow-500">Beginner</span>
-              <img src="./assets/icon-down-chevron.svg" alt="dropdown" className="w-6 h-6" />
+              <img src={downarrow} alt="dropdown" className="w-6 h-6" />
             </div>
           </div>
         </div>
