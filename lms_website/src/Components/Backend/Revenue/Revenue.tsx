@@ -2,17 +2,12 @@ import React from 'react';
 import AnalyticsBanner from './AnalyticsBanner';
 import Transactions from './Transactions';
 import LineChart from '../../LineChart/LineChart';
-import im1 from '../../../../../assets/icon-horizontal-dots.svg'
+import { iconhorizontal } from '../../images';
 
 const Revenue: React.FC = () => {
     const labels = ['January', 'February', 'March', 'April', 'May', 'June'];
     const datasets = [
-    //   {
-    //     label: '2023 Sales',
-    //     data: [65, 59, 80, 81, 56, 55],
-    //     borderColor: '#4f46e5',
-    //     backgroundColor: 'rgba(79, 70, 229, 0.1)',
-    //   },
+
       {
         label: '2024 Sales',
         data: [75, 60, 70, 90, 65, 60],
@@ -31,7 +26,7 @@ const Revenue: React.FC = () => {
     <div className="p-6">
       <div className="flex justify-between items-center mb-6" >
         <h1 className="text-2xl font-bold">Revenue Analytics</h1>
-        <img src={im1} alt="Options" className="h-6 w-6 cursor-pointer" />
+        <img src={iconhorizontal} alt="Options" className="h-6 w-6 cursor-pointer" />
       </div>
       <AnalyticsBanner />
       <LineChart labels={labels} datasets={datasets} canvasWidth="max-w-xl" canvasHeight="h-80" />
