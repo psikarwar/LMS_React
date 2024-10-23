@@ -1,4 +1,5 @@
 import React from 'react';
+import { elipse19img, iconsvg2img, iconsvg3img, iconsvgimg, phosphorimg } from '../../../images';
 
 // Define the types for props
 interface Review {
@@ -26,7 +27,7 @@ const CourseReviews: React.FC<CourseReviewsProps> = ({
       {/* Average Rating Section */}
       <div className="w-full md:w-1/3 bg-white rounded-lg p-4 shadow-md">
         <div className="flex items-center gap-2 font-semibold text-2xl text-gray-900">
-          <img src="./assets/icon.svg" alt="Average rating" className="w-8 h-8" />
+          <img src={iconsvgimg} alt="Average rating" className="w-8 h-8" />
           <span>{averageRating.toFixed(1)}</span>
           <span className="text-sm">({totalReviews} reviews)</span>
         </div>
@@ -37,7 +38,7 @@ const CourseReviews: React.FC<CourseReviewsProps> = ({
                 {[...Array(5)].map((_, index) => (
                   <img
                     key={index}
-                    src={index < item.rating ? './assets/icon-2.svg' : './assets/icon-3.svg'}
+                    src={index < item.rating ? iconsvg2img : iconsvg3img}
                     alt="Star"
                     className="w-5 h-5"
                   />
@@ -66,11 +67,11 @@ const ReviewCard: React.FC<Review> = ({ reviewerName, rating, reviewDate, review
   return (
     <div className="w-full bg-white rounded-lg border border-gray-300 p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 md:max-w-full">
       <div className="flex items-center gap-3 mb-4">
-        <img src="./assets/ellipse-19.svg" alt="Reviewer" className="w-12 h-12 rounded-full border-2 border-gray-200" />
+        <img src={elipse19img} alt="Reviewer" className="w-12 h-12 rounded-full border-2 border-gray-200" />
         <div className="flex flex-col">
           <span className="font-semibold text-lg text-gray-900">{reviewerName}</span>
           <div className="flex items-center gap-1 text-sm text-gray-600">
-            <img src="./assets/phosphor-icons-star.svg" alt="Star" className="w-5 h-5" />
+            <img src={phosphorimg} alt="Star" className="w-5 h-5" />
             <span>{rating}</span>
             <span>Reviewed on {reviewDate}</span>
           </div>

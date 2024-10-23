@@ -1,4 +1,5 @@
 import React from 'react';
+import { chevdownimg } from '../../../images';
 
 interface CourseItem {
   title: string;
@@ -21,7 +22,7 @@ const CourseSyllabus: React.FC<CourseSyllabusProps> = ({ syllabus }) => {
             <div className="flex justify-between items-center p-4 md:p-6 border-b border-gray-300">
               <div className="flex items-center gap-2 md:gap-4 font-semibold text-lg text-gray-900">
                 <img
-                  src="./assets/chevron-down.svg"
+                  src={chevdownimg}
                   alt="expand"
                   className="w-4 h-4 md:w-5 md:h-5"
                 />

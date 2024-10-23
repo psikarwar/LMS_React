@@ -1,10 +1,11 @@
 import React from 'react';
+import { frame8906img } from '../../images';
 
 const OrderImg: React.FC = () => {
   return (
     <div className="relative w-full max-w-7xl h-auto overflow-hidden rounded-lg">
       <img 
-        src="./assets/frame-427318906.svg" 
+        src={frame8906img} 
         alt="Video Thumbnail" 
         className="w-full h-auto rounded-lg" 
       />

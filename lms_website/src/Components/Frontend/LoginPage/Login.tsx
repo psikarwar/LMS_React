@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { facebookimg, frameimg, googleimg, lin34img, line35img, providerimg, rightimg } from '../../images';
 
 const Login: React.FC = () => {
   return (
@@ -29,35 +30,33 @@ const Login: React.FC = () => {
           <Link to='/course'>
             <button className="flex items-center bg-gray-900 text-white p-3 rounded-lg font-medium cursor-pointer mb-5 ">
               Sign In
-              <img src="./assets/icon-arrow-narrow-right.svg" alt="Arrow" className="ml-2" />
+              <img src={rightimg} alt="Arrow" className="ml-2" />
             </button>
           </Link>
           <div className="flex items-center gap-3 justify-center mb-6">
-            <img src="./assets/line-34.svg" alt="Line" className="hidden lg:block" />
+            <img src={lin34img} alt="Line" className="hidden lg:block" />
             {/* Added whitespace-nowrap to keep the text in one line */}
             <span className="text-gray-400 whitespace-nowrap">Sign in with</span>
-            <img src="./assets/line-35.svg" alt="Line" className="hidden lg:block" />
+            <img src={line35img} alt="Line" className="hidden lg:block" />
           </div>
           <div className="flex flex-col lg:flex-row gap-4">
             <button className="flex items-center gap-2 p-3 border border-gray-300 rounded-lg cursor-pointer text-sm font-normal justify-center w-full lg:w-52">
-              <img src="./assets/facebook-logo-primary-2.svg" alt="Facebook" className="w-5 h-5" />
+              <img src={facebookimg} alt="Facebook" className="w-5 h-5" />
               Facebook
             </button>
             <button className="flex items-center gap-2 p-3 border border-gray-300 rounded-lg cursor-pointer text-sm font-normal justify-center w-full lg:w-52">
-              <img src="./assets/google.svg" alt="Google" className="w-5 h-5" />
+              <img src={googleimg} alt="Google" className="w-5 h-5" />
               Google
             </button>
             <button className="flex items-center gap-2 p-3 border border-gray-300 rounded-lg cursor-pointer text-sm font-normal justify-center w-full lg:w-52">
-              <img src="./assets/providers-image-1.svg" alt="Microsoft" className="w-5 h-5" />
+              <img src={providerimg} alt="Microsoft" className="w-5 h-5" />
               Microsoft
             </button>
           </div>
         </div>
         <div className="max-w-2xl mx-auto mt-10 lg:mt-0 lg:ml-80">
           {/* Set the height of the image to 32rem explicitly */}
-          <img src="./assets/frame-427319048.svg" alt="People reading"  
-className
-="max-w-full h-screen object-right" style={{ height: '32rem' }} />
+          <img src={frameimg} alt="People reading"  className="max-w-full h-screen object-right" style={{ height: '32rem' }} />
         </div>
       </main>
     </div>

@@ -8,6 +8,7 @@ import CourseReviews from '../Frontend/CoursePage/CourseReviews/CourseReviews'; 
 // import Footer from '../Footer/Footer'; // Adjust the path according to your folder structure
 import OrderTabs from './OrderTabs/OrderTabs'; // Import the OrderTabs component
 import DesignCourse from '../Frontend/CategoryPage/DesignCourse/DesignCourse';
+import { rect1080img } from '../images';
 // import FeaturedCourses from '../Frontend/CategoryPage/FeaturedCourse/FeaturedCourse'; // Import the FeaturedCourses component
 
 function OrderCompletePag2() {
@@ -40,7 +41,7 @@ function OrderCompletePag2() {
       lectures: 155,
       level: "Beginner",
       price: "149.9",
-      imageSrc: "./assets/rectangle-1080.svg",
+      imageSrc: rect1080img
     },
     {
       title: "Beginner’s Guide to Design",
@@ -51,7 +52,7 @@ function OrderCompletePag2() {
       lectures: 155,
       level: "Beginner",
       price: "149.9",
-      imageSrc: "./assets/rectangle-1080.svg",
+      imageSrc: rect1080img
     },
     {
       title: "Beginner’s Guide to Design",
@@ -62,7 +63,7 @@ function OrderCompletePag2() {
       lectures: 155,
       level: "Beginner",
       price: "149.9",
-      imageSrc: "./assets/rectangle-1080.svg",
+      imageSrc: rect1080img
     },
     {
       title: "Beginner’s Guide to Design",
@@ -73,7 +74,7 @@ function OrderCompletePag2() {
       lectures: 155,
       level: "Beginner",
       price: "149.9",
-      imageSrc: "./assets/rectangle-1080.svg",
+      imageSrc: rect1080img
     },
     {
       title: "Beginner’s Guide to Design",
@@ -84,7 +85,7 @@ function OrderCompletePag2() {
       lectures: 155,
       level: "Beginner",
       price: "149.9",
-      imageSrc: "./assets/rectangle-1080.svg",
+      imageSrc: rect1080img
     },
     {
       title: "Beginner’s Guide to Design",
@@ -95,7 +96,7 @@ function OrderCompletePag2() {
       lectures: 155,
       level: "Beginner",
       price: "149.9",
-      imageSrc: "./assets/rectangle-1080.svg",
+      imageSrc: rect1080img
     },
     {
       title: "Beginner’s Guide to Design",
@@ -106,7 +107,7 @@ function OrderCompletePag2() {
       lectures: 155,
       level: "Beginner",
       price: "149.9",
-      imageSrc: "./assets/rectangle-1080.svg",
+      imageSrc: rect1080img
     },
     {
       title: "Beginner’s Guide to Design",
@@ -117,7 +118,7 @@ function OrderCompletePag2() {
       lectures: 155,
       level: "Beginner",
       price: "149.9",
-      imageSrc: "./assets/rectangle-1080.svg",
+      imageSrc: rect1080img
     },
     {
       title: "Beginner’s Guide to Design",
@@ -128,7 +129,7 @@ function OrderCompletePag2() {
       lectures: 155,
       level: "Beginner",
       price: "149.9",
-      imageSrc: "./assets/rectangle-1080.svg",
+      imageSrc: rect1080img
     },  
     // Repeat as necessary
   ];

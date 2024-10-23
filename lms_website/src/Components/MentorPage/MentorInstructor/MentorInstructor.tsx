@@ -53,7 +53,7 @@
 
 
 import React from 'react';
-import img1 from '../../../assets/Ellipse 53.svg';
+import { elipse53img } from '../../images';
 
 interface MentorInstructorProps {
   name: string;
@@ -126,7 +126,7 @@ const MentorInstructor: React.FC<MentorInstructorProps> = ({
       {/* Right image and links */}
       <div className="lg:w-1/3 flex flex-col items-center lg:items-start">
         <img
-          src={img1}
+          src={elipse53img}
           alt={name}
           className="rounded-full shadow-md w-40 h-40 lg:w-52 lg:h-52 object-cover"
         />

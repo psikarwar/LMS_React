@@ -1,5 +1,5 @@
 import React from 'react';
-import img1 from '../../../../assets/Ellipse 4.svg';
+import { award03img, elipse4img, hat02img, playimg } from '../../../images';
 
 interface InstructorProps {
   name: string;
@@ -29,22 +29,22 @@ const CourseInstructor: React.FC<InstructorProps> = ({
 
         <div className="flex flex-col md:flex-row gap-4 mt-4 items-start md:items-center">
           <img
-            src={img1}
+            src={elipse4img}
             alt="Instructor"
             className="w-24 h-24 md:w-30 md:h-30 rounded-full object-cover"
           />
 
           <div className="flex flex-col gap-2 justify-center">
             <div className="flex items-center gap-2 font-normal text-sm text-gray-900">
-              <img src="./assets/award-03.svg" alt="Reviews" className="w-5 h-5" />
+              <img src={award03img} alt="Reviews" className="w-5 h-5" />
               <span>{reviews.toLocaleString()} Reviews</span>
             </div>
             <div className="flex items-center gap-2 font-normal text-sm text-gray-900">
-              <img src="./assets/graduation-hat-02.svg" alt="Students" className="w-5 h-5" />
+              <img src={hat02img} alt="Students" className="w-5 h-5" />
               <span>{students.toLocaleString()} Students</span>
             </div>
             <div className="flex items-center gap-2 font-normal text-sm text-gray-900">
-              <img src="./assets/play.svg" alt="Courses" className="w-5 h-5" />
+              <img src={playimg} alt="Courses" className="w-5 h-5" />
               <span>{courses.toLocaleString()} Courses</span>
             </div>
           </div>
