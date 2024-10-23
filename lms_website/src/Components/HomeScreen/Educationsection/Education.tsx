@@ -1,14 +1,15 @@
 import React from 'react';
-import img1 from '../../../assets/Homescreen/education.svg'
-import Eduimg2 from '../../../assets/Homescreen/eduimg2.svg';
+import { Eduimg1 } from '../../images';
+import { Eduimg2 } from '../../images';
+import { iconrightarrow } from '../../images';
 const section1 = [
     {
         title: 'Become an Instructor',
         description:
             'Instructors from around the world teach millions of students on Byway. We provide the tools and skills to teach what you love.',
         buttonText: 'Start Your Instructor Journey',
-        buttonIcon: './assets/icon-arrow-narrow-right.svg',
-        image: '../../../assets/Homescreen/education.svg',
+        buttonIcon: iconrightarrow,
+        image: Eduimg1,
     },
 ];
 const section2 = [
@@ -17,8 +18,8 @@ const section2 = [
         description:
             'Learners around the world are launching new careers, advancing in their fields, and enriching their lives.',
         buttonText: 'Checkout Courses',
-        buttonIcon: './assets/icon-arrow-narrow-right.svg',
-        image: '../../../assets/image-4-2.svg',
+        buttonIcon: iconrightarrow,
+        image: Eduimg2,
     },
 ];
 
@@ -47,7 +48,7 @@ const EducationSection: React.FC = () => {
               <img
                 src={section.buttonIcon}
                 alt="arrow"
-                className="w-6 h-6"
+                className="w-4 h-6"
               />
             </button>
           </div>
@@ -72,13 +73,13 @@ const EducationSection: React.FC = () => {
               <img
                 src={section.buttonIcon}
                 alt="arrow"
-                className="w-6 h-6"
+                className="w-4 h-6"
                           />
             
                       </button>
                        <div className="flex flex-col gap-4 w-96 mt-32">  
                       <img
-            src={img1}
+            src={Eduimg1}
             alt="Illustration"
             className="flex-shrink-0 rounded-xl w-6/6"
                           />

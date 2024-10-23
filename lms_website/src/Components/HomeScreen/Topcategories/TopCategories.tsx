@@ -58,10 +58,10 @@
 
 
 import React from 'react';
-import telescope from '../../../assets/Homescreen/telescope.svg';
-import development from '../../../assets/Homescreen/development.svg';
-import Marketing from '../../../assets/Homescreen/Marketing.svg';
-import Physics from '../../../assets/Homescreen/Physics.svg';
+import { telescope } from '../../images';
+import { development } from '../../images';
+import { Physics } from '../../images';
+import { Marketing } from '../../images';
 
 interface Category {
   name: string;

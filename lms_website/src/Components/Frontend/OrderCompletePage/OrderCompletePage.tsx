@@ -1,4 +1,5 @@
 import React from 'react';
+import { subwaytick } from '../../images';
 // import Header from '../../Header/Header'; // Import the Header component
 // import Footer from '../../Footer/Footer'; // Import the Footer component
 
@@ -11,7 +12,7 @@ const OrderCompletePage: React.FC = () => {
       <main className="flex-grow flex flex-col items-center justify-center py-12 mt-12 px-4">
         <div className="flex flex-col items-center">
           <img
-            src="./assets/group-126.svg"
+            src={subwaytick}
             alt="Success"
             className="w-24 h-24 md:w-48 md:h-48 mb-5" // Adjusted size for larger screens
           />

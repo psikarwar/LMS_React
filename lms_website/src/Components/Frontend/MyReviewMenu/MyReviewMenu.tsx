@@ -1,7 +1,8 @@
 import React from 'react';
 import ReviewCard from '../ReviewCard/ReviewCard';
 import Pagination from '../Pagination/Pagination';
-import option from '../../../../../assets/icon-horizontal-dots.svg'
+import { iconhorizontal } from '../../images';
+
 const MyReviewMenu: React.FC = () => {
     const reviews = [
         {
@@ -10,7 +11,7 @@ const MyReviewMenu: React.FC = () => {
             reviewText:
                 "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding.",
             reviewerName: "John Doe",
-            optionsIconSrc: option,
+            optionsIconSrc: iconhorizontal,
         },
         {
             courseName: "Digital Marketing 101",
@@ -18,7 +19,7 @@ const MyReviewMenu: React.FC = () => {
             reviewText:
                 "It was a good introduction to digital marketing, though I felt it could have gone deeper in certain areas. Overall, I still learned a lot.",
             reviewerName: "Alex Johnson",
-            optionsIconSrc: option,
+            optionsIconSrc: iconhorizontal,
         },
         {
             courseName: "Advanced Web Development",
@@ -26,7 +27,7 @@ const MyReviewMenu: React.FC = () => {
             reviewText:
                 "The course was fantastic! It really helped me grasp advanced JavaScript concepts. The assignments were challenging yet extremely rewarding.",
             reviewerName: "Jane Smith",
-            optionsIconSrc: option,
+            optionsIconSrc: iconhorizontal,
         },
         {
             courseName: "Digital Marketing 101",
@@ -34,7 +35,7 @@ const MyReviewMenu: React.FC = () => {
             reviewText:
                 "It was a good introduction to digital marketing, though I felt it could have gone deeper in certain areas. Overall, I still learned a lot.",
             reviewerName: "Alex Johnson",
-            optionsIconSrc: option,
+            optionsIconSrc: iconhorizontal,
         },
     ];
     

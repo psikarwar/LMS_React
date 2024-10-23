@@ -1,4 +1,6 @@
+
 import React from 'react';
+import { ellipse139, ellipse140, iconchleft, iconhorizontal } from '../../images';
 
 const MessageChatMenu: React.FC = () => {
   return (
@@ -14,20 +16,20 @@ const MessageChatMenu: React.FC = () => {
           <div className="chat-container">
             <div className="flex items-center justify-between mb-5">
               <img
-                src="./assets/icon-arrow-narrow-left.svg"
+                src={iconchleft}
                 alt="Back"
                 className="w-6 h-6"
               />
               <div className="flex items-center">
                 <img
-                  src="./assets/ellipse-140.svg"
+                  src={ellipse140}
                   alt="Profile"
                   className="w-8 h-8 rounded-full"
                 />
                 <span className="ml-3 text-lg font-medium text-gray-800">Ronald Richards</span>
               </div>
               <img
-                src="./assets/icon-horizontal-dots.svg"
+                src={iconhorizontal}
                 alt="Options"
                 className="w-6 h-6"
               />
@@ -51,7 +53,7 @@ const MessageChatMenu: React.FC = () => {
 
               <div className="message received flex">
                 <img
-                  src="./assets/ellipse-141.svg"
+                  src={ellipse139}
                   alt="Profile"
                   className="w-8 h-8 rounded-full mr-3"
                 />

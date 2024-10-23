@@ -1,7 +1,6 @@
 import React from 'react'
-import im1 from '../../../../../assets/Backend/notification/dot.svg';
-import xmas from '../../../../../assets/Backend/notification/xmas.svg';
-
+import { xmas } from '../../../../images';
+import { im1 } from '../../../../images';
 const AccouncementCard :React.FC= () => {
   return (
    <div className="flex p-2 bg-white border border-gray-300 rounded-md">

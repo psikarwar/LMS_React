@@ -1,15 +1,11 @@
-
-
-
 import React from 'react'
-import icon1 from '../../../../assets/Backend/detail/playsquare.svg';
-import iconp from '../../../../assets/Backend/detail/iconplus.svg';
-import richt from '../../../../assets/Backend/detail/richtext.svg';
-import rect from '../../../../assets/Backend/detail/rectangle1026.svg';
-import iconx from '../../../../assets/Backend/detail/iconx.svg'
-import addimage from '../../../../assets/Backend/detail/Addimage.svg';
-import downarrow from '../../../../assets/Backend/detail/downarrow.svg';
-
+import { playsquare } from '../../../images';
+import { plusicon } from '../../../images';
+import { richt } from '../../../images';
+import { rect } from '../../../images';
+import { iconx } from '../../../images';
+import { addimage } from '../../../images';
+import { downarrow } from '../../../images';
 const Details: React.FC = () => {
   return (
     <>
@@ -45,7 +41,7 @@ const Details: React.FC = () => {
             <div className="flex flex-col gap-2">
               <span className="text-sm font-normal text-gray-600">Upload Intro Video</span>
               <div className="p-5 border border-gray-200 bg-white rounded-lg flex flex-col items-center gap-3 text-center w-5/6">
-                <img src={icon1} alt="Upload Video Icon" className="w-6 h-6" />
+                <img src={playsquare} alt="Upload Video Icon" className="w-6 h-6" />
                 <span className="text-lg font-semibold text-gray-900">
                   Drag and drop files, or <span className="text-blue-500 cursor-pointer">Browse</span>
                 </span>
@@ -76,7 +72,7 @@ const Details: React.FC = () => {
               </div>
               <button className="flex items-right gap-1  py-6 bg-transparent text-blue-600 text-sm font-medium rounded-lg  -mr-52 ">
                 Add Section
-                <img src={iconp} alt="Add Icon" className="w-6 h-6" />
+                <img src={plusicon} alt="Add Icon" className="w-6 h-6" />
               </button>
             </div>
 

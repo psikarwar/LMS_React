@@ -1,7 +1,7 @@
 import React from 'react'
 import AccouncementCard from './Accouncementcard/AccouncementCard'
-import broadcast from '../../../../assets/Backend/notification/Broadcast.svg';
-import dicon from '../../../../assets/icon-down-chevron.svg';
+import { broadcast } from '../../../images';
+import { dicon } from '../../../images';
 import { NavLink } from 'react-router-dom';
 const Notification :React.FC = () => {
   return (
