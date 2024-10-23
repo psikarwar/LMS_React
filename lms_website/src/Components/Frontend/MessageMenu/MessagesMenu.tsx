@@ -3,8 +3,7 @@ import MessageCard from '../MessagesCard/MessagesCard';
 import search from '../../../assets/myassets/search.svg';
 import ch from '../../../../../assets/icon-down-chevron.svg'
 import el1 from '../../../../../assets/ellipse-140.svg'
-import el2 from '../../../../../assets/ellipse-139.svg'
-
+import { ellipse139 } from '../../images'; 
 
 const MessagesMenu: React.FC = () => {
   const messages = [
@@ -16,7 +15,7 @@ const MessagesMenu: React.FC = () => {
     },
     {
       userName: 'Devon Lane',
-      userImage: el2,
+      userImage: ellipse139,
       date: '18th March, 2024',
       messageContent: 'I’ll get back to you as soon as possible.',
     },

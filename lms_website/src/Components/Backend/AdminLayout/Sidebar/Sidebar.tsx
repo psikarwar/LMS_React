@@ -233,7 +233,7 @@
 
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import db from '../../../../assets/Backend/sidebar/Dashboard.svg';
+// import db from '../../../../assets/Backend/sidebar/Dashboard.svg';
 import course from '../../../../assets/Backend/sidebar/course.svg';
 import communication from '../../../../assets/Backend/sidebar/Communication.svg';
 import rev from '../../../../assets/Backend/sidebar/Revenue.svg';
@@ -241,7 +241,7 @@ import setting from '../../../../assets/Backend/sidebar/setting.svg';
 import CB from '../../../../assets/Backend/sidebar/closebtn.svg';
 import './Sidebar.css'
 import logo from '../../../../assets/logo.svg';
-
+import { db } from '../../../images';
 interface SidebarProps {
   onCollapse: (isCollapsed: boolean) => void; // Prop to notify parent about collapse state
 }
@@ -294,7 +294,7 @@ const Sidebar: React.FC<SidebarProps> = ({ onCollapse }) => {
           } ${isActive('/admin') ? 'bg-[#1e293b]' : 'bg-transparent'}`} // Change background for active item
         >
           <Link
-            to="/admin"
+            to="dashboard"
             className={`flex items-center ${isActive('/admin') ? 'text-[#3b82f6]' : 'text-[#e2e8f0] hover:text-[#3b82f6]'} ${
               isCollapsed ? 'justify-center' : ''
             }`}
@@ -320,7 +320,7 @@ const Sidebar: React.FC<SidebarProps> = ({ onCollapse }) => {
           } ${isActive('/admin/maincourse') ? 'bg-[#1e293b]' : 'bg-transparent'}`} // Change background for active item
         >
           <Link
-            to="/admin/maincourse"
+            to="Maincourse"
             className={`flex items-center ${isActive('/admin/maincourse') ? 'text-[#3b82f6]' : 'text-[#e2e8f0] hover:text-[#3b82f6]'} ${
               isCollapsed ? 'justify-center' : ''
             }`}
@@ -346,7 +346,7 @@ const Sidebar: React.FC<SidebarProps> = ({ onCollapse }) => {
           } ${isActive('/admin/communication') ? 'bg-[#1e293b]' : 'bg-transparent'}`} // Change background for active item
         >
           <Link
-            to="/admin/communication"
+            to="communication"
             className={`flex items-center ${isActive('/admin/communication') ? 'text-[#3b82f6]' : 'text-[#e2e8f0] hover:text-[#3b82f6]'} ${
               isCollapsed ? 'justify-center' : ''
             }`}
@@ -372,7 +372,7 @@ const Sidebar: React.FC<SidebarProps> = ({ onCollapse }) => {
           } ${isActive('/admin/revenue') ? 'bg-[#1e293b]' : 'bg-transparent'}`} // Change background for active item
         >
           <Link
-            to="/admin/revenue"
+            to="revenue"
             className={`flex items-center ${isActive('/admin/revenue') ? 'text-[#3b82f6]' : 'text-[#e2e8f0] hover:text-[#3b82f6]'} ${
               isCollapsed ? 'justify-center' : ''
             }`}
@@ -398,7 +398,7 @@ const Sidebar: React.FC<SidebarProps> = ({ onCollapse }) => {
           } ${isActive('/admin/setting') ? 'bg-[#1e293b]' : 'bg-transparent'}`} // Change background for active item
         >
           <Link
-            to="/admin/setting"
+            to="setting"
             className={`flex items-center ${isActive('/admin/setting') ? 'text-[#3b82f6]' : 'text-[#e2e8f0] hover:text-[#3b82f6]'} ${
               isCollapsed ? 'justify-center' : ''
             }`}
