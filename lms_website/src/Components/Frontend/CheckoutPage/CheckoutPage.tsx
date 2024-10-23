@@ -1,7 +1,9 @@
 // src/Components/Frontend/CheckoutPage.tsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { greaterthan } from '../../images';
+import { greaterthan, visa, paypal , rectangle1133 , percent } from '../../images';
+
+
 // import Header from '../../Header/Header'; // Import the Header component
 // import Footer from '../../Footer/Footer'; // Import the Footer component
 
@@ -48,7 +50,7 @@ const CheckoutPage: React.FC = () => {
               <div>
                 <input type="radio" name="payment" id="card" />
                 <label htmlFor="card" className="ml-2">Credit/Debit Card</label>
-                <img src="./assets/image-17.svg" alt="Card icons" className="ml-4" />
+                <img src={visa} alt="Card icons" className="ml-4" />
                 <div className="space-y-4 mt-4">
                   <div className="mb-4">
                     <label className="block font-semibold mb-1">Name of Card</label>
@@ -89,7 +91,7 @@ const CheckoutPage: React.FC = () => {
               <div>
                 <input type="radio" name="payment" id="paypal" />
                 <label htmlFor="paypal" className="ml-2">PayPal</label>
-                <img src="./assets/image-16.svg" alt="PayPal" className="ml-4" />
+                <img src={paypal} alt="PayPal" className="ml-4" />
               </div>
             </div>
           </section>
@@ -98,7 +100,7 @@ const CheckoutPage: React.FC = () => {
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Order Details</h2>
             <div className="flex mb-6">
               <img
-                src="./assets/rectangle-1133.svg"
+                src={rectangle1133}
                 alt="Course"
                 className="w-32 h-32 rounded-lg mr-6"
               />
@@ -110,7 +112,7 @@ const CheckoutPage: React.FC = () => {
               </div>
             </div>
             <div className="flex items-center mb-4">
-              <img src="./assets/percent-03.svg" alt="Coupon" className="mr-2" />
+              <img src={percent} alt="Coupon" className="mr-2" />
               <span className="text-blue-600">APPLY COUPON CODE</span>
             </div>
             <div className="space-y-2 text-sm text-gray-600">
