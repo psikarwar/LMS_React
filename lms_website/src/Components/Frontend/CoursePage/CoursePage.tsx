@@ -45,9 +45,10 @@ const CoursePage: React.FC = () => {
 
   return (
     <div className="w-full bg-white">
-      {/* CourseDesign and CourseImg layout */}
-      <div className="flex flex-col md:flex-row justify-between items-start p-6">
-        <div className="md:w-2/3 w-full">
+      {/* Responsive layout for CourseDesign, CourseMenu, and CourseImg */}
+      <div className="flex flex-col lg:flex-row justify-between items-start p-4 lg:p-6">
+        {/* Left section with Course Design, Menu, Description, etc */}
+        <div className="lg:w-2/3 w-full">
           <CourseDesign
             title="Introduction to User Experience Design"
             description="This course is meticulously crafted to provide you with a foundational understanding of the principles, methodologies, and tools that drive exceptional user experiences in the digital landscape."
@@ -59,7 +60,15 @@ const CoursePage: React.FC = () => {
             creatorName="John Doe"
             languages={['English', 'Spanish']}
           />
+          
+          {/* Adjusted CourseMenu width and margin for responsiveness */}
+          <div className="mt-4 lg:mt-6 lg:w-3/4 mb-4">
+            <CourseMenu />
+          </div>
+          
           <CourseDescription />
+
+          {/* CourseInstructor Section */}
           <CourseInstructor
             name="Ronald Richards"
             role="UI/UX Designer"
@@ -69,7 +78,11 @@ const CoursePage: React.FC = () => {
             courses={15}
             description="With over a decade of industry experience, Ronald brings a wealth of practical knowledge to the classroom. He has played a pivotal role in designing user-centric interfaces for renowned tech companies, ensuring seamless and engaging user experiences."
           />
+          
+          {/* Syllabus Section */}
           <CourseSyllabus syllabus={syllabusData} />
+          
+          {/* Reviews Section */}
           <CourseReviews
             averageRating={4.6}
             totalReviews={146951}
@@ -84,20 +97,17 @@ const CoursePage: React.FC = () => {
           />
         </div>
 
-        <div className="md:w-1/3 w-full flex flex-col items-center mt-6 md:mt-0">
+        {/* Right section with Course Image */}
+        <div className="lg:w-1/3 w-full flex flex-col items-center mt-6 lg:mt-0">
           <CourseImg />
-          <div className="mt-6 w-full">
-            <CourseMenu />
-          </div>
         </div>
       </div>
 
-      {/* Feedback in full width */}
+      {/* Full width Feedback and CoursesLike sections */}
       <div className="w-full mt-6">
         <Feedback />
       </div>
 
-      {/* CoursesLike in full width and responsive layout */}
       <div className="w-full mt-6">
         <CoursesLike />
       </div>
