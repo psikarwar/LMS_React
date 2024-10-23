@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
 import Tab from '../Tab/Tab'
-import im1 from '../../../../../assets/icon-horizontal-dots.svg';
+import { im1 } from '../../images'
 
 const Communication : React.FC= () => {
   return (
