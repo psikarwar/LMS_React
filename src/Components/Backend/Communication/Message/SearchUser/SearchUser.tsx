@@ -1,6 +1,7 @@
 import React from "react";
 import { elipse5img, elipseimg2, elipseimg3, elipseimg4, elipseimg6, elipseimg7, searchimg } from "../../../../images";
 import { msgimg1 } from "../../../../images";
+
 type User = {
   name: string;
   role: string;
@@ -20,7 +21,7 @@ const users: User[] = [
 
 const SearchUser: React.FC = () => {
   return (
-    <div className="w-full max-w-xs mx-auto">
+    <div className="w-full max-w-xs mx-auto p-4 md:max-w-md lg:max-w-lg"> {/* Adjust container width for responsiveness */}
       {/* Search Bar */}
       <div className="flex items-center p-2.5 bg-white rounded-lg border border-gray-300">
         <input
@@ -32,11 +33,11 @@ const SearchUser: React.FC = () => {
       </div>
       
       {/* User List */}
-      <div className="mt-3">
+      <div className="mt-3 space-y-2"> {/* Added responsive spacing */}
         {users.map((user) => (
           <div
             key={user.name}
-            className={`flex items-center p-4 rounded-lg border border-gray-300 mb-2.5 ${user.badge ? 'bg-sky-100' : 'bg-white'}`}
+            className={`flex items-center p-4 rounded-lg border border-gray-300 ${user.badge ? 'bg-sky-100' : 'bg-white'}`}
           >
             <img src={`${user.image}`} alt={user.name} className="w-8 h-8 rounded-full mr-3" />
             <div className="flex-grow">
