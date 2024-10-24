@@ -25,12 +25,12 @@ const ShoppingCartImg: React.FC<CourseCardProps> = ({
   onClickRemove,
 }) => {
   return (
-    <div className="flex flex-col sm:flex-row items-center w-full max-w-[880px] h-auto bg-white rounded-lg border border-gray-300 p-4 box-border">
+    <div className="flex flex-col sm:flex-row items-start w-full max-w-[880px] h-auto bg-white rounded-lg border border-gray-300 p-4 box-border">
       <div className="flex items-start w-full">
         <img src={image3img} alt={title} className="w-[192px] h-[108px] object-cover rounded-lg" />
 
-        <div className="flex flex-col gap-2 ml-4">
-          <div className="font-semibold text-lg text-black">{title}</div>
+        <div className="flex flex-col gap-2 ml-4 w-full">
+          <div className="font-semibold text-lg text-black line-clamp-2">{title}</div>
           <div className="font-normal text-sm text-gray-600">By {instructor}</div>
 
           <div className="flex items-center gap-4">
@@ -66,7 +66,7 @@ const ShoppingCartImg: React.FC<CourseCardProps> = ({
         </div>
       </div>
 
-      <div className="ml-auto font-semibold text-2xl text-black">{price}</div> {/* Adjusted for right alignment */}
+      <div className="ml-auto font-semibold text-2xl text-black text-right">{price}</div> {/* Adjusted for right alignment */}
     </div>
   );
 };

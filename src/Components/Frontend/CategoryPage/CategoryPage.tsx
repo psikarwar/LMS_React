@@ -230,9 +230,8 @@ function CategoryPage() {
         Featured Course
       </h2>
       <div
-        className="p-4 grid grid-cols-4 gap-11 w-fit h-fit"
+        className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-11 w-fit h-fit"
         style={{ marginLeft: '1rem' }}
-
       >
         {courses.slice(0, 4).map((course, index) => (
           <DesignCourse
@@ -249,8 +248,7 @@ function CategoryPage() {
           />
         ))}
       </div>
-
-      {/* Footer Component */}
+      {/* Footer component */}
       {/* <Footer /> */}
     </>
   );

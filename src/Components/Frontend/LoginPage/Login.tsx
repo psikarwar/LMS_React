@@ -63,7 +63,7 @@ const Login: React.FC = () => {
           <img 
             src={frameimg} 
             alt="People reading" 
-            className="w-30 h-[30rem] object-cover lg:absolute lg:right-[-60px]" /> {/* Existing image dimensions remain unchanged */}
+            className="w-30 h-[30rem] object-cover lg:absolute lg:right-[-60px] lg:h-[40rem]" /> {/* Existing image dimensions remain unchanged */}
         </div>
       </main>
     </div>

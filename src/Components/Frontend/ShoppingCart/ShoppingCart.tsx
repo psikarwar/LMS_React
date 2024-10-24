@@ -69,8 +69,8 @@ const ShoppingCart: React.FC = () => {
       {/* Render ShoppingCartMenu component */}
       <ShoppingCartMenu title="Shopping Cart" items={breadcrumbItems} />
 
-      <main className="flex flex-col md:flex-row justify-center items-start flex-1">
-        <div className="flex flex-col gap-4 w-full md:w-2/3 p-4">
+      <main className="flex flex-col md:flex-row justify-between items-start flex-1 p-4">
+        <div className="flex flex-col gap-4 w-full md:w-2/3">
           <h1 className="text-2xl md:text-3xl font-bold mb-4">Shopping Cart</h1>
           {/* Render course cards */}
           {courseData.map((course, index) => (
@@ -88,7 +88,7 @@ const ShoppingCart: React.FC = () => {
             />
           ))}
         </div>
-        <div className="w-full md:w-1/3 p-4">
+        <div className="w-full md:w-1/3">
           <ShoppingOrder
             price={orderDetails.price}
             discount={orderDetails.discount}

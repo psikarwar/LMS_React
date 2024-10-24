@@ -20,9 +20,14 @@ const FeaturedCourses: React.FC<{ courses: Course[] }> = ({ courses }) => {
       <h2 className="font-inter font-semibold text-2xl text-gray-900 mb-6">
         Featured Courses
       </h2>
-      <div className="flex flex-wrap justify-between gap-10">
+
+      {/* Responsive layout */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {courses.map((course) => (
-          <div key={course.id} className="bg-white border border-gray-200 rounded-xl p-4 w-full sm:w-[calc(50%-20px)] lg:w-[calc(25%-20px)]">
+          <div
+            key={course.id}
+            className="bg-white border border-gray-200 rounded-xl p-4"
+          >
             <img
               src={img1}
               alt={course.title}
@@ -40,10 +45,13 @@ const FeaturedCourses: React.FC<{ courses: Course[] }> = ({ courses }) => {
                 <img src="./assets/icon-3.svg" alt="Star" className="w-5 h-5" />
                 <img src="./assets/icon-4.svg" alt="Star" className="w-5 h-5" />
                 <img src="./assets/icon-5.svg" alt="Star" className="w-5 h-5" />
-                <span className="text-xs text-gray-600">({course.ratings} Ratings)</span>
+                <span className="text-xs text-gray-600">
+                  ({course.ratings} Ratings)
+                </span>
               </div>
               <p className="text-sm text-gray-600 mt-2">
-                {course.hours} Total Hours. {course.lectures} Lectures. {course.level}
+                {course.hours} Total Hours. {course.lectures} Lectures.{' '}
+                {course.level}
               </p>
               <p className="font-inter font-semibold text-xl text-gray-900 mt-2">
                 ${course.price}
