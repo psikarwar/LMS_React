@@ -16,7 +16,7 @@ const ShoppingOrder: React.FC<OrderDetailsProps> = ({
   total,
 }) => {
   return (
-    <div className="flex flex-col w-full max-w-[330px] gap-2">
+    <div className="flex flex-col w-full max-w-[330px] mx-auto gap-2"> {/* Center the component on larger screens */}
       <div className="font-semibold text-xl text-gray-800">Order Details</div>
       <div className="bg-gray-100 rounded-lg border border-gray-300 p-4 flex flex-col gap-4">
         <div className="flex justify-between w-full">

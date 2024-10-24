@@ -3,7 +3,7 @@ import { iconplusimg } from '../../../../images';
 
 const SettingContent: React.FC = () => {
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-6 w-full max-w-4xl mx-auto px-4 md:px-6 lg:px-8">
       <h1 className="text-xl font-semibold leading-6 text-gray-900">Settings</h1>
       
       <div className="flex flex-col gap-2">
@@ -23,7 +23,7 @@ const SettingContent: React.FC = () => {
         </div>
       </div>
 
-      {/* Moved the Add More Requirements button in the middle */}
+      {/* Add More Requirements button in the middle */}
       <button className="flex items-center py-2 px-6 bg-transparent border-none cursor-pointer">
         <span className="text-sm font-medium leading-6 text-blue-600">Add More Requirements</span>
         <img src={iconplusimg} alt="plus icon" className="ml-2 w-6 h-6" />

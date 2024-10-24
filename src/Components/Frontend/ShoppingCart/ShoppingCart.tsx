@@ -62,15 +62,15 @@ const ShoppingCart: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col min-h-screen">
       {/* Render Header component */}
       {/* <Header /> */}
 
       {/* Render ShoppingCartMenu component */}
       <ShoppingCartMenu title="Shopping Cart" items={breadcrumbItems} />
 
-      <main className="flex flex-col md:flex-row justify-center items-start h-auto md:h-screen">
-        <div className="flex flex-col gap-4 w-full md:w-2/3 p-4"> {/* Container for ShoppingCartImg components */}
+      <main className="flex flex-col md:flex-row justify-center items-start flex-1">
+        <div className="flex flex-col gap-4 w-full md:w-2/3 p-4">
           <h1 className="text-2xl md:text-3xl font-bold mb-4">Shopping Cart</h1>
           {/* Render course cards */}
           {courseData.map((course, index) => (
@@ -88,18 +88,18 @@ const ShoppingCart: React.FC = () => {
             />
           ))}
         </div>
-        <div className="w-full md:w-1/3 p-4"> {/* Container for ShoppingOrder */}
+        <div className="w-full md:w-1/3 p-4">
           <ShoppingOrder
             price={orderDetails.price}
             discount={orderDetails.discount}
             tax={orderDetails.tax}
             total={orderDetails.total}
           />
-          <ShoppingButton onClick={() => alert('Proceeding to checkout...')} /> {/* Added ShoppingButton */}
+          <ShoppingButton onClick={() => alert('Proceeding to checkout...')} />
         </div>
       </main>
 
-      {/* <Footer /> Added Footer component */}
+      {/* <Footer /> */}
     </div>
   );
 };

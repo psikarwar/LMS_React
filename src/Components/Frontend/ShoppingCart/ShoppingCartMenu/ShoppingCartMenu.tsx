@@ -5,7 +5,7 @@ import { iconrightimg } from '../../../images';
 interface BreadcrumbItem {
   label: string;
   isActive?: boolean;
-}  
+}
 
 interface ShoppingCartMenuProps {
   title: string;
@@ -18,7 +18,7 @@ const ShoppingCartMenu: React.FC<ShoppingCartMenuProps> = ({ items }) => {
       <div className="flex items-center flex-wrap">
         {items.map((item, index) => (
           <div className="flex items-center gap-2" key={index}>
-            <span className={`text-sm ${item.isActive ? 'text-blue-600' : 'text-gray-900'}`}>
+            <span className={`text-sm md:text-base ${item.isActive ? 'text-blue-600' : 'text-gray-900'}`}>
               {item.label}
             </span>
             {index < items.length - 1 && (

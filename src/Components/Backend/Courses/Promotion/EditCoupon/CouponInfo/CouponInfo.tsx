@@ -3,7 +3,7 @@ import { downicon10img, downicon2img, downicon3img, downicon4img, downicon5img, 
 
 const CouponInfo: React.FC = () => {
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-6 p-4 md:p-6 lg:p-8">
       <div className="flex flex-col gap-2">
         <div className="text-gray-800 font-medium text-base">Coupon Information</div>
         <InputField label="Coupon Status" value="Active" icon={downiconimg} />
@@ -51,7 +51,7 @@ const InputField: React.FC<{ label: string; value: string; icon?: string }> = ({
         readOnly
         className="font-normal text-base text-gray-900 focus:outline-none flex-grow"
       />
-      {icon && <img src={`./assets/${icon}`} className="w-6 h-6" alt="" />}
+      {icon && <img src={`${icon}`} className="w-6 h-6" alt="" />}
     </div>
   </div>
 );
@@ -64,7 +64,7 @@ const CheckboxField: React.FC<{ label: string }> = ({ label }) => (
 );
 
 const DateTimeField: React.FC<{ label: string; value: string; icon: string }> = ({ label, value, icon }) => (
-  <div className="flex flex-col w-80 p-4 rounded-lg border border-gray-200 bg-white">
+  <div className="flex flex-col w-full sm:w-80 p-4 rounded-lg border border-gray-200 bg-white">
     <div className="text-gray-800 font-normal text-sm">{label}</div>
     <div className="flex items-center justify-between">
       <input
@@ -73,7 +73,7 @@ const DateTimeField: React.FC<{ label: string; value: string; icon: string }> = 
         readOnly
         className="font-normal text-base text-gray-900 focus:outline-none flex-grow"
       />
-      <img src={`./assets/${icon}`} className="w-6 h-6" alt="" />
+      <img src={`${icon}`} className="w-6 h-6" alt="" />
     </div>
   </div>
 );
