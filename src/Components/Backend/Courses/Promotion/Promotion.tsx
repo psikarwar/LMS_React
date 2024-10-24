@@ -35,7 +35,7 @@ const Promotion: React.FC = () => {
         label="Coupons"
         buttonText="Create New Coupon"
         iconSrc= {iconplusimg} // Ensure the correct path to your icon
-        buttonLink="/create-new-coupon"  // Link to the coupon creation page
+        buttonLink="/admin/createcoupon"  // Link to the coupon creation page
       />
 
       {/* Existing LineChart component */}

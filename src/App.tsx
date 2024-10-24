@@ -47,22 +47,22 @@ import FrontenComponenet from "./Components/FrontenComponenet";
 import LayoutComponent from "./Components/LayoutComponent";
 import Chapter from "./Components/Backend/Courses/Chapter/Chapter";
 import ReviewPage from "./Components/Backend/ReviewPage/ReviewPage";
+import PromotionCoupon from "./Components/Backend/Courses/Promotion/PromotionCoupon/PromotionCoupon";
 // import MentorPage from "./Components/MentorPage/MentorPage";
 // import FrontenComponenet from "./Components/FrontenComponenet";
 // import Maincourse from "./Components/Backend/Courses/maincourse";
 // import Courses from "./Components/Backend/Courses/Courses";
 // import Sidebar from './Components/Backend/AdminLayout/Sidebar/Sidebar';
 // <<<<<<< Updated upstream
- 
+
 // const App: React.FC = () => {
 //   return (
-   
-     
+
 //     <Router>
 //       {/* <Sidebar/> */}
 //       {/* <Header /> */}
 //       {/* <Courses/> */}
-       
+
 //       <Routes>
 //        <Route path="" element={<FrontenComponenet />}>
 //         <Route path="/homescreen" element={<HomeScreen/>} />
@@ -77,12 +77,11 @@ import ReviewPage from "./Components/Backend/ReviewPage/ReviewPage";
 //         <Route path="/ordercompl" element={<OrderCompletePag2 />} />
 //           <Route path="/mentor" element={<MentorPage />} />
 //         </Route>
- 
+
 //         <Route path="/" element={<AdminDashboard />}>
 //           <Route path="/maincourse" element={<Maincourse />} />
 //            <Route path="/admincourse" element={<Courses />} />
- 
- 
+
 //           {/* Backend */}
 //           <Route path="/customer" element={<Customer />} />
 //           <Route path="/chapter" element={<Chapter />} />
@@ -94,32 +93,31 @@ import ReviewPage from "./Components/Backend/ReviewPage/ReviewPage";
 //           <Route path="/createcoupon" element={<CreateCoupon />} />
 //           <Route path="/setting" element={<Setting />} />
 //           <Route path="/promotion" element={<Promotion />} />
- 
+
 //           <Route path="/commn-review" element={<CommunicationReview />} />
 //           <Route path="/commission" element={<Commission />} />
 //           <Route path="/reviews" element={<ReviewPage />} />
- 
+
 //           <Route path="/notification" element={<Notification />} />
 //           <Route path="/message" element={<Message />} />
 //           <Route path="/detail" element={<Details />} />
 //           <Route path="/notification-send" element={<NotificationSend />} />
- 
+
 //           <Route path="/dashboard" element={<DashBoard />} />
- 
+
 //           <Route path="/communication" element={<Communication />} />
 //           {/* <Route path="/revenue" element={<Revenue />} /> */}
 //           <Route path="/setting" element={<Setting />} />
 //           <Route path="/revenue" element={<Revenue/>} />
- 
+
 //         </Route>
 //       </Routes>
 //       </Router>
-     
+
 //       );
-     
+
 // };
-   
- 
+
 // export default App;
 // =======
 
@@ -145,16 +143,25 @@ const router = createBrowserRouter(
 
         <Route path="Maincourse" element={<Maincourse />} />
         <Route path="Courses" element={<Courses />}>
-         <Route index element={<Commission />} />
+          <Route index element={<Commission />} />
           <Route path="commission" element={<Commission />} />
           <Route path="chapter" element={<Chapter />} />
-          <Route path="/admin/Courses/chapter/chapterdetail/:id" element={<ChapterDetails />} />
-          <Route path="/admin/Courses/chapter/chapterdetail/chapterseo" element={<ChapterSeo />} />
-          <Route path="/admin/Courses/chapter/chapterdetail/chapterresource" element={<ChapterResources />} />
+          <Route
+            path="/admin/Courses/chapter/chapterdetail/:id"
+            element={<ChapterDetails />}
+          />
+          <Route
+            path="/admin/Courses/chapter/chapterdetail/chapterseo"
+            element={<ChapterSeo />}
+          />
+          <Route
+            path="/admin/Courses/chapter/chapterdetail/chapterresource"
+            element={<ChapterResources />}
+          />
           <Route path="customer" element={<Customer />} />
           <Route path="promotion" element={<Promotion />} />
           <Route path="detail" element={<Details />} />
-          <Route path="reviewpage" element={<ReviewPage/>} />
+          <Route path="reviewpage" element={<ReviewPage />} />
           <Route path="setting" element={<Setting />} />
         </Route>
 
@@ -169,12 +176,12 @@ const router = createBrowserRouter(
           </Route>
         </Route>
 
-        
         <Route path="editcoupon" element={<EditCoupon />} />
         <Route path="createcoupon" element={<CreateCoupon />} />
-        
+
         <Route path="setting" element={<Setting />} />
         <Route path="revenue" element={<Revenue />} />
+        <Route path="createcoupon" element={<CreateCoupon />} />
       </Route>
     </Route>
   )
