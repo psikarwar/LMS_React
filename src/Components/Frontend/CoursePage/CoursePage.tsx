@@ -40,7 +40,6 @@ const CoursePage: React.FC = () => {
       reviewDate: '15th April, 2024',
       reviewText: 'Very informative and engaging course.',
     },
-    // Add more reviews here...
   ];
 
   return (
@@ -72,7 +71,7 @@ const CoursePage: React.FC = () => {
           <CourseInstructor
             name="Ronald Richards"
             role="UI/UX Designer"
-            imageSrc= 'elipse4img'
+            imageSrc="elipse4img"
             reviews={40445}
             students={500}
             courses={15}
@@ -99,7 +98,7 @@ const CoursePage: React.FC = () => {
 
         {/* Right section with Course Image */}
         <div className="lg:w-1/3 w-full flex flex-col items-center mt-6 lg:mt-0">
-          <CourseImg />
+          <CourseImg className="w-full sm:w-64 md:w-72 lg:w-80 xl:w-96 h-auto" />
         </div>
       </div>
 

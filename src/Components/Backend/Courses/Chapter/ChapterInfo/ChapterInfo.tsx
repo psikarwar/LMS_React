@@ -15,16 +15,16 @@ interface ChapterInfoProps {
 
 const ChapterInfo: React.FC<ChapterInfoProps> = ({ data }) => {
   return (
-    <div className="bg-white shadow rounded-lg p-4">
+    <div className="bg-white shadow rounded-lg p-4 overflow-x-auto"> {/* Enable horizontal scrolling for small screens */}
       <table className="min-w-full">
         <thead>
           <tr className="bg-gray-100">
-            <th className="px-4 py-2">Chapter</th>
-            <th className="px-4 py-2">Title</th>
-            <th className="px-4 py-2">Type</th>
-            <th className="px-4 py-2">Date</th>
-            <th className="px-4 py-2">Status</th>
-            <th className="px-4 py-2">Price</th>
+            <th className="px-4 py-2 text-left">Chapter</th>
+            <th className="px-4 py-2 text-left">Title</th>
+            <th className="px-4 py-2 text-left">Type</th>
+            <th className="px-4 py-2 text-left">Date</th>
+            <th className="px-4 py-2 text-left">Status</th>
+            <th className="px-4 py-2 text-left">Price</th>
           </tr>
         </thead>
         <tbody>

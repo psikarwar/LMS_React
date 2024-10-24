@@ -16,7 +16,7 @@ const chapters = [
 
 const Chapter: React.FC = () => {
   return (
-    <div className="container mx-auto mt-8">
+    <div className="container mx-auto mt-8 px-4"> {/* Added padding for smaller screens */}
       <h1 className="text-2xl font-bold mb-4">Chapter Details</h1>
       <ChapterInfo data={chapters} />
     </div>

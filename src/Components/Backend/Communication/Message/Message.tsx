@@ -2,6 +2,7 @@ import React from "react";
 import SearchUser from "./SearchUser/SearchUser"; // Adjust the path if necessary
 import Messagebox from "./MessageBox/MessageBox"; // Import the Messagebox component
 import { msgimg1 } from "../../../images";
+
 const Message: React.FC = () => {
   const user = {
     name: "Jack Harrow",
@@ -16,16 +17,16 @@ const Message: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-row gap-4">
+    <div className="flex flex-col md:flex-row gap-4">
       {/* Left side: User List (SearchUser) */}
-      <div className="w-1/3">
+      <div className="w-full md:w-1/3">
         <h1 className="text-xl font-bold mb-4">User List</h1>
         {/* Call the SearchUser component here */}
         <SearchUser />
       </div>
 
       {/* Right side: Messagebox */}
-      <div className="w-2/3">
+      <div className="w-full md:w-2/3">
         <Messagebox user={user} messages={messages} />
       </div>
     </div>

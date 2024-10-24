@@ -98,7 +98,7 @@ const App: React.FC = () => {
           </button>
           <button className="flex items-center justify-center w-full md:w-1/3 py-3 border border-gray-300 rounded-lg bg-white hover:bg-gray-100">
             <img src={Google} alt="Google" className="w-18 h-6" />
-            <span className="ml-2 text-red-500"></span>
+            <span className="ml-2 text-red-500">Google</span>
           </button>
           <button className="flex items-center justify-center w-full md:w-1/3 py-3 border border-gray-300 rounded-lg bg-white hover:bg-gray-100">
             <img src={Microsoft} alt="Microsoft" className="w-18 h-6" />

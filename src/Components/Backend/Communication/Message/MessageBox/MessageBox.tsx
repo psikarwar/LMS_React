@@ -3,7 +3,7 @@ import React from "react";
 type Message = {
   content: string;
   timestamp: string;
-  type: "received" | "sent";  // Union type ensuring it's either "received" or "sent"
+  type: "received" | "sent"; // Union type ensuring it's either "received" or "sent"
 };
 
 type User = {
@@ -19,7 +19,7 @@ type MessageboxProps = {
 
 const Messagebox: React.FC<MessageboxProps> = ({ user, messages }) => {
   return (
-    <div className="w-full max-w-3xl mx-auto border border-gray-300 rounded-lg bg-white overflow-hidden">
+    <div className="w-full max-w-3xl mx-auto border border-gray-300 rounded-lg bg-white overflow-hidden md:max-w-4xl lg:max-w-5xl"> {/* Added responsive max widths */}
       {/* Chat Header */}
       <div className="flex items-center p-4 border-b border-gray-300">
         <img src={user.image} alt="User" className="w-8 h-8 rounded-full" />
@@ -34,14 +34,14 @@ const Messagebox: React.FC<MessageboxProps> = ({ user, messages }) => {
       </div>
 
       {/* Chat Messages */}
-      <div className="p-4 space-y-4">
+      <div className="p-4 space-y-4 overflow-y-auto max-h-96 md:max-h-[32rem] lg:max-h-[36rem]"> {/* Added scroll and dynamic height for responsiveness */}
         {messages.map((message, index) => (
           <div
             key={index}
             className={`${
-              message.type === "received" ? "bg-gray-100" : "bg-gray-200 text-right"
-            } p-3 rounded-lg`}
-          >
+              message.type === "received" ? "bg-gray-100 text-left" : "bg-gray-200 text-right"
+            } p-3 rounded-lg w-full sm:max-w-md md:max-w-lg lg:max-w-xl`}> {/* Adjusted width based on screen sizes */}
+          
             <p className="text-gray-800 opacity-80">{message.content}</p>
             <span className="block text-xs font-semibold text-gray-500 mt-2">{message.timestamp}</span>
           </div>

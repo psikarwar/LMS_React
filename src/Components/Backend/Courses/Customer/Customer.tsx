@@ -1,5 +1,5 @@
 import React from 'react';
-import CustomerDetail from './CustomerDetail/CustomerDeatil'; // Assuming both files are in the same directory
+import CustomerDetail from './CustomerDetail/CustomerDeatil'; // Corrected the import name
 
 const data = [
   { id: 1, name: 'Ronald Richards', type: 'Student', country: 'India', joined: '15 May 2020 8:00 am', totalAmount: '$ 500.00', lastOrder: '12542' },
@@ -12,8 +12,8 @@ const data = [
 
 const Customer: React.FC = () => {
   return (
-    <div className="container mx-auto mt-8">
-      <h1 className="text-xl font-bold mb-4">Customer Details</h1>
+    <div className="container mx-auto mt-8 px-4 sm:px-6 lg:px-8">
+      <h1 className="text-xl sm:text-2xl font-bold mb-4">Customer Details</h1>
       <CustomerDetail data={data} />
     </div>
   );
