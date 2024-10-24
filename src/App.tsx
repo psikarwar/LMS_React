@@ -47,7 +47,7 @@ import FrontenComponenet from "./Components/FrontenComponenet";
 import LayoutComponent from "./Components/LayoutComponent";
 import Chapter from "./Components/Backend/Courses/Chapter/Chapter";
 import ReviewPage from "./Components/Backend/ReviewPage/ReviewPage";
-import PromotionCoupon from "./Components/Backend/Courses/Promotion/PromotionCoupon/PromotionCoupon";
+// import PromotionCoupon from "./Components/Backend/Courses/Promotion/PromotionCoupon/PromotionCoupon";
 // import MentorPage from "./Components/MentorPage/MentorPage";
 // import FrontenComponenet from "./Components/FrontenComponenet";
 // import Maincourse from "./Components/Backend/Courses/maincourse";
@@ -171,9 +171,9 @@ const router = createBrowserRouter(
           <Route path="message" element={<Message />} />
 
           {/* Nested Notification Routes */}
-          <Route path="notification" element={<Notification />}>
+          <Route path="notification" element={<Notification />}/>
             <Route path="notification-send" element={<NotificationSend />} />
-          </Route>
+         
         </Route>
 
         <Route path="editcoupon" element={<EditCoupon />} />
