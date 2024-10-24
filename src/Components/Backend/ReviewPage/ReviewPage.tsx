@@ -69,16 +69,30 @@ const ReviewPage: React.FC = () => {
   ];
 
   return (
-    <div>
-      <section className="flex flex-wrap gap-2 mb-6">
-        <Badge label="Total Reviews" value="1000" color='#000000' />
-        <Badge label="1 star reviews" value="100" color="#ef4444" />
-        <Badge label="2 star reviews" value="100" color="#ca8a04" />
-        <Badge label="3 star reviews" value="100" color="#facc15" />
-        <Badge label="4 star reviews" value="100" color="#4ade80" />
-        <Badge label="5 star reviews" value="100" color="#16a34a" />
+    <div className="p-4"> {/* Adding padding for the overall container */}
+      {/* Badge Section */}
+      <section className="flex flex-wrap gap-9 mb-6"> {/* Adjusted gap for better spacing */}
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5"> {/* Responsive width for badges */}
+          <Badge label="Total Reviews" value="1000" color='#000000' />
+        </div>
+        <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/5">
+          <Badge label="1 Star Reviews" value="100" color="#ef4444" />
+        </div>
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5">
+          <Badge label="2 Star Reviews" value="100" color="#ca8a04" />
+        </div>
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5">
+          <Badge label="3 Star Reviews" value="100" color="#facc15" />
+        </div>
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5">
+          <Badge label="4 Star Reviews" value="100" color="#4ade80" />
+        </div>
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5">
+          <Badge label="5 Star Reviews" value="100" color="#16a34a" />
+        </div>
       </section>
 
+      {/* Review Section */}
       <section className="flex flex-col gap-5 px-4 sm:px-6 lg:px-8">
         {reviews.map((review, index) => (
           <Review
